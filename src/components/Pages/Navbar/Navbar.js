@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
-import headerLog from "../../../images/khatri-white-logo.svg"
+import headerLog from "../../../images/khatri-white-logo.svg";
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const collapseRef = useRef(null);
@@ -50,16 +50,15 @@ const Navbar = () => {
                   id="navbarSupportedContent"
                   ref={collapseRef}
                 >
-                        <div className="navigation-links">
-                   {/* <NavigationLinks /> */}
+                  <div className="navigation-links">
+                    {/* <NavigationLinks /> */}
                   </div>
-                  
-                   <div className="navigation-links">
-                   <NavigationLinks />
-                  </div>
-                  
-                  <div className="download-btn ">
-                    <DownloadButton />
+
+                  <div className="navigation-links responsive_Nav">
+                    <NavigationLinks />
+                    <div className="download-btn ">
+                      <DownloadButton />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -74,12 +73,11 @@ const Navbar = () => {
 const Logo = () => {
   return (
     <Link className="nav-link  active" aria-current="page" to="/">
-      
       <img
-        className="logo_navbar"
+        className="logo_navbar img-fluid"
         src={headerLog}
         alt="Logo"
-        style={{ width: "8rem", padding: "0px" }}
+
       />
     </Link>
   );
@@ -100,16 +98,14 @@ const NavigationLinks = () => {
       </li>
       <li className="nav-item">
         <Link className="nav-link" to="/how-to-play">
-        How To Play
+          How To Play
         </Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link" to="/terms-conditions">
-         Terms & Condition
+          Terms & Condition
         </Link>
       </li>
-
-      
     </ul>
   );
 };

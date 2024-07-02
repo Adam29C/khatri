@@ -1,7 +1,8 @@
 import React from "react";
-import img1 from "../../../images/gambleaware.81280be1.svg";
-import img2 from "../../../images/gamblingtherapy.b.svg";
+import img1 from "../../../images/mask1.png";
+import img2 from "../../../images/mask2.png";
 import img3 from "../../../images/18.svg";
+import logo from "../../../images/khatri-black-logo.svg";
 import "../../../App.css"
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -37,8 +38,8 @@ const Footer = () => {
           </div>
           <div className="footer-sub-container">
             <div className="footer-contain">
-              <div className="ms-auto d-flex">
-                <img src="/images/app_icon_ver.png" className="img-fluid w-50 float-left" alt="" />
+              <div className=" d-flex">
+                <img src={logo} className="img-fluid  float-left" alt="" />
               </div>
               {/* <h1> */}
               {/* RAMA<span className="primary-color">BETS</span> */}

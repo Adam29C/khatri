@@ -4,18 +4,16 @@ import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { GET_ALL_GAMESLIST } from "../../service/admin.service";
 const Charts_Container = ({ title, data, link }) => {
-//   const [getData, setgetData] = useState([]);
+  //   const [getData, setgetData] = useState([]);
 
-
-
-//   console.log("getData" ,getData);
-//   const getResponseData = async () => {
-//     const res = await GET_ALL_GAMESLIST();
-//     setgetData(res.data);
-//   };
-//   useEffect(() => {
-//     getResponseData();
-//   }, []);
+  //   console.log("getData" ,getData);
+  //   const getResponseData = async () => {
+  //     const res = await GET_ALL_GAMESLIST();
+  //     setgetData(res.data);
+  //   };
+  //   useEffect(() => {
+  //     getResponseData();
+  //   }, []);
 
   const Details = (route, name) => {
     if (route === "jodi") {
@@ -33,6 +31,18 @@ const Charts_Container = ({ title, data, link }) => {
 
   return (
     <>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-xxl-6 col-xl-6  col-md-6 ">
+            <div className="shadow card rounded border-0 timetable">
+              <div className="card-body" style={{ textAlign: "center" }}>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <main
         className="container"
         style={{ padding: "0px 10px", marginBottom: "40px" }}
@@ -48,15 +58,8 @@ const Charts_Container = ({ title, data, link }) => {
         >
           {title}
         </h2>
-        <section
-          style={{
-            display: "flex",
-            flexFlow: "column wrap",
-            alignItems: "center",
-            gap: "4px",
-          }}
-        >
-          <div className="col-xl-12 col-md-12 w-100">
+        <section>
+          <div className="col-xl-6 col-md-6 ">
             {data &&
               data.map((data1, index) => (
                 <div className="shadow card rounded border-0 timetable">
