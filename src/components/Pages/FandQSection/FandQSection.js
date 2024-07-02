@@ -50,7 +50,7 @@ const FandQSection = () => {
             {isOpen.ramabet && (
               <div className="description-text">
                 <br />
-                RAMABETS Is A Satta Matka Gamming App Where You Can Play Games
+                RAMABETS Is A Satta Ramabets Gamming App Where You Can Play Games
                 And Win Jackpot.
               </div>
             )}
@@ -80,7 +80,7 @@ const FandQSection = () => {
               {isOpen.games && (
                 <div className="description-text">
                   <br />
-                  Popular Satta Matka Games Like Kalyan, Sridevi, Shree day,
+                  Popular Satta Ramabets Games Like Kalyan, Sridevi, Shree day,
                   Milan, Time Bazar & Rajdhani, Main bazar etc..
                 </div>
               )}

@@ -10,6 +10,7 @@ import StartLineGames from "./components/games/StarLine/StartLineGames";
 import AndarBaharChart from "./components/games/AndarBahar/AndarBaharChart";
 import TermsCondition from "./components/Pages/TermsCondition/TermsCondition";
 import AboutGames from "./components/Pages/About/AboutGames";
+import AboutUs from "./components/Pages/About Us/AboutUs";
 const App = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/jodi-chart/:title/:Chart" element={<Jodi_Chart />} />
         <Route path="/terms-conditions" element={<TermsCondition />} />
         <Route path="/how-to-play" element={<AboutGames />} />
+        <Route path="/about-us" element={<AboutUs />} />
 
       </Routes>
     </Router>
