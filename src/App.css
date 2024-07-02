@@ -1,5 +1,4 @@
 /* .roboto-thin {
-/* .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -69,7 +68,12 @@
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: italic;
-}
+} */
+ @import url("./components/assets/css/ChartDetails.css");
+ @import url("./components/assets/css/Herosection.css");
+ @import url("./components/assets/css/Section3.css");
+ @import url("./components/assets/css/Section4.css");
+ @import url("./components/assets/css/Wraper.css");
 
 * {
   box-sizing: border-box;
@@ -106,7 +110,38 @@ body {
   color: #ffffff;
 }
 
-.navbar-nav .nav-link.active{
+.ml-10px{
+  margin-left: 10px;
+}
+
+.mt-10px{
+  margin-top: 10px;
+}
+.h1-fw-700{
+  font-weight: 700;
+}
+.betting-closed{
+  color:var(--color-close);
+}
+
+.close-for-today{
+  color: var(--color-red);
+}
+.betting-open{
+  color: var(--color-open);
+
+}
+.default-message{
+  color: var(--other-color);
+}
+.text-align-center-css{
+  text-align: center;
+}
+.color-dark-gray{
+  color: rgb(51, 51, 51);
+}
+
+.navbar-nav .nav-link.active {
   color: #ffffff;
 }
 /* Adjust styles for specific elements if needed */
@@ -433,6 +468,55 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   margin-bottom: 80px;
 }
 
+.andar-bahar-chart-main{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.a-tag-css{
+  text-decoration: none;
+}
+
+/* style={{
+  maxWidth: "100%",
+  marginLeft: "auto",
+  marginRight: "auto",
+  paddingLeft: "calc(var(--bs-gutter-x)* .5)",
+  paddingRight: "calc(var(--bs-gutter-x)* .5)",
+}} */
+
+.hero-section-container{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  padding-right: calc(var(--bs-gutter-x)* .5);
+}
+
+.margin-bottom-0px{
+margin-bottom: 0;
+}
+.font-size-2rem{
+  font-size: 2rem;
+}
+
+.contact-btn-backgcolor{
+  background-color: rgb(37, 211, 102);
+}
+
+.span-tag-color{
+  color: rgb(222, 223, 223);
+}
+/* wright new css */
+
+/* ======= */
+
+
+.logo_navbar {
+  width: 11rem;
+}
 
 /* wright new css */
 
