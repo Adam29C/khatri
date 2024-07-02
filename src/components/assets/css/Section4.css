@@ -18,6 +18,14 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: var(--bg-light);
+ background-color: var(--color-primary);
+ 
+  border-color: var(--color-primary);
+}
+
+
 /* [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
     display: none;
@@ -33,12 +41,13 @@ button:not(:disabled) {
 }
 
 th {
-  background-color: #191d31 !important;
-  color: #fff !important;
+  background-color: none !important;
+  color: var(--color-black) !important;
+  border-bottom: 1px solid rgb(218, 215, 215) !important;
 }
 
 table {
-  border: #191d31;
+  border: var(--color-primary) ;
 }
 
 /* Typography */
