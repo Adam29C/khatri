@@ -529,7 +529,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 } */
 
 .header-content-main {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .andar-bahar-chart-main {
@@ -578,7 +578,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 
 
 .logo_navbar {
-  width: 11rem;
+  width: 10rem;
 }
 /* wright new css */
 
