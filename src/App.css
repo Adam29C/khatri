@@ -514,7 +514,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   /* border: 5px solid black; */
 
   position: relative;
-  background-image: url("./images/navbar-svg.svg");
+  background-image: url("./images/header-bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -574,6 +574,11 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 
 .span-tag-color {
   color: rgb(222, 223, 223);
+}
+
+
+.logo_navbar {
+  width: 11rem;
 }
 /* wright new css */
 
