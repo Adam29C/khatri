@@ -9,7 +9,7 @@ import Charts from "./components/Pages/Charts/ChartsWraper";
 import StartLineGames from "./components/games/StarLine/StartLineGames";
 import AndarBaharChart from "./components/games/AndarBahar/AndarBaharChart";
 import TermsCondition from "./components/Pages/TermsCondition/TermsCondition";
-import AboutGames from "./components/Pages/About/AboutGames";
+import AboutGames from "./components/Pages/AboutGames/AboutGames";
 import AboutUs from "./components/Pages/About Us/AboutUs";
 const App = () => {
   return (

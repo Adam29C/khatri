@@ -92,6 +92,11 @@ const NavigationLinks = () => {
         </Link>
       </li>
       <li className="nav-item">
+        <Link className="nav-link" to="/about-us">
+        About Us
+        </Link>
+      </li>
+      <li className="nav-item">
         <Link className="nav-link" to="/charts">
           Charts
         </Link>
@@ -101,11 +106,7 @@ const NavigationLinks = () => {
           How To Play
         </Link>
       </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/about-us">
-        About Us
-        </Link>
-      </li>
+    
       <li className="nav-item">
         <Link className="nav-link" to="/terms-conditions">
           Terms & Condition
