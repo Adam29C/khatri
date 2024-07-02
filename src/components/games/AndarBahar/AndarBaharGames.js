@@ -154,7 +154,7 @@ const StartLine = () => {
                                 getmsg ==
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#11305c"
+                                  : "#237F8A"
                               }`}
                             ></path>
                             <path
@@ -166,7 +166,7 @@ const StartLine = () => {
                                 getmsg ==
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#11305c"
+                                  : "#237F8A"
                               }`}
                             ></path>
                             <g

@@ -27,8 +27,8 @@ box-sizing: border-box;
 }
 
 .color-primary {
-    color: #191d31;
-    color: var(--color-primary);
+    /* color: #191d31; */
+    color: var(--color-black);
 }
 
 button:not(:disabled) {
@@ -37,7 +37,7 @@ button:not(:disabled) {
 
 .contact-button,
 .download-now {
-    background-color: #191d31;
+    background-color:var(--color-primary);
     color: #fff;
     cursor: pointer;
 }

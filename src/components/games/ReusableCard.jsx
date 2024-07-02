@@ -159,7 +159,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                                 showData(data.gameDetails)?.message ===
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#11305c"
+                                  : "#237F8A"
                               }
                             ></path>
                             <path
@@ -171,7 +171,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                                 showData(data.gameDetails)?.message ===
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#11305c"
+                                  : "#237F8A"
                               }
                             ></path>
                             <g
