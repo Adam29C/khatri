@@ -3,7 +3,8 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { GET_ALL_GAMESLIST } from "../../service/admin.service";
-const Charts_Container = ({ title, data, link }) => {
+import infinity from "../../../images/infinity.png";
+const Charts_Container = ({ title, data, link , responsive_Class }) => {
   //   const [getData, setgetData] = useState([]);
 
   //   console.log("getData" ,getData);
@@ -31,19 +32,43 @@ const Charts_Container = ({ title, data, link }) => {
 
   return (
     <>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-xxl-6 col-xl-6  col-md-6 ">
-            <div className="shadow card rounded border-0 timetable">
-              <div className="card-body" style={{ textAlign: "center" }}>
-                
+      {/* <div className="container">
+        <div className="row"> */}
+          <div className={responsive_Class}>
+            <div className="shadow card rounded-3 border-0 timetable">
+              <div className="card-body">
+                <h3 className="ms-2 fw-bold pt-2 pb-4">    {title}</h3>
+                <div>
+                  {data &&
+                    data.map((data1, index) => (
+                      <>
+                        <div className=" d-flex align-items-center ">
+                          <img src={infinity} alt="" className="mx-2" />
+                          <h4
+                           className="mx-4"
+                          >
+                            <Link
+                              to={Details(link, data1.providerName)}
+                              state={{ title: data1.providerName }}
+                              className="text-decoration-none primary-color"
+                            >
+                              {data1.providerName.toUpperCase()}
+                            </Link>
+                          </h4>
+                       
+                        </div>
+                        <hr />
+                      </>
+                    ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        
+        {/* </div>
+      </div> */}
 
-      <main
+      {/* <main
         className="container"
         style={{ padding: "0px 10px", marginBottom: "40px" }}
       >
@@ -94,7 +119,7 @@ const Charts_Container = ({ title, data, link }) => {
               ))}
           </div>
         </section>
-      </main>
+      </main> */}
     </>
   );
 };

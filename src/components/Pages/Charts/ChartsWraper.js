@@ -33,14 +33,23 @@ const Charts = () => {
   return (
     <>
       <Navbar />
-      <Jodi_Chart title="Jodi Chart" data={getChart} link="jodi" />
-      <Pana_Chart title="Pana Chart" data={getChart} link="pana" />
-      <Shree_Starline 
-        title="Shree Starline"
-        data={getStarline}
-        link="starline"
-      />
-      <Shree_Jackpot title="Shree Jackpot" data={getJackpot} link="jackpot" />
+      <div className="container mt-3">
+        <div className="row">
+          <Jodi_Chart title="Jodi Chart" data={getChart} link="jodi" />
+          <Pana_Chart title="Pana Chart" data={getChart} link="pana" />
+          <Shree_Starline
+            title="Shree Starline"
+            data={getStarline}
+            link="starline"
+          />
+
+          <Shree_Jackpot
+            title="Shree Jackpot"
+            data={getJackpot}
+            link="jackpot"
+          />
+        </div>
+      </div>
       <Footer />
     </>
   );
