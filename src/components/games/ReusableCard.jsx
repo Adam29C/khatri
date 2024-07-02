@@ -12,7 +12,7 @@ import star from "../../images/star.png";
 //
 import { downloadAPK } from "../Helpers/DownloadAPK";
 
-const Section4 = ({ GameData, title , showPana }) => {
+const Section4 = ({ GameData, title, showPana }) => {
   //   const [getData, setgetData] = useState([]);
   const [ModalData, setModalData] = useState([]);
   const [AppUrl, setAppUrl] = useState("");
@@ -97,20 +97,32 @@ const Section4 = ({ GameData, title , showPana }) => {
                           </h5>
                           <h3 className="font-700">{data.providerResult}</h3>
                           <h6
-                            className="mb-1 batting_size"
-                            style={{
-                              color:
-                                showData(data.gameDetails)?.message ===
-                                "Close for today"
-                                  ? "red"
-                                  : showData(data.gameDetails)?.message ===
-                                    "Betting is running for close"
-                                  ? "#11305c"
-                                  : showData(data.gameDetails)?.message ===
-                                    "Betting is running for open"
-                                  ? "#37a148"
-                                  : "#d65f78",
-                            }}
+                            // className="mb-1 batting_size"
+                            // style={{
+                            //   color:
+                            //     showData(data.gameDetails)?.message ===
+                            //     "Close for today"
+                            //       ? "red"
+                            //       : showData(data.gameDetails)?.message ===
+                            //         "Betting is running for close"
+                            //       ? "#11305c"
+                            //       : showData(data.gameDetails)?.message ===
+                            //         "Betting is running for open"
+                            //       ? "#37a148"
+                            //       : "#d65f78",
+                            // }}
+                            className={`mb-1 batting_size ${
+                              showData(data.gameDetails)?.message ===
+                              "Close for today"
+                                ? "close-for-today"
+                                : showData(data.gameDetails)?.message ===
+                                  "Betting is running for close"
+                                ? "betting-closed"
+                                : showData(data.gameDetails)?.message ===
+                                  "Betting is running for open"
+                                ? "betting-open"
+                                : "default-message"
+                            }`}
                           >
                             {showData(data.gameDetails)?.message}
                           </h6>
@@ -147,7 +159,7 @@ const Section4 = ({ GameData, title , showPana }) => {
                                 showData(data.gameDetails)?.message ===
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#11305c"
+                                  : "#237F8A"
                               }
                             ></path>
                             <path
@@ -159,7 +171,7 @@ const Section4 = ({ GameData, title , showPana }) => {
                                 showData(data.gameDetails)?.message ===
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#11305c"
+                                  : "#237F8A"
                               }
                             ></path>
                             <g
@@ -207,8 +219,8 @@ const Section4 = ({ GameData, title , showPana }) => {
                             .toLowerCase()
                             .replace(/\s+/g, "")}/pana-chart`}
                           state={{ title: data.providerName }}
-                          className="chat-btn"
-                          style={{ textDecoration: "none" }}
+                          className="chat-btn a-tag-css"
+                         
                         >
                           <span>Pana Chart</span>
                         </Link>
@@ -220,8 +232,8 @@ const Section4 = ({ GameData, title , showPana }) => {
                           .toLowerCase()
                           .replace(/\s+/g, "")}/jodi-chart`}
                         state={{ title: data.providerName }}
-                        className="chat-btn"
-                        style={{ textDecoration: "none", marginLeft: "10px" }}
+                        className="chat-btn a-tag-css ml-10px"
+                       
                       >
                         <span>Jodi Chart</span>
                       </Link>

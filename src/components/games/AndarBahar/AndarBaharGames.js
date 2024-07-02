@@ -70,6 +70,7 @@ const StartLine = () => {
                         <div className="card-text-main">
                           <h4 className="primary-color font-700 ">
                             {data.providerName.toUpperCase()}
+                     
                             {/* <i
                             class="fa fa-info-circle mx-2"
                             aria-hidden="true"
@@ -83,19 +84,20 @@ const StartLine = () => {
                           ></i> */}
                           </h4>
                           <h3 className="font-700 ">{data.providerResult}</h3>
-
+                         
                           <h6
-                            className="mb-1"
-                            style={{
-                              color:
-                                getmsg == "Close for today"
-                                  ? "red"
-                                  : getmsg == "Betting is running for close"
-                                  ? "#11305c"
-                                  : getmsg == "Betting is running for open"
-                                  ? "#37a148"
-                                  : "#d65f78",
-                            }}
+                            // className="mb-1"
+                            // style={{
+                            //   color:
+                            //     getmsg == "Close for today"
+                            //       ? "red"
+                            //       : getmsg == "Betting is running for close"
+                            //       ? "#11305c"
+                            //       : getmsg == "Betting is running for open"
+                            //       ? "#37a148"
+                            //       : "#d65f78",
+                            // }}
+                            className={`mb-1 ${getmsg == "Close for today"  ? "close-for-today"  : getmsg == "Betting is running for close"  ? "betting-closed": getmsg == "Betting is running for open" ? "betting-open":"default-message"}`}
                           >
                             {getmsg}
                           </h6>
@@ -152,7 +154,7 @@ const StartLine = () => {
                                 getmsg ==
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#11305c"
+                                  : "#237F8A"
                               }`}
                             ></path>
                             <path
@@ -164,7 +166,7 @@ const StartLine = () => {
                                 getmsg ==
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#11305c"
+                                  : "#237F8A"
                               }`}
                             ></path>
                             <g
@@ -211,8 +213,8 @@ const StartLine = () => {
                           .toLowerCase()
                           .replace(/\s+/g, "")}`}
                         state={{ title: data.providerName }}
-                        className="chat-btn"
-                        style={{ textDecoration: "none" }}
+                        className="chat-btn a-tag-css"
+                        
                       >
                         <span>Jodi Chart</span>
                       </Link>

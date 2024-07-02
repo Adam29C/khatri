@@ -55,7 +55,7 @@ table {
 }
 
 .custom-card {
-  border: 1px solid #191d31;
+  border: 1px solid var(--color-primary);
   border-radius: 10px;
   text-align: center;
 }
@@ -200,7 +200,9 @@ table {
 
 /* Accordion Styles */
 .accordion-container .accordion-section {
-  background-color: #f9e3c3;
+  background-color: none;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
   border-radius: 8px;
   margin-bottom: 10px;
   padding: 1.25rem 1rem;
@@ -208,7 +210,7 @@ table {
 }
 
 .accordion-container .headin-text {
-  color: var(--color-primary);
+  color: var(--color-black);
 }
 
 .accordion-container .collapese-icon {
@@ -218,9 +220,9 @@ table {
 /* Chat Button Styles */
 .chat-btn {
   background-color: #fff;
-  border: 1px solid var(--color-orange);
+  border: 1px solid var(--color-primary);
   border-radius: 12px;
-  color: var(--color-orange);
+  color: var(--color-primary);
   font-weight: 500;
   min-width: 142px;
   padding: 0 30px;
@@ -230,7 +232,7 @@ table {
 }
 
 .chat-btn:hover {
-  background-color: #191d31;
+  background-color: var(--btn-color);
   color: #fff;
 }
 

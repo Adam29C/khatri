@@ -69,6 +69,11 @@
   font-weight: 900;
   font-style: italic;
 } */
+@import url("./components/assets/css/ChartDetails.css");
+@import url("./components/assets/css/Herosection.css");
+@import url("./components/assets/css/Section3.css");
+@import url("./components/assets/css/Section4.css");
+@import url("./components/assets/css/Wraper.css");
 
 * {
   box-sizing: border-box;
@@ -79,12 +84,19 @@
 }
 
 :root {
-  --color-primary: #191d31;
+  --color-black: #000;
+ --btn-color:#237F8A ;
+  --other-color: #535151;
+  --color-open: #37a148;
+  --color-close: #11305c;
+  --color-red: red;
+  --color-primary: #237F8AFF;
   --bg-primary: #fcf3e5;
   --bg-light: #edefef;
   --color-orange: #11305c;
   --light-black: #acaebb;
   transition: --vh 0.3s ease;
+
 }
 
 html,
@@ -97,6 +109,36 @@ body {
 .nav-link {
   font-size: 1rem !important;
   color: #ffffff;
+}
+
+.ml-10px {
+  margin-left: 10px;
+}
+
+.mt-10px {
+  margin-top: 10px;
+}
+.h1-fw-700 {
+  font-weight: 700;
+}
+.betting-closed {
+  color: var(--color-close);
+}
+
+.close-for-today {
+  color: var(--color-red);
+}
+.betting-open {
+  color: var(--color-open);
+}
+.default-message {
+  color: var(--other-color);
+}
+.text-align-center-css {
+  text-align: center;
+}
+.color-dark-gray {
+  color: rgb(51, 51, 51);
 }
 
 .navbar-nav .nav-link.active {
@@ -158,7 +200,7 @@ th {
 }
 .footer-btn-scroll {
   border: none;
-  background-color: #191d31;
+  background-color: var(--color-primary);
   padding: 10px;
   color: white;
   display: flex;
@@ -234,8 +276,8 @@ th {
   color: black;
 }
 .primary-color {
-  color: #11305c;
-  color: var(--color-orange);
+
+  color: var(--color-primary);
 }
 
 .btn-scroll {
@@ -426,23 +468,116 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   margin-bottom: 80px;
 }
 
-.logo_navbar {
-  width: 11rem;
+.andar-bahar-chart-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
 }
 
+.a-tag-css {
+  text-decoration: none;
+}
+
+/* style={{
+  maxWidth: "100%",
+  marginLeft: "auto",
+  marginRight: "auto",
+  paddingLeft: "calc(var(--bs-gutter-x)* .5)",
+  paddingRight: "calc(var(--bs-gutter-x)* .5)",
+}} */
+
+.hero-section-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.margin-bottom-0px {
+  margin-bottom: 0;
+}
+.font-size-2rem {
+  font-size: 2rem;
+}
+
+.contact-btn-backgcolor {
+  background-color: rgb(37, 211, 102);
+}
+
+.span-tag-color {
+  color: rgb(222, 223, 223);
+}
+/* wright new css */
+.header-container {
+  /* border: 5px solid black; */
+
+  position: relative;
+  background-image: url("./images/navbar-svg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+}
+
+/* .banner-section {
+  background-image: url(https://mama567.com/assets/Section%201/Rectangle%201.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: -webkit-fill-available;
+} */
+
+.header-content-main {
+  margin-bottom: 30px;
+}
+
+.andar-bahar-chart-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.a-tag-css {
+  text-decoration: none;
+}
+
+/* style={{
+  maxWidth: "100%",
+  marginLeft: "auto",
+  marginRight: "auto",
+  paddingLeft: "calc(var(--bs-gutter-x)* .5)",
+  paddingRight: "calc(var(--bs-gutter-x)* .5)",
+}} */
+
+
+
+.hero-section-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.margin-bottom-0px {
+  margin-bottom: 0;
+}
+.font-size-2rem {
+  font-size: 2rem;
+}
+
+.contact-btn-backgcolor {
+  background-color: rgb(37, 211, 102);
+}
+
+.span-tag-color {
+  color: rgb(222, 223, 223);
+}
 /* wright new css */
 
-
-
-
 /* ------------------------- ------------------------ CHART SECTION ------------------------   */
-
-
-
-
-
-
-
 
 /* --------------------------------------  RESPONSIVE  */
 
@@ -463,11 +598,9 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 @media (min-width: 1024px) {
-
   .responsive_Nav {
     display: flex;
   }
-
 
   .footer-sub-container {
     flex-direction: row;
@@ -606,10 +739,9 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 @media (max-width: 425px) {
-
   .banner-left {
     margin: 0 0 3rem 0;
-}
+  }
 
   .table-responsive {
     font-size: 10px;
