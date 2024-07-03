@@ -42,31 +42,35 @@ const Section2 = () => {
                 <div className="button-sec">
                   <div className="row">
                     <div className="col-12">
+                      <div >
+                        <span className="title_heder">Welcome To Khatri555</span>
+                      </div>
                       <div
                         className={`banner-text-section ${
                           isIPhoneXR ? "d-flex flex-column" : ""
                         }`}
                       >
-                        <h1 className="h1-fw-700" >Play Games</h1>
-                        <h1 className="h1-fw-700">Win Money On&nbsp;</h1>
-                        <h1 className="h1-fw-700" >
-                          RAMA
+                        <h1 className="h1-fw-700" >Play Big, Win Big</h1>
+                        <h1 className="h1-fw-700">Business Of Faith </h1>
+                        <h1 className="h1-fw-700">With Confidence </h1>
+                        {/* <h1 className="h1-fw-700" >
+                          W
                           <span
                             className="primary-color h1-fw-700"
                         
                           >
-                            {" "}
+                         
                             BETS
-                          </span>
-                        </h1>
+                          </span> */}
+                        {/* </h1> */}
                       </div>
                     </div>
                   </div>
-                  <img
+                  {/* <img
                     className="count-img"
                     src="/images/group.svg"
                     alt="Alternative Text Here"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>

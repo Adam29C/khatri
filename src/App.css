@@ -85,18 +85,17 @@
 
 :root {
   --color-black: #000;
- --btn-color:#237F8A ;
+  --btn-color: #237f8a;
   --other-color: #535151;
   --color-open: #37a148;
   --color-close: #11305c;
   --color-red: red;
-  --color-primary: #237F8AFF;
+  --color-primary: #237f8aff;
   --bg-primary: #fcf3e5;
   --bg-light: #edefef;
   --color-orange: #11305c;
   --light-black: #acaebb;
   transition: --vh 0.3s ease;
-
 }
 
 html,
@@ -276,7 +275,6 @@ th {
   color: black;
 }
 .primary-color {
-
   color: var(--color-primary);
 }
 
@@ -551,8 +549,6 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   paddingRight: "calc(var(--bs-gutter-x)* .5)",
 }} */
 
-
-
 .hero-section-container {
   max-width: 100%;
   margin-left: auto;
@@ -576,11 +572,31 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   color: rgb(222, 223, 223);
 }
 
-
 .logo_navbar {
   width: 10rem;
 }
 /* wright new css */
+
+.Card_Size {
+  width: 24%;
+}
+
+
+
+.title_heder{
+  /* --color-primary: #237f8aff; */
+  /* background-color: var(--light-black); */
+  background-color: var(--light-black);
+  padding: 7px 30px;
+  border-radius: 12px;
+  font-size: 21px;
+  margin-bottom: 21px;
+
+}
+
+
+
+
 
 /* ------------------------- ------------------------ CHART SECTION ------------------------   */
 
@@ -603,6 +619,11 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 @media (min-width: 1024px) {
+
+  .Card_Size {
+    width: 32%;
+  }
+  
   .responsive_Nav {
     display: flex;
   }
@@ -637,6 +658,12 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   }
 }
 @media (max-width: 768px) {
+
+  
+  .Card_Size {
+    width: 48%;
+  }
+  
   .navbar-nav .nav-link.active {
     color: black;
   }
@@ -744,6 +771,13 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 @media (max-width: 425px) {
+
+   
+  .Card_Size {
+    width: 100%;
+  }
+  
+
   .banner-left {
     margin: 0 0 3rem 0;
   }
