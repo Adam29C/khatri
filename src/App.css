@@ -838,6 +838,8 @@ color: var(--color-primary);;
   }
 }
 
+
+
 @media (max-width: 320px) {
   .main-page-btn{
     min-width: 120px;
