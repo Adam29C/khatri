@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import "./aboutgame.css"
+import { GET_CONTACT } from '../../service/admin.service'
 const AboutGames = () => {
+  const [getData, setgetData] = useState([]);
+
+  const getResponseData = async () => {
+    const res = await GET_CONTACT();
+    setgetData(res.data[0]);
+  };
+  useEffect(() => {
+    getResponseData();
+  }, []);
+
   return (
     <div >
 
@@ -115,7 +126,7 @@ const AboutGames = () => {
           further query then you can
           <span style={{ fontWeight: 600, marginLeft: 5 }}>
             WhatsApp us on
-            <span style={{ color: "#27A966" }}>+91 9167 555333</span>
+            <span style={{ color: "#27A966" }}> +91 {getData?.number }</span>
           </span>
         </li>
       </ul>

@@ -98,6 +98,10 @@
   transition: --vh 0.3s ease;
 }
 
+a:hover {
+  color: #195258;
+}
+
 html,
 body {
   margin: 0;
@@ -166,7 +170,7 @@ table,
 td,
 th {
   /* font-weight:700; */
-  border: 1px solid #191d31;
+  border: 1px solid rgb(206, 202, 202);
 }
 
 .pt-110 {
@@ -281,7 +285,7 @@ th {
 .btn-scroll {
   font-family: "Urbanist", sans-serif;
   color: white;
-  background-color: #191d31;
+  background-color: var(--color-primary);
   width: 150px;
   /* Set your desired width */
   height: 40px;
@@ -292,7 +296,8 @@ th {
 }
 
 .btn-scroll:hover {
-  background-color: #191d31;
+  background-color: var(--color-primary);
+  color: var(--bg-light);
   /* Change the background color on hover */
 }
 
@@ -302,12 +307,12 @@ th {
 
 #table1 {
   border-collapse: collapse;
-  border-color: #191d31;
+  border-color: var(--color-primary);
 }
 
 #table2 {
   border-collapse: separate;
-  border-color: #191d31;
+  border-color: var(--color-primary);
 }
 
 button,
@@ -332,6 +337,7 @@ textarea {
   color: #f8fdfe;
   padding: 16px 30px;
   text-decoration: none; */
+  
   background: none;
   border-radius: 30px;
   color: #f8fdfe;
@@ -339,6 +345,18 @@ textarea {
   text-decoration: none;
   border: 1px solid white;
 }
+
+.download-btn button:hover {
+  color: #f8fdfe;
+  background: rgb(34,126,139);
+  background: -moz-linear-gradient(177deg, rgba(34,126,139,1) 0%, rgba(49,170,185,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(177deg, rgba(34,126,139,1) 0%, rgba(49,170,185,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(177deg, rgba(34,126,139,1) 0%, rgba(49,170,185,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#227e8b",endColorstr="#000000",GradientType=1);
+
+}
+
+
 
 /* Custom CSS */
 button.navbar-toggler.navbar-toggler-btn {
@@ -702,6 +720,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   }
 
   .download-btn button {
+    color: #f8fdfe;
     background: none;
     border-radius: 30px;
     color: var(--color-primary);

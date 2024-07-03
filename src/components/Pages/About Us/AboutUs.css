@@ -48,9 +48,9 @@
     cursor:pointer;
     background-color:transparent;
     padding:3px 7px;
-    /* color:#26a966; */
+    color:var(--color-primary);
     border-radius:25px;
-    /* border:1px solid #26a966; */
+    border:1px solid var(--color-primary);
     display:flex;
     align-items:center;
     box-shadow:none;
@@ -58,7 +58,7 @@
 }
 /*!sc*/
  .dROOdw:hover{
-    background-color:#26a966;
+    background-color:var(--btn-color);
     color:white;
 }
 /*!sc*/

@@ -39,9 +39,9 @@
     cursor: pointer;
     background-color: transparent;
     padding: 3px 7px;
-    color: rgb(38, 169, 102);
+    color: var(--color-primary);
     border-radius: 25px;
-    border: 1px solid rgb(38, 169, 102);
+    border: 1px solid var(--color-primary);
     display: flex;
     align-items: center;
     box-shadow: none;
