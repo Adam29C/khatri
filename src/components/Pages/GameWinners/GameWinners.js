@@ -54,7 +54,7 @@ const Section3 = () => {
               src={star}
               alt=""
             />
-            <h1 className="mb-0 ms-2 me-2 font-700">Today's Top Winners</h1>
+            <h1 className="mb-0 mt-3 ms-2 me-2 font-700">Today's Top Winners</h1>
             <img
               src={star}
               alt=""
