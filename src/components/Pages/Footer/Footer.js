@@ -45,7 +45,7 @@ const Footer = () => {
               {/* RAMA<span className="primary-color">BETS</span> */}
               {/* </h1> */}
               <p>
-                Our website is operated by RAMABETS International, a company
+                Our website is operated by Khatri555 International, a company
                 established under the law of Isle of Man, with registered
                 address at 1-10 Ballanoa Meadow IM4-2HT, Isle Of Man, and having
                 its gaming sublicense issued by Isle of Man e-Gaming and all
@@ -76,7 +76,7 @@ const Footer = () => {
           {/* <hr /> */}
           <div className="footer-last-content gCDmxv">
             <p className="copyright-text">
-              Copyright © 2024 - RAMABETS. All Rights Reserved
+              Copyright © 2024 - Khatri555. All Rights Reserved
             </p>
             <p>
               <Link to="/terms-conditions" onClick={handleClickUp}>

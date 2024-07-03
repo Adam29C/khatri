@@ -16,7 +16,7 @@ const TermsCondition = () => {
       Terms &amp; Conditions
     </h1>
     <p  className="terms-condition-para">
-      SHREE MORNING Jodi Chart Satta Ramabets Record Old History Historical Data
+      SHREE MORNING Jodi Chart Satta Matka Record Old History Historical Data
       Bracket Results Chart Online Live Book Digits Numbers
     </p>
   </div>
@@ -30,7 +30,7 @@ const TermsCondition = () => {
             <li>
               <span className="span-tag-color">●</span>
               <p>
-                If Users Entered Wrong Bank Details Ramabets Is Not
+                If Users Entered Wrong Bank Details Khatri555 Is Not
                 Responsible.
               </p>
             </li>

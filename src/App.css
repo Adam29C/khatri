@@ -85,8 +85,8 @@
 
 :root {
   --color-black: #000;
-  --color-white:#ffff;
-  --light-blue : #c8e9ed;
+  --color-white: #ffff;
+  --light-blue: #c8e9ed;
   --btn-color: #237f8a;
   --other-color: #535151;
   --color-open: #37a148;
@@ -340,7 +340,7 @@ textarea {
   color: #f8fdfe;
   padding: 16px 30px;
   text-decoration: none; */
-  
+
   background: none;
   border-radius: 30px;
   color: #f8fdfe;
@@ -351,15 +351,30 @@ textarea {
 
 .download-btn button:hover {
   color: #f8fdfe;
-  background: rgb(34,126,139);
-  background: -moz-linear-gradient(177deg, rgba(34,126,139,1) 0%, rgba(49,170,185,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
-  background: -webkit-linear-gradient(177deg, rgba(34,126,139,1) 0%, rgba(49,170,185,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
-  background: linear-gradient(177deg, rgba(34,126,139,1) 0%, rgba(49,170,185,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+  background: rgb(34, 126, 139);
+  background: -moz-linear-gradient(
+    177deg,
+    rgba(34, 126, 139, 1) 0%,
+    rgba(49, 170, 185, 1) 100%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    177deg,
+    rgba(34, 126, 139, 1) 0%,
+    rgba(49, 170, 185, 1) 100%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    177deg,
+    rgba(34, 126, 139, 1) 0%,
+    rgba(49, 170, 185, 1) 100%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#227e8b",endColorstr="#000000",GradientType=1);
-
 }
-
-
 
 /* Custom CSS */
 button.navbar-toggler.navbar-toggler-btn {
@@ -602,7 +617,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   width: 24%;
 }
 
-.main-title-text{
+.main-title-text {
   /* border: none;
   background-color:var(--light-blue );
   padding: 5px 20px;
@@ -610,27 +625,16 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   font-size: 21px;
   width: 250px; */
   margin-bottom: 35px;
-
 }
 
-.title-text{
+.title-text {
   border: none;
-  background-color:var(--light-blue );
+  background-color: var(--light-blue);
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 21px;
-  width: 250px;
-color: var(--color-primary);;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
+  margin-bottom: 21px;
 
-}
-
-.main-btn-a{
-  color: var(--color-black);
-  font-size: 14px;
-  font-weight: 500;
 }
 
 .main-page-btn{
@@ -641,6 +645,11 @@ color: var(--color-primary);;
   min-width: 145px;
   outline: none;
   padding: 0.5rem 1.5rem;
+}
+.accordion-section {
+  border: none !important; 
+  border-bottom: .5px solid var(--color-primary) !important; 
+  border-radius: 0 !important;
 }
 
 
@@ -666,11 +675,10 @@ color: var(--color-primary);;
 }
 
 @media (min-width: 1024px) {
-
   .Card_Size {
     width: 32%;
   }
-  
+
   .responsive_Nav {
     display: flex;
   }
@@ -705,12 +713,10 @@ color: var(--color-primary);;
   }
 }
 @media (max-width: 768px) {
-
-  
   .Card_Size {
     width: 48%;
   }
-  
+
   .navbar-nav .nav-link.active {
     color: black;
   }
@@ -819,12 +825,9 @@ color: var(--color-primary);;
 }
 
 @media (max-width: 425px) {
-
-   
   .Card_Size {
     width: 100%;
   }
-  
 
   .banner-left {
     margin: 0 0 3rem 0;
@@ -841,7 +844,7 @@ color: var(--color-primary);;
 
 
 @media (max-width: 320px) {
-  .main-page-btn{
+  .main-page-btn {
     min-width: 120px;
 
     padding: 0.2rem 1rem;
@@ -856,10 +859,10 @@ color: var(--color-primary);;
     margin-bottom: 35px;
     width: 200px;
 } */
-.title-text {
-  color: var(--color-primary);
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: 500;
-}
+  .title-text {
+    color: var(--color-primary);
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+  }
 }
