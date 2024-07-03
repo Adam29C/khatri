@@ -42,8 +42,8 @@ const Section2 = () => {
                 <div className="button-sec">
                   <div className="row">
                     <div className="col-12">
-                      <div >
-                        <span className="title_heder">Welcome To Khatri555</span>
+                      <div className="main-title-text" >
+                        <span className="title-text">Welcome To Khatri555</span>
                       </div>
                       <div
                         className={`banner-text-section ${
@@ -64,6 +64,32 @@ const Section2 = () => {
                           </span> */}
                         {/* </h1> */}
                       </div>
+                      {/* <div className="col-12 col-lg-6"> */}
+            <div className="d-flex gap-3 mt-5 main-btn">
+              <button className="main-page-btn">
+                <a
+                  href={`tel:${getData && getData.number}`}
+                  className="text-decoration-none main-btn-a"
+                >
+                  <i className="fa fa-phone me-2" aria-hidden="true"></i>Call
+                  Now
+                </a>
+              </button>
+              <button
+                className="main-page-btn"
+               
+              >
+                <a
+                  // href="https://wa.me/+919819508829"
+                  href={`https://wa.me/+${getData && getData.number}`}
+                  className="text-decoration-none main-btn-a"
+                >
+                  <i className="fa fa-whatsapp me-2" aria-hidden="true"></i>
+                  WhatsApp
+                </a>
+              </button>
+            </div>
+          {/* </div> */}
                     </div>
                   </div>
                   {/* <img
@@ -103,15 +129,15 @@ const Section2 = () => {
         //   paddingRight: "calc(var(--bs-gutter-x)* .5)",
         // }}
       >
-        <div
+        {/* <div
           className="row d-flex align-items-center p-3 p-lg-5 margin-bottom-0px"
-          // style={{ marginBottom: "0" }}
+  
         >
           <div className="col-12 col-lg-6 text-center">
             <h4 className="color-primary">Connect with phone call</h4>
             <h1
               className="display-5 fw-bolder color-primary roboto-light font-size-2rem"
-              // style={{ fontSize: "2rem" }}
+         
             >
               +91 {getData && getData.number}
             </h1>
@@ -142,7 +168,7 @@ const Section2 = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </>
