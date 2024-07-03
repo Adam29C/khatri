@@ -947,3 +947,11 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     /* border: 2px solid black; */
   }
 }
+
+.img-hover-rotate {
+  transition: transform 0.5s ease-in-out;
+}
+
+.img-hover-rotate:hover {
+  transform: rotate(360deg);
+}

@@ -55,7 +55,7 @@ const GameRateSection = () => {
               className="Card_Size rounded-3 border border-1 p-3 m-1"
             >
               <div className="d-flex align-items-center">
-                <img src={infinity} alt="" className="mx-2" />
+                <img src={infinity} alt="" className="mx-2 img-hover-rotate img-hover-rotate " />
                 <h5 className="mx-1 ">{items.gameName}</h5>
               </div>
               <div className="d-flex">

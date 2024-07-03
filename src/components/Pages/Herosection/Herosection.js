@@ -37,7 +37,10 @@ const Section2 = () => {
       <div className="container">
         <div className="banner-container">
           <div className="row main-contain-row">
-            <div className="col-lg-6 order-1 order-lg-1">
+            <div 
+            // className="col-lg-12 order-1 order-lg-1"
+            className="col-lg-12"
+            >
               <div className="banner-left">
                 <div className="button-sec">
                   <div className="row">
@@ -100,13 +103,13 @@ const Section2 = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 order-2 order-lg-2 text-center">
+            {/* <div className="col-lg-6 order-2 order-lg-2 text-center">
               <img
                 className="banner-img"
-                src="./images/bannerlogo.png" // Reference the image directly from the public folder
+                src="./images/bannerlogo.png" 
                 alt="Illustration of a scene with various elements"
               />
-            </div>
+            </div> */}
           </div>
           <div className="download-now move-color d-flex justify-content-center align-items-center mt(-5)">
            
