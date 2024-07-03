@@ -44,7 +44,7 @@ const AboutGames = () => {
     </div>
     <div className="about-game-main dFgvOd">
       <div className="jcyUcB">
-        <h1>This is how you play matka on MatkaHero:</h1>
+        <h1>This is how you play matka on Khatri555:</h1>
         <ul className="iKDfcs">
           <li className="hTaGYD">
             <span>1.</span>Step 1 is to pick (3) numbers from 0–9. For example
@@ -70,7 +70,7 @@ const AboutGames = () => {
         </ul>
       </div>
       <div className="jcyUcB">
-        <h1>How to add money in MatkaHero?</h1>
+        <h1>How to add money in Khatri555?</h1>
         <ul className="iKDfcs">
           <li className="hTaGYD">
             <span>1{/* */}.</span>Minimum Deposit is 500 /- Rs
@@ -108,7 +108,7 @@ const AboutGames = () => {
         <li>
           The game you played and got lucky enough to win it then accordingly your
           points will be increased.If you wish to encash the points, just apply
-          for withdrawal request on our MatkaHero Mobile App.
+          for withdrawal request on our Khatri555 Mobile App.
         </li>
         <li>
           In case of any inconvenience regarding the transaction of money OR
@@ -125,7 +125,7 @@ const AboutGames = () => {
           Satta is a broad word to describe “betting” in India or Hindi. The Matka
           game is sometimes referred to as Indian Satta Matka because of its early
           popularity. If you are interested in betting games, you can check out
-          the numbers game at matkahero.com
+          the numbers game at Khatri555.com
         </p>
       </div>
       <div className="jcyUcB">

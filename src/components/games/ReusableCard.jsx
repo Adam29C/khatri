@@ -71,7 +71,7 @@ const Section4 = ({ GameData, title, showPana }) => {
       <div className="available-component">
         <div className="heding-sec heading-sec-custom m-4 d-flex text-center justify-content-center align-items-center">
           <img src={star} alt="" />
-          <h1 className="mb-0 ms-2 me-2 font-700">{title}</h1>
+          <h5 className="mb-0 ms-2 me-2 font-700">{title}</h5>
           <img src={star} alt="" />
         </div>
 

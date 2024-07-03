@@ -595,6 +595,11 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 
+.accordion-section {
+  border: none !important; 
+  border-bottom: .5px solid var(--color-primary) !important; 
+  border-radius: 0 !important;
+}
 
 
 

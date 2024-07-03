@@ -294,10 +294,20 @@ const AvailableGames = () => {
   useEffect(() => {
     getResponseData();
   }, []);
-  
+
   return (
     <div>
-      <ReusableCard  GameData={getData} title="AVAILABLE GAMES" showPana={true}/>
+      <div className="heding-sec heading-sec-custom m-4 d-flex text-center justify-content-center align-items-center">
+        <h1 className="fw-bold">
+          We Have Multiple Types of Game Rates <br /> For You
+        </h1>
+      </div>
+
+      <ReusableCard
+        GameData={getData}
+        title="AVAILABLE GAMES"
+        showPana={true}
+      />
     </div>
   );
 };

@@ -14,31 +14,31 @@ const Section3 = () => {
   }, []);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     autoplay: true,
     // autoplaySpeed: 10,
 
-    slidesToShow: 4, // Show 4 cards on laptops
+    slidesToShow: 4, 
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, // Apply these settings when screen width is less than 1024px
+        breakpoint: 1024, 
         settings: {
-          slidesToShow: 3, // Show 3 cards on screens less than 1024px
+          slidesToShow: 3, 
         },
       },
       {
-        breakpoint: 600, // Apply these settings when screen width is less than 600px
+        breakpoint: 600, 
         settings: {
-          slidesToShow: 2, // Show 2 cards on screens less than 600px
+          slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480, // Apply these settings when screen width is less than 480px
+        breakpoint: 480,
         settings: {
-          slidesToShow: 1, // Show 1 card on screens less than 480px
+          slidesToShow: 1,
         },
       },
     ],
@@ -63,35 +63,40 @@ const Section3 = () => {
           <Slider {...settings}>
             <div>
               <div className="custom-card custom-card-padding">
-                <h4 className="primary-color">Divya</h4>
+                <h4 className="primary-color">Amit</h4>
                 <h4 className="font-700 color-primary">$61,000</h4>
               </div>
             </div>
             <div>
               <div className="custom-card">
-                <h4 className="primary-color">Arjun</h4>
+                <h4 className="primary-color">Priya</h4>
                 <h4 className="font-700 color-primary">$35,000</h4>
               </div>
             </div>
             <div>
               <div className="custom-card">
-                <h4 className="primary-color">Avani</h4>
+                <h4 className="primary-color">Himanshu</h4>
                 <h4 className="font-700 color-primary">$51,000</h4>
               </div>
             </div>
             <div>
               <div className="custom-card">
-                <h4 className="primary-color">Kiara</h4>
+                <h4 className="primary-color">Garima</h4>
                 <h4 className="font-700 color-primary">$25,000</h4>
               </div>
             </div>
             <div>
               <div className="custom-card">
-                <h4 className="primary-color">Pari</h4>
+                <h4 className="primary-color">Yash</h4>
                 <h4 className="font-700 color-primary">$45,200</h4>
               </div>
             </div>
-            {/* Add more slides here */}
+            <div>
+              <div className="custom-card">
+                <h4 className="primary-color">Ajit</h4>
+                <h4 className="font-700 color-primary">$45,200</h4>
+              </div>
+            </div>
           </Slider>
         </div>
 
