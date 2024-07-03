@@ -109,13 +109,15 @@ const Section2 = () => {
             </div>
           </div>
           <div className="download-now move-color d-flex justify-content-center align-items-center mt(-5)">
-            <h1
+           
+          <i className="fa-2x fa fa-download mr-15px" aria-hidden="true"></i>
+           <h1
               className="mb-0 font-400 curser-pointer"
               onClick={() => download()}
             >
               Download App
             </h1>
-            <i className="fa-2x fa fa-download ms-4" aria-hidden="true"></i>
+            
           </div>
         </div>
       </div>

@@ -56,7 +56,7 @@ const AboutUs = () => {
       regulatory body responsible holding a (Sub-license with License number
       392/JAZ Sub-License GLH- OCCHKTV0707086017 granted on 21.08.2020).
     </p>
-    <h1>
+    <h1 className="h1-fw-600">
       Khatri555 is into existence for past 30 years with more than 1.38 lac +
       members.
     </h1>

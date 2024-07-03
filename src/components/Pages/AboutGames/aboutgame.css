@@ -109,7 +109,8 @@
     /* flex-direction: column; */
     gap: 30px;
     list-style: none;
-    padding: 50px 0px;
+    padding: 20px 0px;
+    /* border: 1px solid black; */
     width: 100%;
 }
 
@@ -162,6 +163,7 @@
     }
     .dROOdw {
         padding: 10px 16px;
+  
     }
     .about-game-main {
         padding: 0px 130px;

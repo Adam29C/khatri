@@ -297,7 +297,10 @@ const AvailableGames = () => {
 
   return (
     <div>
-      <div className="heding-sec heading-sec-custom m-4 d-flex text-center justify-content-center align-items-center">
+      <div className="heding-sec heading-sec-custom m-4 d-flex flex-column text-center justify-content-center align-items-center">
+      <div className="main-title-text mt-2" >
+                        <span className="title-text">Available Games</span>
+                      </div>
         <h1 className="fw-bold">
           We Have Multiple Types of Game Rates <br /> For You
         </h1>

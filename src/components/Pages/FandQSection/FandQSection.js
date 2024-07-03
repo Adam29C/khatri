@@ -28,12 +28,15 @@ const FandQSection = () => {
     <div className="container">
       <div className="row">
         <div className="col-xl-10 com-sm-12 mx-auto">
-          <div className="heding-sec m-4 d-flex text-center justify-content-center align-items-center my-5">
-            <img src={star} alt="" />
+          <div className="heding-sec m-4 d-flex flex-column text-center justify-content-center align-items-center my-5">
+            {/* <img src={star} alt="" /> */}
+            <div className="main-title-text" >
+                        <span className="title-text">FAQs</span>
+                      </div>
             <h1 className="mb-0 ms-2 me-2 font-700">
               Frequently Asked Questions
             </h1>
-            <img src={star} alt="" />
+            {/* <img src={star} alt="" /> */}
           </div>
           <div className="accordion-container container border border-1 p-3 rounded-3">
             <div className="accordion-section ">

@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const collapseRef = useRef(null);
 
+  
   // const toggleNavbar = () => {
   //   setIsCollapsed(!isCollapsed);
   // };
@@ -32,7 +33,7 @@ const Navbar = () => {
               <div className="container-fluid header-content-main">
                 <Logo />
                 <button
-                  class="navbar-toggler navbar-toggler-btn"
+                  class="navbar-toggler navbar-toggler-btn custom-toggler"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"
