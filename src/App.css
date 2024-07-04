@@ -115,6 +115,8 @@ body {
 .nav-link {
   font-size: 1rem !important;
   color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+
 }
 
 .mr-15px{
@@ -157,15 +159,18 @@ body {
 }
 
 .navbar-nav .nav-link.active {
-  color: white;
+  /* color: white; */
   /* border-bottom: 3px solid white; */
   /* padding-bottom: 3px; */
   
 }
 
 .navbar-nav .nav-link:hover {
-  color: white;
-
+  /* transform: translate3d(); */
+  /* color: white; */
+  /* border-bottom: 3px solid white;  */
+  /* padding: 14px 20px; */
+   /* transform: translate3d(0, -10px, 0); */
   
 }
 /* Adjust styles for specific elements if needed */
@@ -763,7 +768,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   }
 
   .nav-link,
-  .nav-link .active {
+  .nav-link.active {
     font-size: 1rem !important;
     color: black;
   }
