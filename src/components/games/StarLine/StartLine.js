@@ -79,11 +79,11 @@ const StartLine = () => {
                                 ? "red"
                                 : showData(data.gameDetails).message ==
                                   "Betting is running for close"
-                                ? "#11305c"
+                                ? "red"
                                 : showData(data.gameDetails).message ==
                                   "Betting is running for open"
-                                ? "#37a148"
-                                : "#d65f78",
+                                ? "#4BB543"
+                                : "#4BB543",
                           }}
                         >
                           {showData(data.gameDetails).message}
