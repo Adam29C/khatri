@@ -29,7 +29,11 @@ const FandQSection = () => {
       <div className="row">
         <div className="col-xl-10 com-sm-12 mx-auto">
           <div className="heding-sec m-4 d-flex text-center justify-content-center align-items-center my-5">
+            {/* <div className="main-title-text">
+              <span className="title-text">FAQs</span>
+            </div> */}
             <img src={star} alt="" />
+
             <h1 className="mb-0 ms-2 me-2 font-700">
               Frequently Asked Questions
             </h1>
@@ -53,8 +57,8 @@ const FandQSection = () => {
               {isOpen.ramabet && (
                 <div className="fw-bold">
                   <br />
-                  Khatri555 Is A Satta Matka Gaming App Where You Can Play
-                  Games And Win Jackpot.
+                  Khatri555 Is A Satta Matka Gaming App Where You Can Play Games
+                  And Win Jackpot.
                 </div>
               )}
             </div>
@@ -80,8 +84,8 @@ const FandQSection = () => {
                 {isOpen.games && (
                   <div className="fw-bold">
                     <br />
-                    Popular Satta Matka Games Like Kalyan, Sridevi, Shree
-                    day, Milan, Time Bazar & Rajdhani, Main bazar etc..
+                    Popular Satta Matka Games Like Kalyan, Sridevi, Shree day,
+                    Milan, Time Bazar & Rajdhani, Main bazar etc..
                   </div>
                 )}
               </div>
@@ -95,7 +99,9 @@ const FandQSection = () => {
                   <div className="collapese-icon">
                     <i
                       className={`fa ${
-                        isOpen.license ? "fa-solid fa-minus" : "fa-solid fa-plus"
+                        isOpen.license
+                          ? "fa-solid fa-minus"
+                          : "fa-solid fa-plus"
                       }`}
                     ></i>
                   </div>
@@ -121,8 +127,9 @@ const FandQSection = () => {
                   <div className="collapese-icon">
                     <i
                       className={`fa ${
-                        isOpen.depositWithdrawal ? "fa-solid fa-minus" : "fa-solid fa-plus"
-                       
+                        isOpen.depositWithdrawal
+                          ? "fa-solid fa-minus"
+                          : "fa-solid fa-plus"
                       }`}
                     ></i>
                   </div>
@@ -147,8 +154,9 @@ const FandQSection = () => {
                   <div className="collapese-icon">
                     <i
                       className={`fa ${
-                        isOpen.whyChoose ? "fa-solid fa-minus" : "fa-solid fa-plus"
-
+                        isOpen.whyChoose
+                          ? "fa-solid fa-minus"
+                          : "fa-solid fa-plus"
                       }`}
                     ></i>
                   </div>

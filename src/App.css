@@ -654,6 +654,12 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 
 
 
+
+.main-btn-a{
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: 500;
+}
 /* ------------------------- ------------------------ CHART SECTION ------------------------   */
 
 /* --------------------------------------  RESPONSIVE  */
