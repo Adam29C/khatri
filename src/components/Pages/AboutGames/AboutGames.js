@@ -14,6 +14,13 @@ const AboutGames = () => {
     getResponseData();
   }, []);
 
+  const handleClick = ()=>{
+    const targetElement = document.getElementById("scroll-down")
+    if(targetElement){
+      targetElement.scrollIntoView({behavior:"smooth"})
+    }
+  }
+
   return (
     <div >
 
@@ -37,7 +44,9 @@ const AboutGames = () => {
           market introduced by Kalyanji Bhagat in 1962 and the online matka Waroli
           market was introduced back in 70’s by Ratan Khatri.
         </p>
-        <button className="dROOdw">
+        <button className="dROOdw "     
+        onClick={handleClick}
+          id="scroll-down-button">
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -55,7 +64,7 @@ const AboutGames = () => {
     </div>
     <div className="about-game-main dFgvOd">
       <div className="jcyUcB">
-        <h1>This is how you play matka on Khatri555:</h1>
+        <h1 className="h1-fw-600 mt-30px">This is how you play matka on Khatri555:</h1>
         <ul className="iKDfcs">
           <li className="hTaGYD">
             <span>1.</span>Step 1 is to pick (3) numbers from 0–9. For example
@@ -81,7 +90,7 @@ const AboutGames = () => {
         </ul>
       </div>
       <div className="jcyUcB">
-        <h1>How to add money in Khatri555?</h1>
+        <h1 className="h1-fw-600">How to add money in Khatri555?</h1>
         <ul className="iKDfcs">
           <li className="hTaGYD">
             <span>1{/* */}.</span>Minimum Deposit is 500 /- Rs
@@ -131,7 +140,7 @@ const AboutGames = () => {
         </li>
       </ul>
       <div className="jcyUcB">
-        <h1>Satta Matka Guide – How To Play &amp; Win Money?</h1>
+        <h1 className="h1-fw-600">Satta Matka Guide – How To Play &amp; Win Money?</h1>
         <p>
           Satta is a broad word to describe “betting” in India or Hindi. The Matka
           game is sometimes referred to as Indian Satta Matka because of its early
@@ -140,7 +149,7 @@ const AboutGames = () => {
         </p>
       </div>
       <div className="jcyUcB">
-        <h1>WHAT IS SATTA BAZAR?</h1>
+        <h1 className="h1-fw-600">WHAT IS SATTA BAZAR?</h1>
         <p>
           Satta bazar is a highly local Indian term that means betting market.
           Indians love to bet on a number of things. They enjoy taking part in
@@ -154,7 +163,7 @@ const AboutGames = () => {
         </p>
       </div>
       <div className="jcyUcB">
-        <h1>WHAT IS MATKA SATTA?</h1>
+        <h1 className="h1-fw-600">WHAT IS MATKA SATTA?</h1>
         <p>
           Matka satta is one of the well-liked forms of betting in India. In matka
           satta, slips are pulled from a large earthenware pot known as matka.
@@ -164,7 +173,7 @@ const AboutGames = () => {
         </p>
       </div>
       <div className="jcyUcB">
-        <h1>WHERE TO GO FOR SATTA MATKA ONLINE FOR REAL MONEY</h1>
+        <h1 className="h1-fw-600">WHERE TO GO FOR SATTA MATKA ONLINE FOR REAL MONEY</h1>
         <p>
           Satta is not currently legal in India, but it is still big business.
           Lotteries have become more attractive online because they combine all
@@ -179,7 +188,7 @@ const AboutGames = () => {
         </p>
       </div>
       <div className="jcyUcB">
-        <h1>WHERE TO GO FOR SATTA MATKA ONLINE FOR REAL MONEY</h1>
+        <h1 className="h1-fw-600">WHERE TO GO FOR SATTA MATKA ONLINE FOR REAL MONEY</h1>
         <ul>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
@@ -232,7 +241,7 @@ const AboutGames = () => {
         </ul>
       </div>
       <div className="jcyUcB">
-        <h1>How Do You Win At Matka?</h1>
+        <h1 className="h1-fw-600">How Do You Win At Matka?</h1>
         <p>
           To win at Matka Satta, you have various rate payouts, ranging from 9/1
           to 999/1. You can bet on the chance of all numbers coming up to the
@@ -244,7 +253,7 @@ const AboutGames = () => {
         </p>
       </div>
       <div className="jcyUcB">
-        <h1>SATTA MATKA FEES &amp; ODDS</h1>
+        <h1 className="h1-fw-600">SATTA MATKA FEES &amp; ODDS</h1>
         <p>
           The Satta betting agent should only take a maximum of 5% of your wager
           amount assuming you win. Because the game is all luck and neither the
@@ -257,7 +266,7 @@ const AboutGames = () => {
         </p>
       </div>
       <div className="jcyUcB">
-        <h1>Example Of A 10 Rupees Bet:</h1>
+        <h1 className="h1-fw-600">Example Of A 10 Rupees Bet:</h1>
         <ul>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
@@ -283,7 +292,7 @@ const AboutGames = () => {
         </ul>
       </div>
       <div className="jcyUcB">
-        <h1>HISTORY OF SATTA MATKA</h1>
+        <h1 className="h1-fw-600">HISTORY OF SATTA MATKA</h1>
         <p>
           The origins of Indian Matka gambling involve wagering on the daily price
           of cotton according to the Bombay and the New York Cotton Exchange.
@@ -298,7 +307,7 @@ const AboutGames = () => {
         </p>
       </div>
       <div className="jcyUcB">
-        <h1>CONCLUSION ON SATTA MATKA</h1>
+        <h1 className="h1-fw-600">CONCLUSION ON SATTA MATKA</h1>
         <p>
           Big-time enthusiasts still play this game and they remember the days of
           Ratan having celebrities pull draws for him. The game has since lost
@@ -310,6 +319,7 @@ const AboutGames = () => {
       </div>
     </div>
     <div />
+    <div id='scroll-down'></div>
 <Footer/>
   </div>
   

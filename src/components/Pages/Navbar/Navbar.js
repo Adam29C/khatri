@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const collapseRef = useRef(null);
 
+  
   // const toggleNavbar = () => {
   //   setIsCollapsed(!isCollapsed);
   // };
@@ -32,7 +33,7 @@ const Navbar = () => {
               <div className="container-fluid header-content-main">
                 <Logo />
                 <button
-                  class="navbar-toggler navbar-toggler-btn"
+                  class="navbar-toggler navbar-toggler-btn custom-toggler"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"
@@ -87,7 +88,7 @@ const NavigationLinks = () => {
   return (
     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
       <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/">
+        <Link className="nav-link " aria-current="page" to="/">
           Home
         </Link>
       </li>

@@ -43,7 +43,7 @@ const Charts_Container = ({ title, data, link , responsive_Class }) => {
                     data.map((data1, index) => (
                       <>
                         <div className=" d-flex align-items-center ">
-                          <img src={infinity} alt="" className="mx-2" />
+                          <img src={infinity} alt="" className="mx-2 img-hover-rotate " />
                           <h4
                            className="mx-4"
                           >

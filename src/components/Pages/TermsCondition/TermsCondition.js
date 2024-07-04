@@ -25,7 +25,7 @@ const TermsCondition = () => {
 <div className="terms-condition-second-main">
     
 <div className="gCDmxv kDBKpC">
-          <h1>Withdraw Information</h1>
+          <h1 className="h1-fw-600">Withdraw Information</h1>
           <ul>
             <li>
               <span className="span-tag-color">●</span>
@@ -48,14 +48,14 @@ const TermsCondition = () => {
           </ul>
         </div>
         <div className="gCDmxv kDBKpC">
-  <h1>Unfair - Bets</h1>
+  <h1 className="h1-fw-600">Unfair - Bets</h1>
   <p>
     If Admin Found Any Unfair-bets, Blocking Of Digits, Canning Or Match Fix
     Bets. Admin Has All Rights To Take Necessary Actions To Block The User.
   </p>
 </div>
 <div className="gCDmxv kDBKpC">
-  <h1>Cheating - Bets</h1>
+  <h1 className="h1-fw-600 ">Cheating - Bets</h1>
   <p>
     If Admin Found Any Cheating, Hacking, Phishing. Admin Has All Rights To Take
     Necessary Actions To Block The User.
