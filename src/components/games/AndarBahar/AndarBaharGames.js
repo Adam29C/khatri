@@ -98,7 +98,7 @@ const StartLine = () => {
                             //       ? "#37a148"
                             //       : "#d65f78",
                             // }}
-                            className={`mb-1 ${getmsg == "Close for today"  ? "close-for-today"  : getmsg == "Betting is running for close"  ? "betting-closed": getmsg == "Betting is running for open" ? "betting-open":"default-message"}`}
+                            className={`mb-1 ${getmsg == "Close for today"  ? "close-for-today"  : getmsg == "Betting is running for close"  ? "betting-closed": getmsg == "Betting is running for open" ? "default-message":"default-message"}`}
                           >
                             {getmsg}
                           </h6>

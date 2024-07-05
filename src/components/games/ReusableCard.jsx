@@ -120,7 +120,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                                 ? "betting-closed"
                                 : showData(data.gameDetails)?.message ===
                                   "Betting is running for open"
-                                ? "betting-open"
+                                ? "default-message"
                                 : "default-message"
                             }`}
                           >
