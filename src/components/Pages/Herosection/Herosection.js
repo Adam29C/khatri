@@ -39,7 +39,7 @@ const Section2 = () => {
           <div className="row main-contain-row">
             <div 
             // className="col-lg-12 order-1 order-lg-1"
-            className="col-lg-12"
+            className="col-lg-12 hero-sec-left"
             >
               <div className="banner-left">
                 <div className="button-sec">
