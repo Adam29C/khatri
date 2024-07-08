@@ -59,7 +59,7 @@ const StartLine = () => {
         <div className="container">
           <div className="row">
             {getData.map((data, index) => (
-              <div key={index} className="col-xl-4 col-lg-4 mb-3">
+              <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-3">
                 <div className="second-card">
                   <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center">
                     <div className="card-text">

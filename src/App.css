@@ -154,6 +154,11 @@ body {
 .text-align-center-css {
   text-align: center;
 }
+
+.text-alignment {
+  text-align: left;
+  padding-left: 300px;
+}
 .color-dark-gray {
   color: rgb(51, 51, 51);
 }
@@ -308,18 +313,44 @@ th {
   color: var(--color-primary);
 }
 
-.btn-scroll {
-  font-family: "Urbanist", sans-serif;
+.back-btn{
+    font-family: "Urbanist", sans-serif;
   color: white;
   background-color: var(--color-primary);
   width: 150px;
-  /* Set your desired width */
   height: 40px;
-  /* Set your desired height */
   margin-right: 10px;
-  /* Add margin between buttons if needed */
   transition: background-color 0.3s ease;
+
 }
+
+.back-btn:hover{
+  font-family: "Urbanist", sans-serif;
+color: white;
+background-color: var(--color-primary);
+width: 150px;
+height: 40px;
+margin-right: 10px;
+transition: background-color 0.3s ease;
+}
+
+.btn-scroll {
+
+
+  font-family: "Urbanist", sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 3px 7px;
+  color: var(--color-primary);
+  border-radius: 25px;
+  border: 1px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  transition: 0.3s ease-in-out;
+}
+
+
 
 .btn-scroll:hover {
   background-color: var(--color-primary);
@@ -519,8 +550,9 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 
 .andar-bahar-chart-main {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  padding-left: 280px;
+  justify-content: flex-start;
   margin: 2rem;
 }
 
@@ -583,12 +615,12 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   /* margin-bottom: 30px; */
 }
 
-.andar-bahar-chart-main {
+/* .andar-bahar-chart-main {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2rem;
-}
+} */
 
 .a-tag-css {
   text-decoration: none;
@@ -931,6 +963,13 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     /* padding: 20px 5px 10px 5px;
   background-image: url("./images/tabviewheader.png"); */
 }
+.custome-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+}
 
 
 }
@@ -1041,6 +1080,148 @@ button.navbar-toggler.navbar-toggler-btn{
 
   .banner-left {
     margin: 0;
+}
+
+.accordion-container .accordion-section {
+
+  /* border: 1px solid var(--color-black) !important; */
+  color: var(--color-black) !important;
+
+}
+.accordion-section {
+
+  border-bottom: .5px solid var(--color-black) !important;
+
+}
+.footer-sub-container {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+  }
+  .gCDmxv {
+    padding: 0px 100px;
+  }
+  .footer-last-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    gap: 0px;
+  }
+
+  /* .footer-last-content p {
+    font-size: 15px;
+    padding-top: 10px;
+  } */
+  .footer-last-content p a {
+    font-size: 15px;
+  }
+  .footer-contain p {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+}
+  .footer_logo {
+    grid-column: 1 / 13;
+    position: relative;
+    z-index: -1;
+    display: inline-flex;
+    width: clamp(7rem, 6.14634rem + 4.87805vw, 12rem);
+    height: auto;
+  }
+  .kDBKpC {
+    padding-top: 30px !important;
+  }
+  .kDBKpC p {
+    font-size: clamp(0.75rem, 0.673171rem + 0.439024vw, 1.2rem);
+    font-weight: 400;
+    padding-top: 15px;
+  }
+  .img-fluid {
+    max-width: 70%;
+    height: auto;
+}
+.footer-contain-img img{
+ height: 2rem;
+ width: 2rem;
+ object-fit: contain;
+}
+.jcyUcB p {
+  font-size: clamp(0.75rem, 0.673171rem + 0.439024vw, 1.2rem);
+  font-weight: 400;
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
+  /* border: 1px solid black; */
+}
+.jcyUcB ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 30px;
+  font-size: clamp(0.75rem, 0.673171rem + 0.439024vw, 1.2rem);
+  font-weight: 400;
+}
+.jcyUcB ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.jcyUcB span{
+  padding-bottom: 5px !important;
+}
+.jgmYWX span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #eb5758;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 25px;
+}
+.jgmYWX span p {
+  font-size: 0.8rem !important;
+  padding-top: 10px !important;
+}
+.jgmYWX span svg{
+  width: 1.5rem;
+}
+.andar-bahar-chart-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: 2rem;
+}
+
+.btn-scroll {
+  /* font-family: "Urbanist", sans-serif;
+  color: white;
+  background-color: var(--color-primary);
+  width: 150px;
+  height: 40px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease; */
+  cursor: pointer;
+  background-color: transparent;
+  padding: 3px 7px;
+  color: var(--color-primary);
+  border-radius: 25px;
+  border: 1px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  transition: 0.3s ease-in-out;
+
+}
+.text-alignment{
+  text-align: left;
+  padding-left: 40px;
 }
 }
 
