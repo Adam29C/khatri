@@ -104,9 +104,10 @@ const Footer = () => {
                 is prohibited.
               </p>
               <div className="footer-img-sec">
+              <img className="img2" src={img2} alt="" />
                 <img className="img1" src={img1} alt="" />
 
-                <img className="img2" src={img2} alt="" />
+            
               </div>
             </div>
           </div> */}
