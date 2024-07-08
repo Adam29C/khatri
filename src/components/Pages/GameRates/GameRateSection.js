@@ -54,14 +54,14 @@ const GameRateSection = () => {
           {getData.map((items, index) => (
             <div
               key={index}
-              className="Card_Size rounded-3 border border-1 p-3 m-1"
+              className="Card_Size rounded-3 border border-1 p-2 m-1"
             >
               <div className="d-flex align-items-center">
                 <img src={infinity} alt="" className="mx-2 img-hover-rotate img-hover-rotate " />
-                <h5 className="mx-1 ">{items.gameName}</h5>
+                <h5 className="mx-1 heading">{items.gameName}</h5>
               </div>
               <div className="d-flex">
-                <h4 className="mx-5 ps-2 primary-color">
+                <h4 className="ms-5 ps-2 primary-color sub_heading">
                   1 RS KA {items.gamePrice}
                 </h4>
               </div>

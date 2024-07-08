@@ -88,7 +88,7 @@
   --color-white: #ffff;
   --light-blue: #c8e9ed;
   --btn-color: #237f8a;
-  --other-color: #4BB543;
+  --other-color: #4bb543;
   --color-open: #37a148;
   --color-close: #11305c;
   --color-red: red;
@@ -98,7 +98,6 @@
   --color-orange: #11305c;
   --light-black: #acaebb;
   transition: --vh 0.3s ease;
-
 }
 
 a:hover {
@@ -116,17 +115,16 @@ body {
   font-size: 1rem !important;
   color: #ffffff;
   transition: transform 0.3s ease-in-out;
-
 }
 
-.mr-15px{
+.mr-15px {
   margin-right: 15px;
 }
 
 .ml-10px {
   margin-left: 10px;
 }
-.mt-30px{
+.mt-30px {
   margin-top: 30px;
 }
 .mt-10px {
@@ -162,7 +160,6 @@ body {
   /* color: white; */
   /* border-bottom: 3px solid white; */
   /* padding-bottom: 3px; */
-  
 }
 
 .navbar-nav .nav-link:hover {
@@ -170,8 +167,7 @@ body {
   /* color: white; */
   /* border-bottom: 3px solid white;  */
   /* padding: 14px 20px; */
-   /* transform: translate3d(0, -10px, 0); */
-  
+  /* transform: translate3d(0, -10px, 0); */
 }
 /* Adjust styles for specific elements if needed */
 .card {
@@ -358,7 +354,6 @@ textarea {
 }
 
 .download-btn button {
-
   background: none;
   border-radius: 30px;
   color: #f8fdfe;
@@ -509,10 +504,6 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   padding: 20px;
 }
 
-
-
-
-
 .header-content-main {
   margin-bottom: 80px;
 }
@@ -567,17 +558,16 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   height: -webkit-fill-available;
 } */
 
-.main-btn-a{
+.main-btn-a {
   color: var(--color-black);
   font-size: 14px;
   font-weight: 500;
 }
-.main-btn-a:hover{
+.main-btn-a:hover {
   color: var(--color-black);
   font-size: 14px;
   font-weight: 500;
 }
-
 
 .header-content-main {
   /* margin-bottom: 30px; */
@@ -653,10 +643,9 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   font-size: 21px;
   margin-bottom: 21px;
   font-weight: 500;
-
 }
 
-.main-page-btn{
+.main-page-btn {
   background-color: var(--color-white);
   border: 1px solid var(--color-black);
   border-radius: 25px;
@@ -666,27 +655,24 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   padding: 0.5rem 1.5rem;
 }
 
-
 .accordion-section {
-  border: none !important; 
-  border-bottom: .5px solid var(--color-primary) !important; 
+  border: none !important;
+  border-bottom: 0.5px solid var(--color-primary) !important;
   border-radius: 0 !important;
 }
 
 /* Custom CSS to change the navbar toggler icon color */
 .custom-toggler .navbar-toggler-icon {
-  background-image: url('./images/grid-svgrepo-com\ \(2\).svg');
+  background-image: url("./images/grid-svgrepo-com\ \(2\).svg");
   width: 40px;
-    height: 30px;
+  height: 30px;
 }
 
-
-
-
-.main-btn-a{
+.main-btn-a {
   color: var(--color-black);
   font-size: 14px;
   font-weight: 500;
+}
 .img-hover-rotate {
   transition: transform 0.5s ease-in-out;
 }
@@ -697,6 +683,32 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 
 .Card_Size {
   width: 24%;
+}
+
+.sub_heading {
+  font-size: 1.2rem;
+}
+.heading {
+  font-size: 1.2rem;
+}
+
+.obt_cbt_font_size {
+  font-size: 14px;
+}
+
+.footer-text {
+  text-align: justify;
+  line-height: 30px;
+  font-size: 17px;
+}
+.footer-right-image {
+  display: flex;
+  margin: 24px 33px 0;
+}
+.footer-para-test {
+  padding: 17px 34px;
+  text-align: justify;
+  line-height: 26px;
 }
 /* ------------------------- ------------------------ CHART SECTION ------------------------   */
 
@@ -713,6 +725,13 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   .Card_Size {
     width: 24%;
   }
+
+  .sub_heading {
+    font-size: 1.2rem;
+  }
+  .sub_heading {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -721,10 +740,19 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+}
+
 @media (min-width: 1024px) {
   .Card_Size {
-    width: 32%;
+    width: 24%;
+  }
 
+  .sub_heading {
+    font-size: 1.2rem;
+  }
+  .heading {
+    font-size: 1rem;
   }
 
   .responsive_Nav {
@@ -761,6 +789,17 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   }
 }
 @media (max-width: 768px) {
+  .Card_Size {
+    width: 32%;
+  }
+
+  .sub_heading {
+    font-size: 1.2rem;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+
   /* .Card_Size {
     width: 48%;
   } */
@@ -866,9 +905,15 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 
 @media (max-width: 425px) {
   .Card_Size {
-    width: 48%;
+    width: 47%;
   }
 
+  .sub_heading {
+    font-size: 1rem;
+  }
+  .heading {
+    font-size: 0.8rem;
+  }
   .navbar-nav .nav-link.active {
     color: black;
   }
@@ -908,15 +953,9 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     padding: 8px 30px;
     text-decoration: none;
     border: 1px solid var(--color-primary);
-
-
   }
 
   .download-btn {
-    width: 100%;
-  }
-
-  .Card_Size {
     width: 100%;
   }
 
@@ -932,16 +971,11 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   }
 
   .header-container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* padding: 20px 5px 10px 5px;
   background-image: url("./images/tabviewheader.png"); */
+  }
 }
-
-
-}
-
-
-
 
 @media (max-width: 320px) {
   .main-page-btn {
@@ -949,7 +983,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 
     padding: 0.2rem 1rem;
   }
-  .mt-30px{
+  .mt-30px {
     margin-top: 0px;
     border: 2px solid black;
   }
@@ -960,7 +994,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     font-weight: 500;
   }
 
-      /* .banner-text-section {
+  /* .banner-text-section {
       display: flex;
      
       flex-wrap: nowrap;
@@ -971,16 +1005,15 @@ button.navbar-toggler.navbar-toggler-btn:focus {
       -ms-overflow-style: none;
       margin-bottom: 20px;
     } */
-   
-     .banner-text-section h1 {
-   font-size: 20px;
-   text-align: center;
-    }
 
-    .main-title-text {
-    
-      margin-top: -25px;
-      margin-left: 20px;
+  .banner-text-section h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .main-title-text {
+    margin-top: -25px;
+    margin-left: 20px;
   }
 
   .second-card .chat-btn {
@@ -988,18 +1021,62 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     min-width: 100px;
     padding: 0 0px !important;
     font-size: 14px;
-
   }
 
   button.navbar-toggler.navbar-toggler-btn {
-
     padding: 0px;
+  }
+
+  .Card_Size {
+    width: 100%;
+  }
 }
 
-}
+@media (max-width: 375px) {
 
-@media (max-width:375px) {
-  .mt-30px{
+  .footer-last-content p a {
+    font-size: 14px;
+}
+  .footer-last-content p {
+    font-size: 14px;
+  }
+  
+  .footer-img-sec {
+    width: 50%;
+}
+  .margin-img{
+    margin-top: 7px;
+
+  }
+  .footer-text {
+    /* text-align: justify; */
+    line-height: 24px;
+    font-size: 14px;
+}
+  .footer-para-test {
+    padding: 0 0px;
+    margin-left: 20px;
+    text-align: justify;
+    line-height: 26px;
+    font-size: 14px;
+
+  }
+  .footer-right-image {
+    display: flex;
+    margin: 24px 7px 0;
+  }
+
+  .footer-img-3{
+   width:  135%
+
+  }
+  .footer-image {
+   width:  50%
+  }
+  .footer-container {
+    padding: 0;
+  }
+  .mt-30px {
     margin-top: 0px;
     /* border: 2px solid black; */
   }
@@ -1009,43 +1086,38 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   .header-container {
     /* border: 1px solid black; */
     padding: 20px 5px 10px 5px;
-  background-image: url("./images/tabviewheader.png");
-}
+    background-image: url("./images/tabviewheader.png");
+  }
 
-button.navbar-toggler.navbar-toggler-btn{
-  display: none;
-}
-.navbar-expand-lg .navbar-collapse {
-  display: flex !important;
-  flex-basis: auto;
-}
-.navigation-links{
-  display: block;
-}
-.responsive_Nav {
-  display: flex;
-}
-.navbar-expand-lg .navbar-nav {
-  flex-direction: row;
-}
-.nav-link {
-  margin-left: 8px;
-  font-size: 0.9rem !important;
-  color: #ffffff;
-  transition: transform 0.3s ease-in-out;
-}
-
-
+  button.navbar-toggler.navbar-toggler-btn {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  .navigation-links {
+    display: block;
+  }
+  .responsive_Nav {
+    display: flex;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+  .nav-link {
+    margin-left: 8px;
+    font-size: 0.9rem !important;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
 
   .download-btn button {
-
-  margin-left: 5px;
+    margin-left: 5px;
     padding: 5px 20px;
- 
   }
 
   .banner-left {
     margin: 0;
+  }
 }
-}
-

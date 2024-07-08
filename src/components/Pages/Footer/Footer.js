@@ -3,7 +3,7 @@ import img1 from "../../../images/mask1.png";
 import img2 from "../../../images/mask2.png";
 import img3 from "../../../images/18.svg";
 import logo from "../../../images/khatri-black-logo.svg";
-import "../../../App.css"
+import "../../../App.css";
 import { Link } from "react-router-dom";
 const Footer = () => {
   const handleClickUp = () => {
@@ -17,7 +17,46 @@ const Footer = () => {
     <>
       <div className="footer-container text-center mt-3 " id="scroll-up">
         <div className="container">
-          <div className="footer-btn-scroll-main">
+          <div className="row">
+            <div className="col-md-6 d-flex flex-column">
+              <div className=" d-flex">
+                <img src={logo} className="img-fluid footer-image float-left" alt="" />
+              </div>
+
+              <p className="footer-text">
+                Our website is operated by Khatri555 International, a company
+                established under the law of Isle of Man, with registered
+                address at 1-10 Ballanoa Meadow IM4-2HT, Isle Of Man, and having
+                its gaming sublicense issued by Isle of Man e-Gaming and all
+                rights to operate the gaming software worldwide.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <div className="footer-right-image">
+                <div className="margin-img">
+                  <img
+                    fetchpriority="high"
+                    decoding="async"
+                    data-nimg="fill"
+                    src={img3}
+                     className="footer-img-3"
+                     />
+                     </div>
+
+                <p className="footer-para-test">
+                  Players need to be 18+ in order to register. Underage gambling
+                  is prohibited.
+                </p>
+
+              </div>
+              <div className="footer-img-sec">
+                <img className="img1" src={img1} alt="" />
+                <img className="img2" src={img2} alt="" />
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="footer-btn-scroll-main">
             <button
               className="footer-btn-scroll"
               onClick={handleClickUp}
@@ -41,9 +80,7 @@ const Footer = () => {
               <div className=" d-flex">
                 <img src={logo} className="img-fluid  float-left" alt="" />
               </div>
-              {/* <h1> */}
-              {/* RAMA<span className="primary-color">BETS</span> */}
-              {/* </h1> */}
+             
               <p>
                 Our website is operated by Khatri555 International, a company
                 established under the law of Isle of Man, with registered
@@ -72,7 +109,7 @@ const Footer = () => {
                 <img className="img2" src={img2} alt="" />
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <hr /> */}
           <div className="footer-last-content gCDmxv">
             <p className="copyright-text">
