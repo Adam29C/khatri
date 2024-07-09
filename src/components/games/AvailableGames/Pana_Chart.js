@@ -67,7 +67,13 @@ const Pana_Chart = () => {
     <>
       <div id="scroll-up"></div>
       <Navbar />
-      <div className="pt-110  text-alignment" >
+  
+
+
+      <div className="container ">
+        <div className="row justify-content-center">
+        <div className="text-center col-xl-8 col-q-12 col-md-12 col-sm-12 ">
+        <div className="pt-110  text-alignment" >
         <h2>
           <strong className="color-dark-gray">
             {location.state.title}
@@ -79,20 +85,9 @@ const Pana_Chart = () => {
           Historical Data Bracket Results Chart Online Live Book Digits Numbers
         </p>
       </div>
-      <div
-     className="andar-bahar-chart-main"
-      ></div>
-      <div
-   className="andar-bahar-chart-main"
-      >
-        {/* <button
-          className=" btn btn-primary rounded-pill btn-scroll"
-          onClick={handleClick}
-          id="scroll-down-button"
-        >
-            Go To Bottom
-        </button> */}
-         <button className="btn-scroll"     
+
+   
+      <button className="btn-scroll my-3"     
         onClick={handleClick}
           id="scroll-down-button">
           <svg
@@ -108,10 +103,7 @@ const Pana_Chart = () => {
           </svg>
           Go To Bottom
         </button>
-      </div>
-
-      <div className="container ">
-        <div className="row justify-content-center">
+        </div>
           <div className="table-responsive  text-center col-xl-8 col-lg-12 col-md-12 col-sm-12 ">
             {nameRejext(location.state.title) ===
             nameRejext("SHREE MORNING") ? (
@@ -167,21 +159,17 @@ const Pana_Chart = () => {
               ""
             )}
 
-            <button
-              className=" btn  rounded-pill back-btn"
+  
+          </div>
+          <div className="text-left col-xl-8 col-q-12 col-md-12 col-sm-12 ">
+          <button
+              className=" btn  rounded-pill back-btn mt-2"
               onClick={() => navigate(-1)}
               id="scroll-down-button"
             >
               Back
             </button>
-            {/* <button
-              className=" btn rounded-pill btn-scroll"
-              onClick={handleClickUp}
-              id="scroll-down-button"
-            >
-              Scroll to Top
-            </button> */}
-          </div>
+        </div>
         </div>
       </div>
 

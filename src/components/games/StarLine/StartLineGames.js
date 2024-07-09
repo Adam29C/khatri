@@ -108,7 +108,13 @@ const Pana_Chart = () => {
     <>
       <div id="scroll-up"></div>
       <Navbar />
-      <div className="pt-110" style={{ textAlign: "center" }}>
+  
+ 
+
+      <div className="container ">
+        <div className="row justify-content-center">
+        <div className="text-center col-xl-8 col-q-12 col-md-12 col-sm-12 ">
+        <div className="pt-110" style={{ textAlign: "center" }}>
         <h2>
           <strong style={{ color: "rgb(51, 51, 51)" }}>
             Shree Starline &nbsp;
@@ -122,30 +128,9 @@ const Pana_Chart = () => {
           Results Chart Online Live Book Digits Numbers
         </p>
       </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          margin: "2rem",
-        }}
-      ></div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          margin: "2rem",
-        }}
-      >
-        {/* <button
-          className=" btn btn-primary rounded-pill btn-scroll"
-          onClick={handleClick}
-          id="scroll-down-button"
-        >
-          Scroll Down
-        </button> */}
-         <button className="btn-scroll "     
+
+   
+      <button className="btn-scroll my-3"     
         onClick={handleClick}
           id="scroll-down-button">
           <svg
@@ -161,10 +146,7 @@ const Pana_Chart = () => {
           </svg>
           Go To Bottom
         </button>
-      </div>
-
-      <div className="container ">
-        <div className="row justify-content-center">
+        </div>
           <div className="table-responsive  text-center col-xl-8 col-lg-12 col-md-12 col-sm-12 ">
             {nameRejext(location.state.title) === nameRejext("7:00PM") ? (
               <ShreeDay chartData={getData.data} />
@@ -194,21 +176,18 @@ const Pana_Chart = () => {
               ""
             )}
 
-            <button
-              className=" btn  rounded-pill back-btn"
+      
+      
+          </div>
+          <div className="text-left col-xl-8 col-q-12 col-md-12 col-sm-12 ">
+          <button
+              className="btn  rounded-pill back-btn mt-2"
               onClick={() => navigate(-1)}
               id="scroll-down-button"
             >
               Back
             </button>
-            {/* <button
-              className=" btn rounded-pill btn-scroll"
-              onClick={handleClickUp}
-              id="scroll-down-button"
-            >
-              Scroll to Top
-            </button> */}
-          </div>
+        </div>
         </div>
       </div>
 
