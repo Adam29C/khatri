@@ -51,7 +51,7 @@ const StartLine = () => {
   return (
     <div>
       <div className="available-component">
-        <div className="heding-sec heading-sec-custom m-4 d-flex text-center justify-content-center align-items-center">
+        <div className="heding-sec heading-sec-custom m-4  d-flex text-center justify-content-center align-items-center">
           <img src={star} alt="" />
           <h5 className="mb-0 ms-2 me-2 font-700">MILAN STARLINE GAMES</h5>
           <img src={star} alt="" />
@@ -59,7 +59,7 @@ const StartLine = () => {
         <div className="container">
           <div className="row">
             {getData.map((data, index) => (
-              <div key={index} className="col-xl-4 col-lg-4 mb-3">
+              <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-3">
                 <div className="second-card">
                   <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center">
                     <div className="card-text">
@@ -79,11 +79,11 @@ const StartLine = () => {
                                 ? "red"
                                 : showData(data.gameDetails).message ==
                                   "Betting is running for close"
-                                ? "#11305c"
+                                ? "red"
                                 : showData(data.gameDetails).message ==
                                   "Betting is running for open"
-                                ? "#37a148"
-                                : "#d65f78",
+                                ? "#4BB543"
+                                : "#4BB543",
                           }}
                         >
                           {showData(data.gameDetails).message}

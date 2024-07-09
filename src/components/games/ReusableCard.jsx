@@ -79,7 +79,7 @@ const Section4 = ({ GameData, title, showPana }) => {
           <div className="row">
             {GameData &&
               GameData.map((data, index) => (
-                <div key={index} className="col-xl-4 col-lg-4 mb-3">
+                <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-3">
                   <div className="second-card">
                     <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center">
                       <div className="card-text">
@@ -97,20 +97,6 @@ const Section4 = ({ GameData, title, showPana }) => {
                           </h5>
                           <h3 className="font-700">{data.providerResult}</h3>
                           <h6
-                            // className="mb-1 batting_size"
-                            // style={{
-                            //   color:
-                            //     showData(data.gameDetails)?.message ===
-                            //     "Close for today"
-                            //       ? "red"
-                            //       : showData(data.gameDetails)?.message ===
-                            //         "Betting is running for close"
-                            //       ? "#11305c"
-                            //       : showData(data.gameDetails)?.message ===
-                            //         "Betting is running for open"
-                            //       ? "#37a148"
-                            //       : "#d65f78",
-                            // }}
                             className={`mb-1 batting_size ${
                               showData(data.gameDetails)?.message ===
                               "Close for today"
@@ -120,7 +106,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                                 ? "betting-closed"
                                 : showData(data.gameDetails)?.message ===
                                   "Betting is running for open"
-                                ? "betting-open"
+                                ? "default-message"
                                 : "default-message"
                             }`}
                           >
@@ -220,7 +206,6 @@ const Section4 = ({ GameData, title, showPana }) => {
                             .replace(/\s+/g, "")}/pana-chart`}
                           state={{ title: data.providerName }}
                           className="chat-btn a-tag-css"
-                         
                         >
                           <span>Pana Chart</span>
                         </Link>
@@ -233,12 +218,27 @@ const Section4 = ({ GameData, title, showPana }) => {
                           .replace(/\s+/g, "")}/jodi-chart`}
                         state={{ title: data.providerName }}
                         className="chat-btn a-tag-css ml-10px"
-                       
                       >
                         <span>Jodi Chart</span>
                       </Link>
                     </div>
-                    <hr />
+                    <hr className="mb-1" />
+                    <div class="result__time d-flex justify-content-between">
+                      <span>
+                        Open Bids :
+                        <strong>
+                          {showData(data.gameDetails) != undefined &&
+                            showData(data.gameDetails).OBT}
+                        </strong>
+                      </span>
+                      <span>
+                        Close Bids :{" "}
+                        <strong>
+                          {showData(data.gameDetails) != undefined &&
+                            showData(data.gameDetails).CBT}
+                        </strong>
+                      </span>
+                    </div>
                   </div>
                 </div>
               ))}
