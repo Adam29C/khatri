@@ -1260,6 +1260,9 @@ padding-bottom: 0px !important;
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
+  .banner-left {
+    margin: 0rem 0;
+}
   .footer-para-test {
     padding: 17px 0px;
     text-align: justify;
