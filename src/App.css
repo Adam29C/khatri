@@ -447,7 +447,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 .terms-condition-main {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   padding-bottom: 0px;
   /* padding-left: 80px; */
   /* padding-left: 30px; */
@@ -465,7 +465,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   font-size: clamp(1.8rem, 1.25366rem + 3.12195vw, 5rem);
   font-weight: 700;
   letter-spacing: -2px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
   text-align: center;
 }
 
@@ -1332,7 +1332,7 @@ padding-bottom: 0px !important;
 }
 .terms-condition-main {
 
-  padding: 0px 10px 0px 10px;
+  padding: 0px 16px 0px 16px;
 
 }
 .terms-condition-contain h1 {
