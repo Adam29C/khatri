@@ -735,6 +735,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   text-align: justify;
   line-height: 30px;
   /* font-size: 17px; */
+  padding-top: 10px;
 }
 .footer-right-image {
   display: flex;
