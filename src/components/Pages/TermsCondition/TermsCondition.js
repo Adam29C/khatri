@@ -15,7 +15,7 @@ const TermsCondition = () => {
     >
       Terms &amp; Conditions
     </h1>
-    <p  className="terms-condition-para">
+    <p  className="terms-condition-para f-size">
       SHREE MORNING Jodi Chart Satta Matka Record Old History Historical Data
       Bracket Results Chart Online Live Book Digits Numbers
     </p>
@@ -29,18 +29,18 @@ const TermsCondition = () => {
           <ul>
             <li>
               <span className="span-tag-color">●</span>
-              <p>
+              <p  className='f-size'>
                 If Users Entered Wrong Bank Details Khatri555 Is Not
                 Responsible.
               </p>
             </li>
             <li>
               <span className="span-tag-color">●</span>
-              <p>Before Requesting Withdraw Re-check Your Bank Details.</p>
+              <p  className='f-size'>Before Requesting Withdraw Re-check Your Bank Details.</p>
             </li>
             <li>
               <span className="span-tag-color">●</span>
-              <p>
+              <p  className='f-size'>
                 After Withdraw Request If There Is No Vaild Wallet Balance The
                 Request Will Be Auto Declined.
               </p>
@@ -49,14 +49,14 @@ const TermsCondition = () => {
         </div>
         <div className="gCDmxv kDBKpC">
   <h1 className="h1-fw-600">Unfair - Bets</h1>
-  <p>
+  <p  className='f-size'>
     If Admin Found Any Unfair-bets, Blocking Of Digits, Canning Or Match Fix
     Bets. Admin Has All Rights To Take Necessary Actions To Block The User.
   </p>
 </div>
 <div className="gCDmxv kDBKpC">
   <h1 className="h1-fw-600 ">Cheating - Bets</h1>
-  <p>
+  <p  className='f-size'>
     If Admin Found Any Cheating, Hacking, Phishing. Admin Has All Rights To Take
     Necessary Actions To Block The User.
   </p>

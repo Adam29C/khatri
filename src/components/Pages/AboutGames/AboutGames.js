@@ -33,7 +33,7 @@ const AboutGames = () => {
         >
           About The Game
         </h2>
-        <p>
+        <p className='f-size'>
           Satta is a broad word to describe&nbsp;“betting”&nbsp;in India or Hindi.
           The Matka game is sometimes referred to as Indian Satta Matka because of
           its early popularity. If you are interested in betting games, you can
@@ -66,8 +66,8 @@ const AboutGames = () => {
       <div className="jcyUcB">
         <h1 className="h1-fw-600 mt-30px">This is how you play matka on Khatri555:</h1>
         <ul className="iKDfcs">
-          <li className="hTaGYD">
-            <span>1.</span>Step 1 is to pick (3) numbers from 0–9. For example
+          <li className="hTaGYD f-size">
+            <span >1.</span>Step 1 is to pick (3) numbers from 0–9. For example
             5,3,6 would be your first picked random numbers from given 0–9. To add
             more thrill and substance to the diversion, the numbers are then
             included/added (5 + 3 + 6) and a last number is given. In this example
@@ -75,7 +75,7 @@ const AboutGames = () => {
             that is the last one. In this example, it will be the 4. So your first
             draw would be 5,3,6 *4.
           </li>
-          <li className="hTaGYD">
+          <li className="hTaGYD f-size">
             <span>2.</span>There are also a second set of numbers which is drawn.
             The process is similar just like step 1. The rules for picking 2nd
             number is exactly same as the first draw. As an random case, lets
@@ -83,7 +83,7 @@ const AboutGames = () => {
             only keep the last digit so our last pick for the second draw of
             numbers is 8,2,8 *8
           </li>
-          <li className="hTaGYD">
+          <li className="hTaGYD f-size">
             <span>3.</span>Our last card would resemble this: 5,3,6 *4 X 8,2,8 *8.
             Here is an example card.
           </li>
@@ -92,45 +92,47 @@ const AboutGames = () => {
       <div className="jcyUcB">
         <h1 className="h1-fw-600">How to add money in Khatri555?</h1>
         <ul className="iKDfcs">
-          <li className="hTaGYD">
+          <li className="hTaGYD f-size">
             <span>1{/* */}.</span>Minimum Deposit is 500 /- Rs
           </li>
-          <li className="hTaGYD">
+          <li className="hTaGYD f-size">
             <span>2{/* */}.</span>Minimum Withdraw is 2000/- Rs
           </li>
-          <li className="hTaGYD">
+          <li className="hTaGYD f-size">
             <span>3{/* */}.</span>Maximum Withdraw Is 5 Lakh Per Day.
-          </li>
-          <li className="hTaGYD">
+          </li> 
+          <li className="hTaGYD f-size">
             <span>4{/* */}.</span>Withdrawal request can be placed between 11 am
             to 11 pm, all 7 days.
           </li>
-          <li className="hTaGYD">
+          <li className="hTaGYD f-size">
             <span>5{/* */}.</span>Once request is placed, amount will be.
           </li>
-          <li className="hTaGYD">
+          <li className="hTaGYD f-size">
             <span>6{/* */}.</span>Withdraw Is Available On Saturday &amp; Sunday
             Also.
           </li>
-          <li className="hTaGYD">
+          <li className="hTaGYD  f-size">
             <span>7{/* */}.</span>Withdraw Is Not Available On Festivals.
           </li>
-          <li className="hTaGYD">
+          <li className="hTaGYD f-size">
             <span>8{/* */}.</span>The amount of money you deposit accordingly the
             points will be added to your corresponding ID.
           </li>
-          <li className="hTaGYD">
+          <li className="hTaGYD f-size">
             <span>9{/* */}.</span>1 point = Rs. 1/-
           </li>
         </ul>
       </div>
       <ul className="cKTdPD">
-        <li>
+        <li className='f-size'
+        >
           The game you played and got lucky enough to win it then accordingly your
           points will be increased.If you wish to encash the points, just apply
           for withdrawal request on our Khatri555 Mobile App.
         </li>
-        <li>
+        <li className='f-size'
+        >
           In case of any inconvenience regarding the transaction of money OR
           further query then you can
           <span style={{ fontWeight: 600, marginLeft: 5 }}>
@@ -141,7 +143,8 @@ const AboutGames = () => {
       </ul>
       <div className="jcyUcB">
         <h1 className="h1-fw-600">Satta Matka Guide – How To Play &amp; Win Money?</h1>
-        <p>
+        <p className='f-size'
+        >
           Satta is a broad word to describe “betting” in India or Hindi. The Matka
           game is sometimes referred to as Indian Satta Matka because of its early
           popularity. If you are interested in betting games, you can check out
@@ -150,7 +153,8 @@ const AboutGames = () => {
       </div>
       <div className="jcyUcB">
         <h1 className="h1-fw-600">WHAT IS SATTA BAZAR?</h1>
-        <p>
+        <p className='f-size'
+        >
           Satta bazar is a highly local Indian term that means betting market.
           Indians love to bet on a number of things. They enjoy taking part in
           this activity and are therefore always willing to spend a significant
@@ -164,7 +168,8 @@ const AboutGames = () => {
       </div>
       <div className="jcyUcB">
         <h1 className="h1-fw-600">WHAT IS MATKA SATTA?</h1>
-        <p>
+        <p className='f-size'
+        >
           Matka satta is one of the well-liked forms of betting in India. In matka
           satta, slips are pulled from a large earthenware pot known as matka.
           Sometimes, the winner is declared after dealing with the playing card.
@@ -174,7 +179,8 @@ const AboutGames = () => {
       </div>
       <div className="jcyUcB">
         <h1 className="h1-fw-600">WHERE TO GO FOR SATTA MATKA ONLINE FOR REAL MONEY</h1>
-        <p>
+        <p className='f-size'
+        >
           Satta is not currently legal in India, but it is still big business.
           Lotteries have become more attractive online because they combine all
           lotteries on an international level, so those from India can leverage
@@ -192,40 +198,45 @@ const AboutGames = () => {
         <ul>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>You pick (3) three numbers from 0 – 9.</p>
+            <p className='f-size'
+            >You pick (3) three numbers from 0 – 9.</p>
           </li>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>For example, 5,3,6 would be your first pick at random.</p>
+            <p className='f-size'>For example, 5,3,6 would be your first pick at random.</p>
           </li>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>
+            <p className='f-size'
+            >
               To add more substance to the game, the numbers are then added up (5
               + 3 + 6) and a final Satta Matka number is given.
             </p>
           </li>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>
+            <p className='f-size'
+            >
               In this example, it is 14. You only use one digit of this number,
               the last one. In this example, it will be the 4.
             </p>
           </li>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>So your first draw would be 5,3,6 *4.</p>
+            <p className='f-size'>So your first draw would be 5,3,6 *4.</p>
           </li>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>
+            <p className='f-size'
+            >
               The second set of numbers is also drawn. They are drawn in the exact
               same way as the first draw.
             </p>
           </li>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>
+            <p className='f-size'
+            >
               As a random example, let’s assume the numbers 8,2,8. This gives us a
               total of 18, we again only use the last digit so our final pick for
               the second set of numbers is 8,2,8 *8
@@ -233,7 +244,8 @@ const AboutGames = () => {
           </li>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>
+            <p className='f-size'
+            >
               Our final card would look like this: 5,3,6 *4 X 8,2,8 *8. Here is an
               example card you would find in a matka game.
             </p>
@@ -242,7 +254,8 @@ const AboutGames = () => {
       </div>
       <div className="jcyUcB">
         <h1 className="h1-fw-600">How Do You Win At Matka?</h1>
-        <p>
+        <p className='f-size'
+        >
           To win at Matka Satta, you have various rate payouts, ranging from 9/1
           to 999/1. You can bet on the chance of all numbers coming up to the
           first, last, or any other type of bet allowed by the Matka gambling
@@ -254,7 +267,8 @@ const AboutGames = () => {
       </div>
       <div className="jcyUcB">
         <h1 className="h1-fw-600">SATTA MATKA FEES &amp; ODDS</h1>
-        <p>
+        <p className='f-size'
+        >
           The Satta betting agent should only take a maximum of 5% of your wager
           amount assuming you win. Because the game is all luck and neither the
           agent nor the bettor has an advantage, the bookie should take home 5% on
@@ -270,18 +284,21 @@ const AboutGames = () => {
         <ul>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>
+            <p className='f-size'
+            >
               You choose the correct first number drawn: 9 X Your Wager of 10Rs =
               90 Rs.
             </p>
           </li>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p> Your second number is drawn: 9 X Your Wager of 10Rs = 90 Rs.</p>
+            <p className='f-size'
+            > Your second number is drawn: 9 X Your Wager of 10Rs = 90 Rs.</p>
           </li>
           <li>
             <span style={{ color: "#DEDFDF" }}>●</span>
-            <p>
+            <p className='f-size'
+            >
               You choose the middle number (the jodi) and the first number correct
               in combination: 90 X Your Wager = 900 Rs.{/* */}{" "}
               <span style={{ color: "#27A966", fontWeight: 600 }}>
@@ -293,7 +310,8 @@ const AboutGames = () => {
       </div>
       <div className="jcyUcB">
         <h1 className="h1-fw-600">HISTORY OF SATTA MATKA</h1>
-        <p>
+        <p className='f-size'
+        >
           The origins of Indian Matka gambling involve wagering on the daily price
           of cotton according to the Bombay and the New York Cotton Exchange.
           Nowadays, Matka betting, or Satta King, is a popular lottery-style game.
@@ -308,7 +326,8 @@ const AboutGames = () => {
       </div>
       <div className="jcyUcB">
         <h1 className="h1-fw-600">CONCLUSION ON SATTA MATKA</h1>
-        <p>
+        <p className='f-size'
+        >
           Big-time enthusiasts still play this game and they remember the days of
           Ratan having celebrities pull draws for him. The game has since lost
           most of its following. Indians have chosen the faster-paced action of

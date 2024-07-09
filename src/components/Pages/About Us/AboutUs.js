@@ -18,7 +18,7 @@ const AboutUs = () => {
       >
         About Us
       </h2>
-      <p className='about_descri'>
+      <p className='about_descri f-size'>
       SHREE MORNING Jodi Chart Satta Khatri555 Record Old History Historical Data
         Bracket Results Chart Online Live Book Digits Numbers
       </p>
@@ -50,7 +50,7 @@ const AboutUs = () => {
         style={{ color: "transparent" }}
       />
     </div> */}
-    <p>
+    <p  className='f-size'>
       Khatri555 is operated by S S international, a company incorporated under
       the laws of United Kingdom and regulated by the UK authority as the
       regulatory body responsible holding a (Sub-license with License number
@@ -60,7 +60,7 @@ const AboutUs = () => {
       Khatri555 is into existence for past 30 years with more than 1.38 lac +
       members.
     </h1>
-    <p>
+    <p  className='f-size'>
       We have proudly taken our culture from offline to online business and now
       stand as India's most trusted betting platform. Khatri555 is an
       international betting platform and has presence in more than 18 countries.
@@ -80,7 +80,7 @@ const AboutUs = () => {
         <path fill="none" d="M0 0h24v24H0V0z" />
         <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
       </svg>
-      <p>
+      <p  className='f-size'>
         Players are requested not to contact any untrusted sources for Khatri555
         accounts.
       </p>
