@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.14cd5f2c.css",
-    "main.js": "/static/js/main.862def1d.js",
+    "main.css": "/static/css/main.db4b0a6f.css",
+    "main.js": "/static/js/main.768f1e17.js",
     "static/media/khatri-white-logo.svg": "/static/media/khatri-white-logo.eb16996644acb95dd4f0c4b88b29bc48.svg",
     "static/media/khatri-black-logo.svg": "/static/media/khatri-black-logo.0084e1a3db526bf127d84bed5e2f0f02.svg",
     "static/media/person.webp": "/static/media/person.07c6f5e75ddbe441bbf5.webp",
@@ -13,11 +13,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/grid-svgrepo-com (2).svg": "/static/media/grid-svgrepo-com (2).795e940a644f44732878.svg",
     "static/media/header-bg.svg": "/static/media/header-bg.4e69664c85e58671e8da.svg",
-    "main.14cd5f2c.css.map": "/static/css/main.14cd5f2c.css.map",
-    "main.862def1d.js.map": "/static/js/main.862def1d.js.map"
+    "main.db4b0a6f.css.map": "/static/css/main.db4b0a6f.css.map",
+    "main.768f1e17.js.map": "/static/js/main.768f1e17.js.map"
   },
   "entrypoints": [
-    "static/css/main.14cd5f2c.css",
-    "static/js/main.862def1d.js"
+    "static/css/main.db4b0a6f.css",
+    "static/js/main.768f1e17.js"
   ]
 }
