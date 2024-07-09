@@ -1072,7 +1072,9 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 @media (max-width: 375px) {
-
+    .gCDmxv {
+      padding: 0px ;
+    }
   .footer-last-content p a {
     font-size: 14px;
 }
@@ -1182,7 +1184,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     position: relative;
   }
   .gCDmxv {
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
   }
   .footer-last-content {
     padding-top: 15px;
