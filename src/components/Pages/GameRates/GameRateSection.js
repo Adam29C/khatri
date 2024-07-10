@@ -51,7 +51,7 @@ const GameRateSection = () => {
         </div>
 
         <div className="row">
-          {getData.map((items, index) => (
+          {getData?.map((items, index) => (
             <div
               key={index}
               className="Card_Size rounded-3 border border-1 p-2 m-1"

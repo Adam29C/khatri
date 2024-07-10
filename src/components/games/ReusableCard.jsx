@@ -78,7 +78,7 @@ const Section4 = ({ GameData, title, showPana }) => {
         <div className="container">
           <div className="row">
             {GameData &&
-              GameData.map((data, index) => (
+              GameData?.map((data, index) => (
                 <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-3">
                   <div className="second-card">
                     <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center">
@@ -91,32 +91,32 @@ const Section4 = ({ GameData, title, showPana }) => {
                               aria-hidden="true"
                               onClick={() => {
                                 handleShow(data);
-                                setModalData(showData(data.gameDetails));
+                                setModalData(showData(data?.gameDetails));
                               }}
                             ></i>
                           </h5>
                           <h3 className="font-700">{data.providerResult}</h3>
                           <h6
                             className={`mb-1 batting_size ${
-                              showData(data.gameDetails)?.message ===
+                              showData(data?.gameDetails)?.message ===
                               "Close for today"
                                 ? "close-for-today"
-                                : showData(data.gameDetails)?.message ===
+                                : showData(data?.gameDetails)?.message ===
                                   "Betting is running for close"
                                 ? "betting-closed"
-                                : showData(data.gameDetails)?.message ===
+                                : showData(data?.gameDetails)?.message ===
                                   "Betting is running for open"
                                 ? "default-message"
                                 : "default-message"
                             }`}
                           >
-                            {showData(data.gameDetails)?.message}
+                            {showData(data?.gameDetails)?.message}
                           </h6>
                         </div>
                       </div>
                       <div
                         className={`play-icon ${
-                          showData(data.gameDetails)?.message ===
+                          showData(data?.gameDetails)?.message ===
                           "Close for today"
                             ? ""
                             : "zoom-in-zoom-out"
@@ -125,7 +125,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                         <a
                           href="#"
                           onClick={() =>
-                            downloadFile(showData(data.gameDetails)?.message)
+                            downloadFile(showData(data?.gameDetails)?.message)
                           }
                         >
                           <svg
@@ -142,7 +142,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                               className="play_icon_class"
                               transform="translate(0.098 0)"
                               fill={
-                                showData(data.gameDetails)?.message ===
+                                showData(data?.gameDetails)?.message ===
                                 "Close for today"
                                   ? "#6c757d"
                                   : "#237F8A"
@@ -154,7 +154,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                               d="M31.179,256H0a15.589,15.589,0,1,0,31.179,0Z"
                               transform="translate(0 -239.882)"
                               fill={
-                                showData(data.gameDetails)?.message ===
+                                showData(data?.gameDetails)?.message ===
                                 "Close for today"
                                   ? "#6c757d"
                                   : "#237F8A"
@@ -201,10 +201,10 @@ const Section4 = ({ GameData, title, showPana }) => {
                     <div className="bottom-sec d-flex align-items-center justify-content-center">
                       {showPana ? (
                         <Link
-                          to={`/pana-chart/${data.providerName
+                          to={`/pana-chart/${data?.providerName
                             .toLowerCase()
                             .replace(/\s+/g, "")}/pana-chart`}
-                          state={{ title: data.providerName }}
+                          state={{ title: data?.providerName }}
                           className="chat-btn a-tag-css"
                         >
                           <span>Pana Chart</span>
@@ -213,10 +213,10 @@ const Section4 = ({ GameData, title, showPana }) => {
                         ""
                       )}
                       <Link
-                        to={`/jodi-chart/${data.providerName
+                        to={`/jodi-chart/${data?.providerName
                           .toLowerCase()
                           .replace(/\s+/g, "")}/jodi-chart`}
-                        state={{ title: data.providerName }}
+                        state={{ title: data?.providerName }}
                         className="chat-btn a-tag-css ml-10px"
                       >
                         <span>Jodi Chart</span>
@@ -227,15 +227,15 @@ const Section4 = ({ GameData, title, showPana }) => {
                       <span>
                         Open Bids :
                         <strong>
-                          {showData(data.gameDetails) != undefined &&
-                            showData(data.gameDetails).OBT}
+                          {showData(data?.gameDetails) != undefined &&
+                            showData(data?.gameDetails)?.OBT}
                         </strong>
                       </span>
                       <span>
                         Close Bids :{" "}
                         <strong>
-                          {showData(data.gameDetails) != undefined &&
-                            showData(data.gameDetails).CBT}
+                          {showData(data?.gameDetails) != undefined &&
+                            showData(data?.gameDetails)?.CBT}
                         </strong>
                       </span>
                     </div>
@@ -250,7 +250,7 @@ const Section4 = ({ GameData, title, showPana }) => {
 
       <Modal show={show} centered onHide={handleClose} size="lg">
         <Modal.Header closeButton>
-          <Modal.Title>{RowData.title} 05:30 PM</Modal.Title>
+          <Modal.Title>{RowData?.title} 05:30 PM</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Table striped>
@@ -275,10 +275,10 @@ const Section4 = ({ GameData, title, showPana }) => {
             </thead>
             <tbody className="text-center">
               <tr>
-                <td>{ModalData.OBT}</td>
-                <td>{ModalData.CBT}</td>
-                <td>{ModalData.OBRT}</td>
-                <td>{ModalData.CBRT}</td>
+                <td>{ModalData?.OBT}</td>
+                <td>{ModalData?.CBT}</td>
+                <td>{ModalData?.OBRT}</td>
+                <td>{ModalData?.CBRT}</td>
               </tr>
             </tbody>
           </Table>

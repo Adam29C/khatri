@@ -58,7 +58,7 @@ const StartLine = () => {
         </div>
         <div className="container">
           <div className="row">
-            {getData.map((data, index) => (
+            {getData?.map((data, index) => (
               <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-3">
                 <div className="second-card">
                   <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center">
@@ -73,26 +73,26 @@ const StartLine = () => {
                           className="mb-1"
                           style={{
                             color:
-                              showData(data.gameDetails) != undefined &&
-                              showData(data.gameDetails).message ==
+                              showData(data?.gameDetails) != undefined &&
+                              showData(data?.gameDetails)?.message ==
                                 "Close for today"
                                 ? "red"
-                                : showData(data.gameDetails).message ==
+                                : showData(data?.gameDetails)?.message ==
                                   "Betting is running for close"
                                 ? "red"
-                                : showData(data.gameDetails).message ==
+                                : showData(data?.gameDetails)?.message ==
                                   "Betting is running for open"
                                 ? "#4BB543"
                                 : "#4BB543",
                           }}
                         >
-                          {showData(data.gameDetails).message}
+                          {showData(data?.gameDetails)?.message}
                         </h6>
                       </div>
                     </div>
                     <div
                       className={`play-icon  ${
-                        showData(data.gameDetails).message == "Close for today"
+                        showData(data?.gameDetails)?.message == "Close for today"
                           ? ""
                           : "zoom-in-zoom-out"
                       } `}
@@ -100,7 +100,7 @@ const StartLine = () => {
                       <a
                         href="#"
                         onClick={() =>
-                          downloadFile(showData(data.gameDetails).message)
+                          downloadFile(showData(data?.gameDetails)?.message)
                         }
                       >
                        <svg
@@ -117,7 +117,7 @@ const StartLine = () => {
                             className="play_icon_class"
                             transform="translate(0.098 0)"
                             fill={`${
-                              showData(data.gameDetails).message ==
+                              showData(data?.gameDetails)?.message ==
                               "Close for today"
                                 ? "#6c757d"
                                 : "#237F8A"
@@ -129,7 +129,7 @@ const StartLine = () => {
                             d="M31.179,256H0a15.589,15.589,0,1,0,31.179,0Z"
                             transform="translate(0 -239.882)"
                             fill={`${
-                              showData(data.gameDetails).message ==
+                              showData(data?.gameDetails)?.message ==
                               "Close for today"
                                 ? "#6c757d"
                                 : "#237F8A"
@@ -175,10 +175,10 @@ const StartLine = () => {
                   </div>
                   <div className="bottom-sec d-flex align-items-center justify-content-center">
                     <Link
-                      to={`/starline/${data.providerName
+                      to={`/starline/${data?.providerName
                         .toLowerCase()
                         .replace(/\s+/g, "")}`}
-                      state={{ title: data.providerName }}
+                      state={{ title: data?.providerName }}
                       className="chat-btn"
                       style={{ textDecoration: "none" }}
                     >
@@ -190,15 +190,15 @@ const StartLine = () => {
                     <span>
                       Open Bids :
                       <strong>
-                        {showData(data.gameDetails) != undefined &&
-                          showData(data.gameDetails).OBT}
+                        {showData(data?.gameDetails) != undefined &&
+                          showData(data?.gameDetails)?.OBT}
                       </strong>
                     </span>
                     <span>
                       Close Bids :{" "}
                       <strong>
-                        {showData(data.gameDetails) != undefined &&
-                          showData(data.gameDetails).CBT}
+                        {showData(data?.gameDetails) != undefined &&
+                          showData(data?.gameDetails)?.CBT}
                       </strong>
                     </span>
                   </div>
