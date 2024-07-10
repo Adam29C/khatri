@@ -78,7 +78,7 @@ const Section4 = ({ GameData, title, showPana }) => {
         <div className="container">
           <div className="row">
             {GameData &&
-              GameData.map((data, index) => (
+              GameData?.map((data, index) => (
                 <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-3">
                   <div className="second-card">
                     <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center">
@@ -91,7 +91,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                               aria-hidden="true"
                               onClick={() => {
                                 handleShow(data);
-                                setModalData(showData(data.gameDetails));
+                                setModalData(showData(data?.gameDetails));
                               }}
                             ></i>
                           </h5>

@@ -58,7 +58,7 @@ const StartLine = () => {
         </div>
         <div className="container">
           <div className="row">
-            {getData.map((data, index) => {
+            {getData?.map((data, index) => {
               let getmsg =
                 showData(data.gameDetails) != undefined &&
                 showData(data.gameDetails).message;
