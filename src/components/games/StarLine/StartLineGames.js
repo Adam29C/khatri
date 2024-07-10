@@ -113,8 +113,8 @@ const Pana_Chart = () => {
 
       <div className="container ">
         <div className="row justify-content-center">
-        <div className="text-center col-xl-8 col-q-12 col-md-12 col-sm-12 ">
-        <div className="pt-110" style={{ textAlign: "center" }}>
+        <div className="text-left col-xl-8 col-q-12 col-md-12 col-sm-12 ">
+        <div className="pt-110">
         <h2>
           <strong style={{ color: "rgb(51, 51, 51)" }}>
             Shree Starline &nbsp;
