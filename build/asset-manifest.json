@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.db4b0a6f.css",
-    "main.js": "/static/js/main.e8db525f.js",
-    "static/media/khatri-white-logo.svg": "/static/media/khatri-white-logo.eb16996644acb95dd4f0c4b88b29bc48.svg",
-    "static/media/khatri-black-logo.svg": "/static/media/khatri-black-logo.0084e1a3db526bf127d84bed5e2f0f02.svg",
+    "main.js": "/static/js/main.b82ba17e.js",
+    "static/media/khatri-white-logo.svg": "/static/media/khatri-white-logo.35172736fe7b56111dd9cbfb70997980.svg",
+    "static/media/khatri-black-logo.svg": "/static/media/khatri-black-logo.c910a623895e89cf4b1b4c06b8639607.svg",
     "static/media/person.webp": "/static/media/person.07c6f5e75ddbe441bbf5.webp",
     "index.html": "/index.html",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/18.svg": "/static/media/18.5d6745e4561d398893b23eda2fc314f9.svg",
+    "static/media/18.svg": "/static/media/18.eeaae4510496ac8209ba347eebdbf95f.svg",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/grid-svgrepo-com (2).svg": "/static/media/grid-svgrepo-com (2).795e940a644f44732878.svg",
     "static/media/header-bg.svg": "/static/media/header-bg.4e69664c85e58671e8da.svg",
     "main.db4b0a6f.css.map": "/static/css/main.db4b0a6f.css.map",
-    "main.e8db525f.js.map": "/static/js/main.e8db525f.js.map"
+    "main.b82ba17e.js.map": "/static/js/main.b82ba17e.js.map"
   },
   "entrypoints": [
     "static/css/main.db4b0a6f.css",
-    "static/js/main.e8db525f.js"
+    "static/js/main.b82ba17e.js"
   ]
 }

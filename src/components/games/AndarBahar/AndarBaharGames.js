@@ -60,8 +60,8 @@ const StartLine = () => {
           <div className="row">
             {getData?.map((data, index) => {
               let getmsg =
-                showData(data.gameDetails) != undefined &&
-                showData(data.gameDetails).message;
+                showData(data?.gameDetails) != undefined &&
+                showData(data?.gameDetails)?.message;
 
               return (
                 <div key={index} className="col-xl-4 col-lg-4 col-md-6  mb-3">
@@ -135,7 +135,7 @@ const StartLine = () => {
                         <a
                           href="#"
                           onClick={() =>
-                            downloadFile(showData(data.gameDetails).message)
+                            downloadFile(showData(data?.gameDetails)?.message)
                           }
                         >
                           <svg
@@ -225,15 +225,15 @@ const StartLine = () => {
                       <span>
                         Open Bids :
                         <strong>
-                          {showData(data.gameDetails) != undefined &&
-                            showData(data.gameDetails).OBT}
+                          {showData(data?.gameDetails) != undefined &&
+                            showData(data?.gameDetails)?.OBT}
                         </strong>
                       </span>
                       <span>
                         Close Bids :{" "}
                         <strong>
-                          {showData(data.gameDetails) != undefined &&
-                            showData(data.gameDetails).CBT}
+                          {showData(data?.gameDetails) != undefined &&
+                            showData(data?.gameDetails)?.CBT}
                         </strong>
                       </span>
                     </div>
