@@ -19,7 +19,7 @@ const AboutUs = () => {
         About Us
       </h2>
       <p className='about_descri f-size'>
-      SHREE MORNING Jodi Chart Satta Khatri555 Record Old History Historical Data
+      KHATRI MORNING Jodi Chart Satta Khatri555 Record Old History Historical Data
         Bracket Results Chart Online Live Book Digits Numbers
       </p>
     </div>

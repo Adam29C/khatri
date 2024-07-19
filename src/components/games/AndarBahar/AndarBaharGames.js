@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import star from "../../../images/star.png";
+import star from "../../../images/Star-Icon.svg";
 import { GET_ALL_JACKPOT_GAME } from "../../service/admin.service";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
 

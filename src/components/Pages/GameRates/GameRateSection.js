@@ -39,7 +39,7 @@ const GameRateSection = () => {
       </div> */}
 
       <div className="game-rate-container">
-        <div className="heding-sec heading-sec-custom m-4 d-flex flex-column text-center justify-content-center align-items-center">
+        <div className="-custom m-4 d-flex flex-column text-center justify-content-center align-items-center">
           {/* <img src={doller} alt="" /> */}
           <div className="main-title-text">
             <span className="title-text">Game Rates</span>

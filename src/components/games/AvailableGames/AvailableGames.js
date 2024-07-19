@@ -8,7 +8,7 @@ import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Table from "react-bootstrap/Table";
 import { GET_ALL_GAMES } from "../../service/admin.service";
-import star from "../../../images/star.png";
+import star from "../../../images/Star-Icon.svg";
 //
 import { downloadAPK } from "../../Helpers/DownloadAPK";
 

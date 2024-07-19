@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../../images/mask1.png";
-import img2 from "../../../images/mask2.png";
-import img3 from "../../../images/18.svg";
+import img1 from "../../../images/BeGamble-Aware.svg";
+import img2 from "../../../images/gambling-therapy.svg";
+import img3 from "../../../images/18+Icon.svg";
 import logo from "../../../images/khatri-black-logo.svg";
 import "../../../App.css";
 import { Link } from "react-router-dom";
@@ -70,8 +70,9 @@ const Footer = () => {
 
               </div>
               <div className="footer-img-sec">
+              <img className="img1" src={img1} alt="" />
               <img className="img2" src={img2} alt="" />
-                <img className="img1" src={img1} alt="" />
+              
               
               </div>
             </div>

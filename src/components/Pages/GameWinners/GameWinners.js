@@ -4,7 +4,7 @@ import "../../assets/css/Section3.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import star from '../../../images/star.png'
+import star from '../../../images/Star-Icon.svg'
 
 const Section3 = () => {
   useEffect(() => {

@@ -117,7 +117,7 @@ const Pana_Chart = () => {
         <div className="pt-110">
         <h2>
           <strong style={{ color: "rgb(51, 51, 51)" }}>
-            Shree Starline &nbsp;
+          Khatri Starline &nbsp;
             {location.state.title}&nbsp;
             Chart
           </strong>

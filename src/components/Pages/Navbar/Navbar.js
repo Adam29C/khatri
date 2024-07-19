@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
 import headerLog from "../../../images/khatri-white-logo.svg";
+import HeaderSvg from "../../Helpers/HeaderSvg";
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const collapseRef = useRef(null);
@@ -87,30 +88,36 @@ const Logo = () => {
 const NavigationLinks = () => {
   return (
     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-      <li className="nav-item">
-        <Link className="nav-link " aria-current="page" to="/">
+      <li className="nav-item ">
+        <Link className="nav-link d-flex flex-column" aria-current="page" to="/">
           Home
+      <HeaderSvg/>
         </Link>
+     
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/about-us">
+        <Link className="nav-link d-flex flex-column" to="/about-us">
         About Us
+        <HeaderSvg/>
         </Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/charts">
+        <Link className="nav-link d-flex flex-column" to="/charts">
           Charts
+          <HeaderSvg/>
         </Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/how-to-play">
+        <Link className="nav-link d-flex flex-column" to="/how-to-play">
           How To Play
+          <HeaderSvg/>
         </Link>
       </li>
     
       <li className="nav-item">
-        <Link className="nav-link" to="/terms-conditions">
+        <Link className="nav-link d-flex flex-column" to="/terms-conditions">
           Terms & Condition
+          <HeaderSvg/>
         </Link>
       </li>
     </ul>
