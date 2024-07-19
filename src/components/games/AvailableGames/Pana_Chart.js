@@ -68,12 +68,10 @@ const Pana_Chart = () => {
       <div id="scroll-up"></div>
       <Navbar />
   
-
-
-      <div className="container ">
-        <div className="row justify-content-center">
-        <div className="text-center col-xl-8 col-q-12 col-md-12 col-sm-12 ">
-        <div className="pt-110  text-alignment" >
+      <div className="container-fluid">
+        <div className="row">
+          <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header ">
+          <div className="pt-110  text-alignment" >
         <h2>
           <strong className="color-dark-gray">
             {location.state.title}
@@ -103,8 +101,16 @@ const Pana_Chart = () => {
           </svg>
           Go To Bottom
         </button>
+          </div>
         </div>
-          <div className="table-responsive  text-center col-xl-8 col-lg-12 col-md-12 col-sm-12 ">
+      </div>
+
+      <div className="container ">
+        <div className="row justify-content-center">
+        <div className="p-0 text-center d-flex justify-content-center   col-xl-12 col-q-12 col-md-12 col-sm-12">
+    
+  
+          <div className="table-responsive  text-center col-xl-8 col-lg-12 col-md-12 col-sm-12">
             {nameRejext(location.state.title) ===
             nameRejext("SHREE MORNING") ? (
               <ShreeMorning chartData={getData.data} />
@@ -159,17 +165,18 @@ const Pana_Chart = () => {
               ""
             )}
 
-  
+<div className="row justify-content-start">
+                <button
+                  className=" btn  rounded-pill back-btn mt-2"
+                  onClick={() => navigate(-1)}
+                  id="scroll-down-button"
+                >
+                  Back
+                </button>
+              </div>
           </div>
-          <div className="text-left col-xl-8 col-q-12 col-md-12 col-sm-12 ">
-          <button
-              className=" btn  rounded-pill back-btn mt-2"
-              onClick={() => navigate(-1)}
-              id="scroll-down-button"
-            >
-              Back
-            </button>
-        </div>
+          </div>
+        
         </div>
       </div>
 

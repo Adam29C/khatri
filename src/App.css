@@ -675,13 +675,10 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   align-items: center;
   justify-content: space-between;
 }
-.chart-header {
+.chart-header  {
   padding: 50px 130px;
 }
 
-.chart-header-font {
-  font-size: 60px;
-}
 
 .accordion-container .accordion-section {
   color: var(--color-black) !important;
@@ -1309,6 +1306,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 @media (min-width: 1024px) {
+
   .Card_Size {
     width: 24%;
   }
@@ -1387,42 +1385,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   }
 }
 
-@media (max-width: 425px) {
-  .Card_Size {
-    width: 100%;
-  }
-}
 
-@media (min-width: 425px) and (max-width: 720px) {
-  #navbarSupportedContent {
-    text-align: center;
-    padding: 0 10px 10px;
-    background: #fff;
-    color: black;
-    box-shadow: 20px 40px 60px #444343, -20px 40px 60px #ffeed4;
-    transition: 0.3s ease-in-out;
-    z-index: 1;
-    width: 239px;
-    position: absolute;
-    right: 14px;
-    top: 68px;
-    border-radius: 12px;
-  }
-  .nav-link {
-    color: black;
-  }
 
-  .download-btn button {
-    color: #f8fdfe;
-    background: none;
-    border-radius: 30px;
-    color: var(--color-primary);
-    padding: 8px 30px;
-    text-decoration: none;
-    border: 1px solid var(--color-primary);
-  }
-  .Card_Size {
-    width: 48%;
-  }
-}
+
 /* --------------------------------------  RESPONSIVE --------------------------------------------------- */
