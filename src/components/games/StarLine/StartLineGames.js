@@ -111,7 +111,7 @@ const Pana_Chart = () => {
         <div className="row">
           <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header ">
             <div className="pt-110 text-alignment">
-              <h2>
+              <h2 className="chart-header-font">
                 <strong style={{ color: "rgb(51, 51, 51)" }}>
                   Khatri Starline &nbsp;
                   {location.state.title}&nbsp; Chart
