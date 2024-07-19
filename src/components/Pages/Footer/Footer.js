@@ -51,7 +51,7 @@ const Footer = () => {
                 rights to operate the gaming software worldwide.
               </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 ">
               <div className="footer-right-image">
                 <div className="margin-img">
                   <img
