@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { GET_ALL_GAMERATES } from "../../service/admin.service";
 import doller from "../../../images/doller.png";
-import infinity from "../../../images/infinity.png";
+import infinity from "../../../images/infinit.svg";
 
 const GameRateSection = () => {
   const [getData, setgetData] = useState([]);

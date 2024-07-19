@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { GET_ALL_GAMESLIST } from "../../service/admin.service";
-import infinity from "../../../images/infinity.png";
+import infinity from "../../../images/infinit.svg";
 const Charts_Container = ({ title, data, link , responsive_Class }) => {
   //   const [getData, setgetData] = useState([]);
 
