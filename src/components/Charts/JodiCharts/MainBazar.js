@@ -3385,9 +3385,9 @@ const ShreeDay = ({ chartData }) => {
         </td>
       </tr>
       {chartData &&
-              chartData.map((item1) => (
+              chartData?.map((item1) => (
                 <tr key={item1.id}>
-                  {item1.data.map((nestedItem) => (
+                  {item1?.data?.map((nestedItem) => (
                     <td key={nestedItem.id} className="cc">
                       <div
                       className="kalyan-chart-number-black"

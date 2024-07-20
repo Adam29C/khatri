@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import star from "../../../images/star.png";
+import star from "../../../images/Star-Icon.svg";
 import Accordion from "react-bootstrap/Accordion";
 
 const FandQSection = () => {
@@ -83,7 +83,7 @@ const FandQSection = () => {
                 {isOpen.games && (
                   <div className="fw-bold">
                     <br />
-                    Popular Satta Matka Games Like Kalyan, Sridevi, Shree day,
+                    Popular Satta Matka Games Like Kalyan, Sridevi,
                     Milan, Time Bazar & Rajdhani, Main bazar etc..
                   </div>
                 )}

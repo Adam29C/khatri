@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { GET_ALL_GAMESLIST } from "../../service/admin.service";
-import infinity from "../../../images/infinity.png";
+import infinity from "../../../images/infinit.svg";
 const Charts_Container = ({ title, data, link , responsive_Class }) => {
   //   const [getData, setgetData] = useState([]);
 
@@ -40,7 +40,7 @@ const Charts_Container = ({ title, data, link , responsive_Class }) => {
                 <h3 className="ms-2 fw-bold pt-2 pb-4">    {title}</h3>
                 <div>
                   {data &&
-                    data.map((data1, index) => (
+                    data?.map((data1, index) => (
                       <>
                         <div className=" d-flex align-items-center ">
                           <img src={infinity} alt="" className="mx-2 img-hover-rotate " />

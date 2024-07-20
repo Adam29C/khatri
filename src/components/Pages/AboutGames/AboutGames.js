@@ -93,13 +93,13 @@ const AboutGames = () => {
         <h1 className="h1-fw-600">How to add money in Khatri555?</h1>
         <ul className="iKDfcs">
           <li className="hTaGYD f-size">
-            <span>1{/* */}.</span>Minimum Deposit is 500 /- Rs
+            <span>1{/* */}.</span>Minimum Deposit is 100 /- Rs
           </li>
           <li className="hTaGYD f-size">
-            <span>2{/* */}.</span>Minimum Withdraw is 2000/- Rs
+            <span>2{/* */}.</span>Minimum Withdraw is 500/- Rs
           </li>
           <li className="hTaGYD f-size">
-            <span>3{/* */}.</span>Maximum Withdraw Is 5 Lakh Per Day.
+            <span>3{/* */}.</span>Maximum Withdraw Is 25 Lakh Per Day.
           </li> 
           <li className="hTaGYD f-size">
             <span>4{/* */}.</span>Withdrawal request can be placed between 11 am

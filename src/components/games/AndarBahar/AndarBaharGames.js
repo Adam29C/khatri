@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import star from "../../../images/star.png";
+import star from "../../../images/Star-Icon.svg";
 import { GET_ALL_JACKPOT_GAME } from "../../service/admin.service";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
 
@@ -58,10 +58,10 @@ const StartLine = () => {
         </div>
         <div className="container">
           <div className="row">
-            {getData.map((data, index) => {
+            {getData?.map((data, index) => {
               let getmsg =
-                showData(data.gameDetails) != undefined &&
-                showData(data.gameDetails).message;
+                showData(data?.gameDetails) != undefined &&
+                showData(data?.gameDetails)?.message;
 
               return (
                 <div key={index} className="col-xl-4 col-lg-4 col-md-6  mb-3">
@@ -135,7 +135,7 @@ const StartLine = () => {
                         <a
                           href="#"
                           onClick={() =>
-                            downloadFile(showData(data.gameDetails).message)
+                            downloadFile(showData(data?.gameDetails)?.message)
                           }
                         >
                           <svg
@@ -225,15 +225,15 @@ const StartLine = () => {
                       <span>
                         Open Bids :
                         <strong>
-                          {showData(data.gameDetails) != undefined &&
-                            showData(data.gameDetails).OBT}
+                          {showData(data?.gameDetails) != undefined &&
+                            showData(data?.gameDetails)?.OBT}
                         </strong>
                       </span>
                       <span>
                         Close Bids :{" "}
                         <strong>
-                          {showData(data.gameDetails) != undefined &&
-                            showData(data.gameDetails).CBT}
+                          {showData(data?.gameDetails) != undefined &&
+                            showData(data?.gameDetails)?.CBT}
                         </strong>
                       </span>
                     </div>

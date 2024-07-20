@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { GET_ALL_GAMERATES } from "../../service/admin.service";
 import doller from "../../../images/doller.png";
-import infinity from "../../../images/infinity.png";
+import infinity from "../../../images/infinit.svg";
 
 const GameRateSection = () => {
   const [getData, setgetData] = useState([]);
@@ -39,7 +39,7 @@ const GameRateSection = () => {
       </div> */}
 
       <div className="game-rate-container">
-        <div className="heding-sec heading-sec-custom m-4 d-flex flex-column text-center justify-content-center align-items-center">
+        <div className="-custom m-4 d-flex flex-column text-center justify-content-center align-items-center">
           {/* <img src={doller} alt="" /> */}
           <div className="main-title-text">
             <span className="title-text">Game Rates</span>
@@ -51,7 +51,7 @@ const GameRateSection = () => {
         </div>
 
         <div className="row">
-          {getData.map((items, index) => (
+          {getData?.map((items, index) => (
             <div
               key={index}
               className="Card_Size rounded-3 border border-1 p-2 m-1"
