@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.db4b0a6f.css",
-    "main.js": "/static/js/main.b82ba17e.js",
-    "static/media/khatri-white-logo.svg": "/static/media/khatri-white-logo.35172736fe7b56111dd9cbfb70997980.svg",
-    "static/media/khatri-black-logo.svg": "/static/media/khatri-black-logo.c910a623895e89cf4b1b4c06b8639607.svg",
+    "main.css": "/static/css/main.bfb93e77.css",
+    "main.js": "/static/js/main.72dcf290.js",
+    "static/media/khatri-white-logo.svg": "/static/media/khatri-white-logo.eb16996644acb95dd4f0c4b88b29bc48.svg",
+    "static/media/khatri-black-logo.svg": "/static/media/khatri-black-logo.0084e1a3db526bf127d84bed5e2f0f02.svg",
     "static/media/person.webp": "/static/media/person.07c6f5e75ddbe441bbf5.webp",
+    "static/media/BeGamble-Aware.svg": "/static/media/BeGamble-Aware.561918329563ffecaf9ee579d305eef4.svg",
+    "static/media/gambling-therapy.svg": "/static/media/gambling-therapy.afd35abde3f0456228ac7c51a4576733.svg",
+    "static/media/18+Icon.svg": "/static/media/18+Icon.ed14938020502d57683031e745e8c396.svg",
     "index.html": "/index.html",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/18.svg": "/static/media/18.eeaae4510496ac8209ba347eebdbf95f.svg",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/Star-Icon.svg": "/static/media/Star-Icon.d62883a191752f12fe0c3cdc99c2b4be.svg",
     "static/media/grid-svgrepo-com (2).svg": "/static/media/grid-svgrepo-com (2).795e940a644f44732878.svg",
     "static/media/header-bg.svg": "/static/media/header-bg.4e69664c85e58671e8da.svg",
-    "main.db4b0a6f.css.map": "/static/css/main.db4b0a6f.css.map",
-    "main.b82ba17e.js.map": "/static/js/main.b82ba17e.js.map"
+    "static/media/mobile-header-image-375.svg": "/static/media/mobile-header-image-375.71a8305f07b16a8a1352.svg",
+    "static/media/Mobile-Header-Wave.svg": "/static/media/Mobile-Header-Wave.5971a3a9ae89faf63311.svg",
+    "static/media/infinit.svg": "/static/media/infinit.72fdab84b8103674f6d2dfd7e36390be.svg",
+    "main.bfb93e77.css.map": "/static/css/main.bfb93e77.css.map",
+    "main.72dcf290.js.map": "/static/js/main.72dcf290.js.map"
   },
   "entrypoints": [
-    "static/css/main.db4b0a6f.css",
-    "static/js/main.b82ba17e.js"
+    "static/css/main.bfb93e77.css",
+    "static/js/main.72dcf290.js"
   ]
 }
