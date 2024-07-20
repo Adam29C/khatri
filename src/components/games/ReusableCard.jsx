@@ -264,11 +264,11 @@ const Section4 = ({ GameData, title, showPana }) => {
                   Time
                 </th>
                 <th>
-                  <i class="fa fa-clock-o" aria-hidden="true"></i> Open Bit
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> Open Bid
                   Result Time
                 </th>
                 <th>
-                  <i class="fa fa-clock-o" aria-hidden="true"></i> Close Bit
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> Close Bid
                   Result Time
                 </th>
               </tr>

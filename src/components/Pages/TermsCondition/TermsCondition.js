@@ -16,7 +16,7 @@ const TermsCondition = () => {
       Terms &amp; Conditions
     </h1>
     <p  className="terms-condition-para f-size">
-    KHATRI MORNING Jodi Chart Satta Matka Record Old History Historical Data
+    Kalyan, Main Bazar Jodi Chart Satta Matka Record Old History Historical Data
       Bracket Results Chart Online Live Book Digits Numbers
     </p>
   </div>
