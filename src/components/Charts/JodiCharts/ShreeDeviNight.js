@@ -2,8 +2,7 @@ import React from "react";
 
 const ShreeDay = ({ chartData }) => {
   return (
-    <div className="table-responsive ">
-  <table className="table fw-bold" border="collapse">
+    <table className="table fw-bold" border="collapse">
     <thead>
       <tr>
         <th className="ch">MON</th>
@@ -214,7 +213,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">61</span>
           </div>
@@ -237,7 +242,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">49</span>
           </div>
@@ -346,7 +357,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">49</span>
           </div>
@@ -434,7 +451,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">44</span>
           </div>
@@ -455,7 +478,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">22</span>
           </div>
@@ -485,7 +514,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">05</span>
           </div>
@@ -520,7 +555,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">16</span>
           </div>
@@ -529,7 +570,13 @@ const ShreeDay = ({ chartData }) => {
       <tr>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">94</span>
           </div>
@@ -550,7 +597,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">16</span>
           </div>
@@ -682,7 +735,13 @@ const ShreeDay = ({ chartData }) => {
       <tr>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">50</span>
           </div>
@@ -747,7 +806,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">05</span>
           </div>
@@ -784,14 +849,26 @@ const ShreeDay = ({ chartData }) => {
       <tr>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">44</span>
           </div>
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">88</span>
           </div>
@@ -937,7 +1014,13 @@ const ShreeDay = ({ chartData }) => {
       <tr>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">88</span>
           </div>
@@ -958,14 +1041,26 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">16</span>
           </div>
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">22</span>
           </div>
@@ -995,14 +1090,26 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">38</span>
           </div>
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">05</span>
           </div>
@@ -1023,7 +1130,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">61</span>
           </div>
@@ -1039,7 +1152,13 @@ const ShreeDay = ({ chartData }) => {
       <tr>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">61</span>
           </div>
@@ -1074,7 +1193,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">61</span>
           </div>
@@ -1097,7 +1222,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">00</span>
           </div>
@@ -1118,7 +1249,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">27</span>
           </div>
@@ -1141,7 +1278,13 @@ const ShreeDay = ({ chartData }) => {
       <tr>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">49</span>
           </div>
@@ -1169,7 +1312,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">22</span>
           </div>
@@ -1234,7 +1383,13 @@ const ShreeDay = ({ chartData }) => {
         </td>
         <td className="cc">
           <div
-         className="kalyan-chart-number-red"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "red"
+            }}
           >
             <span className="cp">16</span>
           </div>
@@ -1291,26 +1446,264 @@ const ShreeDay = ({ chartData }) => {
           </div>
         </td>
       </tr>
-      {chartData &&
-              chartData.map((item1) => (
-                <tr key={item1.id}>
-                  {item1.data.map((nestedItem) => (
-                    <td key={nestedItem.id} className="cc">
-                      <div
-                    className="kalyan-chart-number-black"
-                      >
-                        <span className="cp">
-                          {nestedItem.relatedData[0] && nestedItem.relatedData[0].winningDigitFamily}
-                          {nestedItem.relatedData[1] && nestedItem.relatedData[1].winningDigitFamily}
-                        </span>
-                      </div>
-                    </td>
-                  ))}
-                </tr>
-              ))}
+      <tr>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">03</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">03</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">44</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">25</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">49</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">64</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">39</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">78</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">**</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">04</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">36</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">39</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">00</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">60</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">01</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">29</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">61</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">31</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">31</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">79</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">76</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">53</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">22</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">78</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">30</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">61</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">90</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">30</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">61</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">35</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">78</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">37</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">59</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">**</span>
+          </div>
+        </td>
+        <td className="cc">
+          <div
+            className="kalyan-chart-number-black"
+          >
+            <span className="cp">**</span>
+          </div>
+        </td>
+      </tr>
     </tbody>
   </table>
-</div>
+  
 
   );
 };
