@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
-import headerLog from "../../../images/khatri-white-logo.svg";
+import headerLog from "../../../images/khatri_new_logo.svg";
 import HeaderSvg from "../../Helpers/HeaderSvg";
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
