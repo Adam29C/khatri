@@ -84,7 +84,7 @@ const Section2 = () => {
               >
                 <a
                   // href="https://wa.me/+919819508829"
-                  href={`https://wa.me/+${getData && getData.number}`}
+                  href={`https://wa.me/+91${getData && getData.number}`}
                   className="text-decoration-none main-btn-a"
                 >
                   <i className="fa fa-whatsapp me-2" aria-hidden="true"></i>
