@@ -64,37 +64,37 @@ const Section3 = () => {
             <div>
               <div className="custom-card custom-card-padding">
                 <h4 className="primary-color">Amit</h4>
-                <h4 className="font-700 color-primary">$61,000</h4>
+                <h4 className="font-700 color-primary">₹61,000</h4>
               </div>
             </div>
             <div>
               <div className="custom-card">
                 <h4 className="primary-color">Priya</h4>
-                <h4 className="font-700 color-primary">$35,000</h4>
+                <h4 className="font-700 color-primary">₹35,000</h4>
               </div>
             </div>
             <div>
               <div className="custom-card">
                 <h4 className="primary-color">Himanshu</h4>
-                <h4 className="font-700 color-primary">$51,000</h4>
+                <h4 className="font-700 color-primary">₹51,000</h4>
               </div>
             </div>
             <div>
               <div className="custom-card">
                 <h4 className="primary-color">Garima</h4>
-                <h4 className="font-700 color-primary">$25,000</h4>
+                <h4 className="font-700 color-primary">₹25,000</h4>
               </div>
             </div>
             <div>
               <div className="custom-card">
                 <h4 className="primary-color">Yash</h4>
-                <h4 className="font-700 color-primary">$45,200</h4>
+                <h4 className="font-700 color-primary">₹45,200</h4>
               </div>
             </div>
             <div>
               <div className="custom-card">
                 <h4 className="primary-color">Ajit</h4>
-                <h4 className="font-700 color-primary">$45,200</h4>
+                <h4 className="font-700 color-primary">₹45,200</h4>
               </div>
             </div>
           </Slider>

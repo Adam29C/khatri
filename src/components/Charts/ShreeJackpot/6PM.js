@@ -1444,23 +1444,20 @@ const ShreeDay = ({ chartData }) => {
             </td>
           </tr>
           {chartData &&
-              chartData.map((item1) => (
-                <tr key={item1.id}>
-                  {item1.data.map((nestedItem) => (
-                    <td key={nestedItem.id} className="cc">
-                      <div
-                     className="kalyan-chart-number-black"
-                      >
-                        <span className="cp">
+            chartData.map((item1) => (
+              <tr key={item1.id}>
+                {item1.data.map((nestedItem) => (
+                  <td key={nestedItem.id} className="cc">
+                    <div className="kalyan-chart-number-black">
+                      <span className="cp">
                         {nestedItem.relatedData[0] &&
-                            nestedItem.relatedData[0].winningDigit}
-                        </span>
-                      </div>
-                    </td>
-                  ))}
-                </tr>
-              ))}
-
+                          nestedItem.relatedData[0].winningDigit}
+                      </span>
+                    </div>
+                  </td>
+                ))}
+              </tr>
+            ))}
         </tbody>
       </table>
     </div>

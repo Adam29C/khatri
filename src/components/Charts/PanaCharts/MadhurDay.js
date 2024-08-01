@@ -5993,7 +5993,7 @@ const ShreeDay = ({ chartData }) => {
                 <span className="cp">***</span>
               </div>
             </td>
-          </tr>
+          </tr>{" "}
           {chartData &&
             chartData.map((item1) => (
               <tr key={item1.id}>

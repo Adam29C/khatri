@@ -3,7 +3,7 @@ import React from "react";
 const ShreeDay = ({ chartData }) => {
   return (
     <div>
-     <table className="table fw-bold" border="collapse">
+<table className="table fw-bold" border="collapse">
   <thead>
     <tr>
       <th className="cc">Date</th>
@@ -20,12 +20,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/02/2023 </span>
           <span className="result_date">to</span>
@@ -111,12 +106,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/09/2023 </span>
           <span className="result_date">to</span>
@@ -202,12 +192,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/16/2023 </span>
           <span className="result_date">to</span>
@@ -281,12 +266,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/23/2023 </span>
           <span className="result_date">to</span>
@@ -366,12 +346,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/30/2023 </span>
           <span className="result_date">to</span>
@@ -451,12 +426,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">02/06/2023 </span>
           <span className="result_date">to</span>
@@ -554,12 +524,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">02/13/2023 </span>
           <span className="result_date">to</span>
@@ -633,12 +598,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">02/20/2023 </span>
           <span className="result_date">to</span>
@@ -724,12 +684,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">02/27/2023 </span>
           <span className="result_date">to</span>
@@ -815,12 +770,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">03/06/2023 </span>
           <span className="result_date">to</span>
@@ -900,12 +850,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">03/13/2023 </span>
           <span className="result_date">to</span>
@@ -997,12 +942,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">03/20/2023 </span>
           <span className="result_date">to</span>
@@ -1082,12 +1022,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">03/27/2023 </span>
           <span className="result_date">to</span>
@@ -1161,12 +1096,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">04/03/2023 </span>
           <span className="result_date">to</span>
@@ -1246,12 +1176,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">04/10/2023 </span>
           <span className="result_date">to</span>
@@ -1325,12 +1250,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">04/17/2023 </span>
           <span className="result_date">to</span>
@@ -1410,12 +1330,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">04/24/2023 </span>
           <span className="result_date">to</span>
@@ -1507,12 +1422,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">05/01/2023 </span>
           <span className="result_date">to</span>
@@ -1598,12 +1508,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">05/08/2023 </span>
           <span className="result_date">to</span>
@@ -1689,12 +1594,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">05/15/2023 </span>
           <span className="result_date">to</span>
@@ -1774,12 +1674,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">05/22/2023 </span>
           <span className="result_date">to</span>
@@ -1859,12 +1754,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">05/29/2023 </span>
           <span className="result_date">to</span>
@@ -1938,12 +1828,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">06/05/2023 </span>
           <span className="result_date">to</span>
@@ -2023,12 +1908,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">06/12/2023 </span>
           <span className="result_date">to</span>
@@ -2102,12 +1982,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">06/19/2023 </span>
           <span className="result_date">to</span>
@@ -2193,12 +2068,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">06/26/2023 </span>
           <span className="result_date">to</span>
@@ -2278,12 +2148,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">07/03/2023 </span>
           <span className="result_date">to</span>
@@ -2357,12 +2222,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">07/10/2023 </span>
           <span className="result_date">to</span>
@@ -2460,12 +2320,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">07/17/2023 </span>
           <span className="result_date">to</span>
@@ -2539,12 +2394,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">07/24/2023 </span>
           <span className="result_date">to</span>
@@ -2624,12 +2474,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">07/31/2023 </span>
           <span className="result_date">to</span>
@@ -2703,12 +2548,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">08/07/2023 </span>
           <span className="result_date">to</span>
@@ -2782,12 +2622,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">08/14/2023 </span>
           <span className="result_date">to</span>
@@ -2861,12 +2696,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">08/21/2023 </span>
           <span className="result_date">to</span>
@@ -2946,12 +2776,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">08/28/2023 </span>
           <span className="result_date">to</span>
@@ -3037,12 +2862,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">09/04/2023 </span>
           <span className="result_date">to</span>
@@ -3116,12 +2936,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">09/11/2023 </span>
           <span className="result_date">to</span>
@@ -3201,12 +3016,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">09/18/2023 </span>
           <span className="result_date">to</span>
@@ -3280,12 +3090,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">09/25/2023 </span>
           <span className="result_date">to</span>
@@ -3359,12 +3164,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">10/02/2023 </span>
           <span className="result_date">to</span>
@@ -3450,12 +3250,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">10/09/2023 </span>
           <span className="result_date">to</span>
@@ -3529,12 +3324,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">10/16/2023 </span>
           <span className="result_date">to</span>
@@ -3620,12 +3410,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">10/23/2023 </span>
           <span className="result_date">to</span>
@@ -3705,12 +3490,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">10/30/2023 </span>
           <span className="result_date">to</span>
@@ -3796,12 +3576,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">11/06/2023 </span>
           <span className="result_date">to</span>
@@ -3875,12 +3650,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">11/13/2023 </span>
           <span className="result_date">to</span>
@@ -3954,12 +3724,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">11/20/2023 </span>
           <span className="result_date">to</span>
@@ -4033,12 +3798,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">11/27/2023 </span>
           <span className="result_date">to</span>
@@ -4118,12 +3878,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">12/04/2023 </span>
           <span className="result_date">to</span>
@@ -4203,12 +3958,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">12/11/2023 </span>
           <span className="result_date">to</span>
@@ -4288,12 +4038,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">12/18/2023 </span>
           <span className="result_date">to</span>
@@ -4385,12 +4130,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">12/25/2023 </span>
           <span className="result_date">to</span>
@@ -4464,12 +4204,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/01/2024 </span>
           <span className="result_date">to</span>
@@ -4543,12 +4278,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/08/2024 </span>
           <span className="result_date">to</span>
@@ -4628,12 +4358,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/15/2024 </span>
           <span className="result_date">to</span>
@@ -4719,12 +4444,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/22/2024 </span>
           <span className="result_date">to</span>
@@ -4798,12 +4518,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">01/29/2024 </span>
           <span className="result_date">to</span>
@@ -4883,12 +4598,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">02/05/2024 </span>
           <span className="result_date">to</span>
@@ -4974,12 +4684,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">02/12/2024 </span>
           <span className="result_date">to</span>
@@ -5053,12 +4758,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">02/19/2024 </span>
           <span className="result_date">to</span>
@@ -5138,12 +4838,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">02/26/2024 </span>
           <span className="result_date">to</span>
@@ -5217,12 +4912,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">03/04/2024 </span>
           <span className="result_date">to</span>
@@ -5302,12 +4992,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">03/11/2024 </span>
           <span className="result_date">to</span>
@@ -5387,12 +5072,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">03/18/2024 </span>
           <span className="result_date">to</span>
@@ -5484,12 +5164,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">03/25/2024 </span>
           <span className="result_date">to</span>
@@ -5569,12 +5244,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">04/01/2024 </span>
           <span className="result_date">to</span>
@@ -5654,12 +5324,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">04/08/2024 </span>
           <span className="result_date">to</span>
@@ -5751,12 +5416,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">04/15/2024 </span>
           <span className="result_date">to</span>
@@ -5830,12 +5490,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">04/22/2024 </span>
           <span className="result_date">to</span>
@@ -5915,12 +5570,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">04/29/2024 </span>
           <span className="result_date">to</span>
@@ -6000,12 +5650,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">05/06/2024 </span>
           <span className="result_date">to</span>
@@ -6097,12 +5742,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">05/13/2024 </span>
           <span className="result_date">to</span>
@@ -6176,12 +5816,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">05/20/2024 </span>
           <span className="result_date">to</span>
@@ -6267,12 +5902,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">05/27/2024 </span>
           <span className="result_date">to</span>
@@ -6364,12 +5994,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">06/03/2024 </span>
           <span className="result_date">to</span>
@@ -6461,12 +6086,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">06/24/2024 </span>
           <span className="result_date">to</span>
@@ -6540,12 +6160,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">07/01/2024 </span>
           <span className="result_date">to</span>
@@ -6619,12 +6234,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">07/08/2024 </span>
           <span className="result_date">to</span>
@@ -6698,12 +6308,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">07/15/2024 </span>
           <span className="result_date">to</span>
@@ -6777,12 +6382,7 @@ const ShreeDay = ({ chartData }) => {
     <tr>
       <td className="cc" style={{ width: "13%" }}>
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
+          className="kalyan-chart-number-black"
         >
           <span className="result_date">07/22/2024 </span>
           <span className="result_date">to</span>
@@ -6854,40 +6454,40 @@ const ShreeDay = ({ chartData }) => {
       </td>
     </tr>
      {chartData &&
-              chartData.map((item1) => (
-                <tr key={item1.id}>
-                  <td className="cc td-width-13">
-                    <div className="pana-chart-main">
-                      <span className="result_date">{item1.weekStartDay} </span>
-                      <span className="result_date">to</span>
-                      <span className="result_date"> {item1.weekEndDay}</span>
+            chartData.map((item1) => (
+              <tr key={item1.id}>
+                <td className="cc td-width-13">
+                  <div className="pana-chart-main">
+                    <span className="result_date">{item1.weekStartDay} </span>
+                    <span className="result_date">to</span>
+                    <span className="result_date"> {item1.weekEndDay}</span>
+                  </div>
+                </td>
+                {item1.data.map((nestedItem) => (
+                  <td key={nestedItem.id} className="cc">
+                    <div className="kalyan-chart-number-black">
+                      <span className="cp">
+                        {nestedItem.relatedData[0] &&
+                          nestedItem.relatedData[0].winningDigit}
+                      </span>
+                      <span className="cp">
+                        {nestedItem.relatedData[0] &&
+                          nestedItem.relatedData[0].winningDigitFamily}
+                        {nestedItem.relatedData[1] &&
+                          nestedItem.relatedData[1].winningDigitFamily}
+                      </span>
+                      <span className="cp">
+                        {nestedItem.relatedData[1] &&
+                          nestedItem.relatedData[1].winningDigit}
+                      </span>
                     </div>
                   </td>
-                  {item1.data.map((nestedItem) => (
-                    <td key={nestedItem.id} className="cc">
-                      <div className="kalyan-chart-number-black">
-                        <span className="cp">
-                          {nestedItem.relatedData[0] &&
-                            nestedItem.relatedData[0].winningDigit}
-                        </span>
-                        <span className="cp">
-                          {nestedItem.relatedData[0] &&
-                            nestedItem.relatedData[0].winningDigitFamily}
-                          {nestedItem.relatedData[1] &&
-                            nestedItem.relatedData[1].winningDigitFamily}
-                        </span>
-                        <span className="cp">
-                          {nestedItem.relatedData[1] &&
-                            nestedItem.relatedData[1].winningDigit}
-                        </span>
-                      </div>
-                    </td>
-                  ))}
-                </tr>
-              ))}
-
+                ))}
+              </tr>
+            ))}
   </tbody>
 </table>
+
 
     </div>
   );

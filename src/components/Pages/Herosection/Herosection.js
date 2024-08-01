@@ -71,7 +71,7 @@ const Section2 = () => {
             <div className="d-flex gap-3 mt-5 main-btn">
               <button className="main-page-btn">
                 <a
-                  href={`tel:${getData && getData.number}`}
+                  href={`tel:+91${getData && getData.number}`}
                   className="text-decoration-none main-btn-a"
                 >
                   <i className="fa fa-phone me-2" aria-hidden="true"></i>Call

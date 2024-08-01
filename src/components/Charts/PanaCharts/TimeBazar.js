@@ -5831,7 +5831,71 @@ const TimeBazar = ({ chartData }) => {
               </div>
             </td>
           </tr>
-          
+          <tr>
+            <td className="cc" style={{ width: "13%" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <span className="result_date">07/22/2024 </span>
+                <span className="result_date">to</span>
+                <span className="result_date"> 07/28/2024</span>
+              </div>
+            </td>
+            <td className="cc">
+              <div className="kalyan-chart-number-black">
+                <span className="cp">460</span>
+                <span className="cp">06</span>
+                <span className="cp">349</span>
+              </div>
+            </td>
+            <td className="cc">
+              <div className="kalyan-chart-number-black">
+                <span className="cp">400</span>
+                <span className="cp">43</span>
+                <span className="cp">788</span>
+              </div>
+            </td>
+            <td className="cc">
+              <div className="kalyan-chart-number-black">
+                <span className="cp">280</span>
+                <span className="cp">05</span>
+                <span className="cp">348</span>
+              </div>
+            </td>
+            <td className="cc">
+              <div className="kalyan-chart-number-black">
+                <span className="cp">333</span>
+                <span className="cp">92</span>
+                <span className="cp">589</span>
+              </div>
+            </td>
+            <td className="cc">
+              <div className="kalyan-chart-number-black">
+                <span className="cp">788</span>
+                <span className="cp">34</span>
+                <span className="cp">455</span>
+              </div>
+            </td>
+            <td className="cc">
+              <div className="kalyan-chart-number-black">
+                <span className="cp">477</span>
+                <span className="cp">84</span>
+                <span className="cp">400</span>
+              </div>
+            </td>
+            <td className="cc">
+              <div className="kalyan-chart-number-black">
+                <span className="cp">***</span>
+                <span className="cp">**</span>
+                <span className="cp">***</span>
+              </div>
+            </td>
+          </tr>
           {chartData &&
             chartData.map((item1) => (
               <tr key={item1.id}>
