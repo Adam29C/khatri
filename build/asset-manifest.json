@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bfb93e77.css",
-    "main.js": "/static/js/main.fd496bf7.js",
+    "main.js": "/static/js/main.166506a8.js",
     "static/media/khatri-black-logo.svg": "/static/media/khatri-black-logo.0084e1a3db526bf127d84bed5e2f0f02.svg",
     "static/media/person.webp": "/static/media/person.07c6f5e75ddbe441bbf5.webp",
     "static/media/khatri_new_logo.svg": "/static/media/khatri_new_logo.22b7a24f6ccaec9b012afbaead4ceb5f.svg",
@@ -21,10 +21,10 @@
     "static/media/Mobile-Header-Wave.svg": "/static/media/Mobile-Header-Wave.5971a3a9ae89faf63311.svg",
     "static/media/infinit.svg": "/static/media/infinit.72fdab84b8103674f6d2dfd7e36390be.svg",
     "main.bfb93e77.css.map": "/static/css/main.bfb93e77.css.map",
-    "main.fd496bf7.js.map": "/static/js/main.fd496bf7.js.map"
+    "main.166506a8.js.map": "/static/js/main.166506a8.js.map"
   },
   "entrypoints": [
     "static/css/main.bfb93e77.css",
-    "static/js/main.fd496bf7.js"
+    "static/js/main.166506a8.js"
   ]
 }
