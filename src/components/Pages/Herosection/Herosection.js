@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../../assets/css/Herosection.css";
 import { GET_CONTACT } from "../../service/admin.service";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
-// import Section3 from "./Section3";
 
 const Section2 = () => {
   const [getData, setgetData] = useState([]);
@@ -37,15 +36,12 @@ const Section2 = () => {
       <div className="container">
         <div className="banner-container">
           <div className="row main-contain-row">
-            <div 
-            // className="col-lg-12 order-1 order-lg-1"
-            className="col-lg-12 hero-sec-left"
-            >
+            <div className="col-lg-12 hero-sec-left">
               <div className="banner-left">
                 <div className="button-sec">
                   <div className="row">
                     <div className="col-12">
-                      <div className="main-title-text" >
+                      <div className="main-title-text">
                         <span className="title-text">Welcome To Khatri555</span>
                       </div>
                       <div
@@ -53,74 +49,54 @@ const Section2 = () => {
                           isIPhoneXR ? "d-flex flex-column" : ""
                         }`}
                       >
-                        <h1 className="h1-fw-700" >Play Big, Win Big</h1>
+                        <h1 className="h1-fw-700">Play Big, Win Big</h1>
                         <h1 className="h1-fw-700">Business Of Faith </h1>
                         <h1 className="h1-fw-700">With Confidence </h1>
-                        {/* <h1 className="h1-fw-700" >
-                          W
-                          <span
-                            className="primary-color h1-fw-700"
-                        
-                          >
-                         
-                            BETS
-                          </span> */}
-                        {/* </h1> */}
                       </div>
                       {/* <div className="col-12 col-lg-6"> */}
-            <div className="d-flex gap-3 mt-5 main-btn">
-              <button className="main-page-btn">
-                <a
-                  href={`tel:+91${getData && getData.number}`}
-                  className="text-decoration-none main-btn-a"
-                >
-                  <i className="fa fa-phone me-2" aria-hidden="true"></i>Call
-                  Now
-                </a>
-              </button>
-              <button
-                className="main-page-btn"
-               
-              >
-                <a
-                  // href="https://wa.me/+919819508829"
-                  href={`https://wa.me/+91${getData && getData.number}`}
-                  className="text-decoration-none main-btn-a"
-                >
-                  <i className="fa fa-whatsapp me-2" aria-hidden="true"></i>
-                  WhatsApp
-                </a>
-              </button>
-            </div>
-          {/* </div> */}
+                      <div className="d-flex gap-3 mt-5 main-btn">
+                        <button className="main-page-btn">
+                          <a
+                            href={`tel:+91${getData && getData.number}`}
+                            className="text-decoration-none main-btn-a"
+                          >
+                            <i
+                              className="fa fa-phone me-2"
+                              aria-hidden="true"
+                            ></i>
+                            Call Now
+                          </a>
+                        </button>
+                        <button className="main-page-btn">
+                          <a
+                            // href="https://wa.me/+919819508829"
+                            href={`https://wa.me/+91${
+                              getData && getData.number
+                            }`}
+                            className="text-decoration-none main-btn-a"
+                          >
+                            <i
+                              className="fa fa-whatsapp me-2"
+                              aria-hidden="true"
+                            ></i>
+                            WhatsApp
+                          </a>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  {/* <img
-                    className="count-img"
-                    src="/images/group.svg"
-                    alt="Alternative Text Here"
-                  /> */}
                 </div>
               </div>
             </div>
-            {/* <div className="col-lg-6 order-2 order-lg-2 text-center">
-              <img
-                className="banner-img"
-                src="./images/bannerlogo.png" 
-                alt="Illustration of a scene with various elements"
-              />
-            </div> */}
           </div>
           <div className="download-now move-color d-flex justify-content-center align-items-center mt(-5)">
-           
-          <i className="fa-2x fa fa-download mr-15px" aria-hidden="true"></i>
-           <h1
+            <i className="fa-2x fa fa-download mr-15px" aria-hidden="true"></i>
+            <h1
               className="mb-0 font-400 curser-pointer"
               onClick={() => download()}
             >
               Download App
             </h1>
-            
           </div>
         </div>
       </div>
@@ -174,7 +150,6 @@ const Section2 = () => {
             </div>
           </div>
         </div> */}
-
       </div>
     </>
   );

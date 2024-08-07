@@ -2,8 +2,6 @@ import React from 'react'
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import "./AboutUs.css"
-import kahtriLogo from "../../../images/khatri-black-logo.svg"
-import webpPic from "../../../images/person.webp"
 const AboutUs = () => {
   return (
     <div>
@@ -25,31 +23,6 @@ const AboutUs = () => {
     </div>
   </div>
   <div className="sc-3112ab3d-0 sc-60e9ecdd-0 gCDmxv jgmYWX">
-    {/* <div className="sc-60e9ecdd-1 kelKta">
-      <img
-        alt="Khatri555hero"
-        loading="lazy"
-        width={350}
-        height={100}
-        decoding="async"
-        data-nimg={1}
-        className="sc-60e9ecdd-2 cpJduL"
-        src={kahtriLogo}
-        style={{ color: "transparent" }}
-      />
-      <img
-        alt="Khatri555hero"
-        loading="lazy"
-        width={200}
-        height={300}
-        decoding="async"
-        data-nimg={1}
-        className="sc-60e9ecdd-3 hedqyr"
-        srcSet={webpPic}
-        src={webpPic}
-        style={{ color: "transparent" }}
-      />
-    </div> */}
     <p  className='f-size'>
       Khatri555 is operated by S S international, a company incorporated under
       the laws of United Kingdom and regulated by the UK authority as the
@@ -86,9 +59,6 @@ const AboutUs = () => {
       </p>
     </span>
   </div>
-
-
-
       <Footer/>
     </div>
   )

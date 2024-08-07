@@ -1,9 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bfb93e77.css",
-    "main.js": "/static/js/main.d3b6a82d.js",
-    "static/media/khatri-black-logo.svg": "/static/media/khatri-black-logo.0084e1a3db526bf127d84bed5e2f0f02.svg",
-    "static/media/person.webp": "/static/media/person.07c6f5e75ddbe441bbf5.webp",
+    "main.js": "/static/js/main.8286a7e6.js",
     "static/media/khatri_new_logo.svg": "/static/media/khatri_new_logo.22b7a24f6ccaec9b012afbaead4ceb5f.svg",
     "static/media/BeGamble-Aware.svg": "/static/media/BeGamble-Aware.561918329563ffecaf9ee579d305eef4.svg",
     "static/media/green_khatri_logo.svg": "/static/media/green_khatri_logo.323aa48cedde2e5e7543a7cb46bcec16.svg",
@@ -21,10 +19,10 @@
     "static/media/Mobile-Header-Wave.svg": "/static/media/Mobile-Header-Wave.5971a3a9ae89faf63311.svg",
     "static/media/infinit.svg": "/static/media/infinit.72fdab84b8103674f6d2dfd7e36390be.svg",
     "main.bfb93e77.css.map": "/static/css/main.bfb93e77.css.map",
-    "main.d3b6a82d.js.map": "/static/js/main.d3b6a82d.js.map"
+    "main.8286a7e6.js.map": "/static/js/main.8286a7e6.js.map"
   },
   "entrypoints": [
     "static/css/main.bfb93e77.css",
-    "static/js/main.d3b6a82d.js"
+    "static/js/main.8286a7e6.js"
   ]
 }
