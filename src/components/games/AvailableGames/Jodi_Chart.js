@@ -6,13 +6,7 @@ import Footer from "../../Pages/Footer/Footer";
 import { nameRejext } from "../../Helpers/StringRejex";
 import { getWeekStartAndEndDates, fa_time } from "../../Helpers/getWeekDays";
 
-import ShreeMorning from "../../Charts/JodiCharts/ShreeMorning";
-
-import ShreeDay from "../../Charts/JodiCharts/ShreeDay";
-import ShreeNight from "../../Charts/JodiCharts/ShreeNight";
-
 import MadhurDay from "../../Charts/JodiCharts/MadhurDay";
-import MadhurNight from "../../Charts/JodiCharts/MadhurNight";
 
 import MilanDay from "../../Charts/JodiCharts/MilanDay";
 import MilanNight from "../../Charts/JodiCharts/MilanNight";
@@ -21,7 +15,6 @@ import RajdhaniDay from "../../Charts/JodiCharts/RajdhaniDay";
 import RajdhaniNight from "../../Charts/JodiCharts/RajdhaniNight";
 
 import Kalyan from "../../Charts/JodiCharts/Kalyan";
-import KalyanNight from "../../Charts/JodiCharts/KalyanNight";
 
 import TimeBazar from "../../Charts/JodiCharts/TimeBazar";
 import MainBazar from "../../Charts/JodiCharts/MainBazar";
@@ -67,25 +60,27 @@ const Pana_Chart = () => {
       <div id="scroll-up"></div>
       <Navbar />
 
-
       <div className="container-fluid">
         <div className="row">
           <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header ">
-            <div className="pt-110 text-alignment" >
+            <div className="pt-110 text-alignment">
               <h1 className="chart-header-font">
-                <strong className="color-dark-gray" >
+                <strong className="color-dark-gray">
                   {location.state.title}
                 </strong>
               </h1>
 
               <p>
                 {location.state.title} Pana Chart Satta Matka Record Old History
-                Historical Data Bracket Results Chart Online Live Book Digits Numbers
+                Historical Data Bracket Results Chart Online Live Book Digits
+                Numbers
               </p>
             </div>
-            <button className="btn-scroll my-3"
+            <button
+              className="btn-scroll my-3"
               onClick={handleClick}
-              id="scroll-down-button">
+              id="scroll-down-button"
+            >
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -102,26 +97,15 @@ const Pana_Chart = () => {
           </div>
         </div>
       </div>
-      
-     <div className="container ">
+
+      <div className="container ">
         <div className="row justify-content-center">
           <div className=" p-0 text-center d-flex justify-content-center   col-xl-12 col-q-12 col-md-12 col-sm-12 ">
             <div className="table-responsive  text-center col-xl-8 col-lg-12 col-md-12 col-sm-12 ">
-              {nameRejext(location.state.title) ===
-                nameRejext("SHREE MORNING") ? (
-                <ShreeMorning chartData={getData.data} />
-              ) : nameRejext(location.state.title) === nameRejext("SHREE day") ? (
-                <ShreeDay chartData={getData.data} />
-              ) : nameRejext(location.state.title) ===
-                nameRejext("SHREE NIGHT") ? (
-                <ShreeNight chartData={getData.data} />
-              ) : nameRejext(location.state.title) ===
-                nameRejext("MADHUR DAY") ? (
+              {nameRejext(location.state.title) === nameRejext("MADHUR DAY") ? (
                 <MadhurDay chartData={getData.data} />
               ) : nameRejext(location.state.title) ===
-                nameRejext("MADHUR NIGHT") ? (
-                <MadhurNight chartData={getData.data} />
-              ) : nameRejext(location.state.title) === nameRejext("MILAN DAY") ? (
+                nameRejext("MILAN DAY") ? (
                 <MilanDay chartData={getData.data} />
               ) : nameRejext(location.state.title) ===
                 nameRejext("MILAN NIGHT") ? (
@@ -134,9 +118,6 @@ const Pana_Chart = () => {
                 <RajdhaniNight chartData={getData.data} />
               ) : nameRejext(location.state.title) === nameRejext("KALYAN") ? (
                 <Kalyan chartData={getData.data} />
-              ) : nameRejext(location.state.title) ===
-                nameRejext("KALYAN NIGHT") ? (
-                <KalyanNight chartData={getData.data} />
               ) : nameRejext(location.state.title) ===
                 nameRejext("TIME BAZAR") ? (
                 <TimeBazar chartData={getData.data} />
@@ -161,13 +142,9 @@ const Pana_Chart = () => {
                   Back
                 </button>
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
 
       <Footer />

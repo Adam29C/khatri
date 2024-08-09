@@ -6,13 +6,7 @@ import Footer from "../../Pages/Footer/Footer";
 import { getWeekStartAndEndDates, fa_time } from "../../Helpers/getWeekDays";
 import { nameRejext } from "../../Helpers/StringRejex";
 
-import ShreeMorning from "../../Charts/PanaCharts/ShreeMorning";
-
-import ShreeDay from "../../Charts/PanaCharts/ShreeDay";
-import ShreeNight from "../../Charts/PanaCharts/ShreeNight";
-
 import MadhurDay from "../../Charts/PanaCharts/MadhurDay";
-import MadhurNight from "../../Charts/PanaCharts/MadhurNight";
 
 import MilanDay from "../../Charts/PanaCharts/MilanDay";
 import MilanNight from "../../Charts/PanaCharts/MilanNight";
@@ -21,15 +15,12 @@ import RajdhaniDay from "../../Charts/PanaCharts/RajdhaniDay";
 import RajdhaniNight from "../../Charts/PanaCharts/RajdhaniNight";
 
 import Kalyan from "../../Charts/PanaCharts/Kalyan";
-import KalyanNight from "../../Charts/PanaCharts/KalyanNight";
 
 import TimeBazar from "../../Charts/PanaCharts/TimeBazar";
 import MainBazar from "../../Charts/PanaCharts/MainBazar";
 
 import ShreeDevi from "../../Charts/PanaCharts/ShreeDevi";
 import ShreeDeviNight from "../../Charts/PanaCharts/ShreeDeviNight";
-
-import SupremNight from "../../Charts/PanaCharts/SupremNight";
 
 import { GetAllCharts } from "../../Helpers/GetCharts";
 
@@ -67,105 +58,82 @@ const Pana_Chart = () => {
     <>
       <div id="scroll-up"></div>
       <Navbar />
-  
+
       <div className="container-fluid">
         <div className="row">
           <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header ">
-          <div className="pt-110  text-alignment" >
-        <h2 className="chart-header-font">
-          <strong className="color-dark-gray">
-            {location.state.title}
-          </strong>
-        </h2>
+            <div className="pt-110  text-alignment">
+              <h2 className="chart-header-font">
+                <strong className="color-dark-gray">
+                  {location.state.title}
+                </strong>
+              </h2>
 
-        <p>
-          {location.state.title} Pana Chart Satta Matka Record Old History
-          Historical Data Bracket Results Chart Online Live Book Digits Numbers
-        </p>
-      </div>
+              <p>
+                {location.state.title} Pana Chart Satta Matka Record Old History
+                Historical Data Bracket Results Chart Online Live Book Digits
+                Numbers
+              </p>
+            </div>
 
-   
-      <button className="btn-scroll my-3"     
-        onClick={handleClick}
-          id="scroll-down-button">
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            strokeWidth={0}
-            viewBox="0 0 512 512"
-            height={20}
-            width={20}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M348.3 295.6c-5-5.1-13.3-5.1-18.4-.1L269 356.2V124.9c0-7.1-5.8-12.9-13-12.9s-13 5.8-13 12.9v231.3l-60.9-60.8c-5.1-5-13.3-4.9-18.4.1-5 5.1-5 13.2.1 18.3l83 82.4c1.2 1.1 2.5 2 4.1 2.7 1.6.7 3.3 1 5 1 3.4 0 6.6-1.3 9.1-3.7l83-82.4c5.2-4.9 5.3-13.1.3-18.2z" />
-          </svg>
-          Go To Bottom
-        </button>
+            <button
+              className="btn-scroll my-3"
+              onClick={handleClick}
+              id="scroll-down-button"
+            >
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth={0}
+                viewBox="0 0 512 512"
+                height={20}
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M348.3 295.6c-5-5.1-13.3-5.1-18.4-.1L269 356.2V124.9c0-7.1-5.8-12.9-13-12.9s-13 5.8-13 12.9v231.3l-60.9-60.8c-5.1-5-13.3-4.9-18.4.1-5 5.1-5 13.2.1 18.3l83 82.4c1.2 1.1 2.5 2 4.1 2.7 1.6.7 3.3 1 5 1 3.4 0 6.6-1.3 9.1-3.7l83-82.4c5.2-4.9 5.3-13.1.3-18.2z" />
+              </svg>
+              Go To Bottom
+            </button>
           </div>
         </div>
       </div>
 
       <div className="container ">
         <div className="row justify-content-center">
-        <div className="p-0 text-center d-flex justify-content-center   col-xl-12 col-q-12 col-md-12 col-sm-12">
-    
-  
-          <div className="table-responsive  text-center col-xl-8 col-lg-12 col-md-12 col-sm-12">
-            {nameRejext(location.state.title) ===
-            nameRejext("SHREE MORNING") ? (
-              <ShreeMorning chartData={getData.data} />
-            ) :
-            nameRejext(location.state.title) ===
-            nameRejext("SHREE DAY") ? (
-              <ShreeDay chartData={getData.data} />
-            ) :
-             nameRejext(location.state.title) ===
-              nameRejext("SHREE NIGHT") ? (
-              <ShreeNight chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("MADHUR DAY") ? (
-              <MadhurDay chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("MADHUR NIGHT") ? (
-              <MadhurNight chartData={getData.data} />
-            ) : nameRejext(location.state.title) === nameRejext("MILAN DAY") ? (
-              <MilanDay chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("MILAN NIGHT") ? (
-              <MilanNight chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("RAJDHANI DAY") ? (
-              <RajdhaniDay chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("RAJDHANI NIGHT") ? (
-              <RajdhaniNight chartData={getData.data} />
-            ) : nameRejext(location.state.title) === nameRejext("KALYAN") ? (
-              <Kalyan chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("KALYAN NIGHT") ? (
-              <KalyanNight chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("TIME BAZAR") ? (
-              <TimeBazar chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("MAIN BAZAR") ? (
-              <MainBazar chartData={getData.data} />
-            ) : nameRejext(location.state.title) === nameRejext("SRIDEVI") ? (
-              <ShreeDevi chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("sridevinight") ? (
-              <ShreeDeviNight chartData={getData.data} />
-            ) : nameRejext(location.state.title) ===
-              nameRejext("supremenight") ? (
-              <SupremNight chartData={getData.data} />
-            ) : (
-              // :nameRejext("supremeday") ? (
-              //   <SupremNight chartData={getData.data} />
-              // )
-              ""
-            )}
+          <div className="p-0 text-center d-flex justify-content-center   col-xl-12 col-q-12 col-md-12 col-sm-12">
+            <div className="table-responsive  text-center col-xl-8 col-lg-12 col-md-12 col-sm-12">
+              {nameRejext(location.state.title) === nameRejext("MADHUR DAY") ? (
+                <MadhurDay chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("MILAN DAY") ? (
+                <MilanDay chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("MILAN NIGHT") ? (
+                <MilanNight chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("RAJDHANI DAY") ? (
+                <RajdhaniDay chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("RAJDHANI NIGHT") ? (
+                <RajdhaniNight chartData={getData.data} />
+              ) : nameRejext(location.state.title) === nameRejext("KALYAN") ? (
+                <Kalyan chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("TIME BAZAR") ? (
+                <TimeBazar chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("MAIN BAZAR") ? (
+                <MainBazar chartData={getData.data} />
+              ) : nameRejext(location.state.title) === nameRejext("SRIDEVI") ? (
+                <ShreeDevi chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("sridevinight") ? (
+                <ShreeDeviNight chartData={getData.data} />
+              ) : (
+                ""
+              )}
 
-<div className="row justify-content-start">
+              <div className="row justify-content-start">
                 <button
                   className=" btn  rounded-pill back-btn mt-2"
                   onClick={() => navigate(-1)}
@@ -174,9 +142,8 @@ const Pana_Chart = () => {
                   Back
                 </button>
               </div>
+            </div>
           </div>
-          </div>
-        
         </div>
       </div>
 
