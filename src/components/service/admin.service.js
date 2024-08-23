@@ -10,6 +10,7 @@ export async function GET_CONTACT(data, token) {
       data,
       {
         // headers: header(token),
+        'content-type': 'application/x-www-form-urlencoded',
         data: {},
       }
     );
