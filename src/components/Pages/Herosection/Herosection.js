@@ -54,7 +54,7 @@ const Section2 = () => {
                         <h1 className="h1-fw-700">With Confidence </h1>
                       </div>
                       {/* <div className="col-12 col-lg-6"> */}
-                      <div className="d-flex gap-3 mt-5 main-btn">
+                      {/* <div className="d-flex gap-3 mt-5 main-btn">
                         <button className="main-page-btn">
                           <a
                             href={`tel:+91${getData && getData.number}`}
@@ -69,7 +69,7 @@ const Section2 = () => {
                         </button>
                         <button className="main-page-btn">
                           <a
-                            // href="https://wa.me/+919819508829"
+                            
                             href={`https://wa.me/+91${
                               getData && getData.number
                             }`}
@@ -82,7 +82,7 @@ const Section2 = () => {
                             WhatsApp
                           </a>
                         </button>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -102,15 +102,15 @@ const Section2 = () => {
       </div>
       <div
         className="contact-container hero-section-container"
-        // style={{
-        //   maxWidth: "100%",
-        //   marginLeft: "auto",
-        //   marginRight: "auto",
-        //   paddingLeft: "calc(var(--bs-gutter-x)* .5)",
-        //   paddingRight: "calc(var(--bs-gutter-x)* .5)",
-        // }}
+        style={{
+          maxWidth: "100%",
+          marginLeft: "auto",
+          marginRight: "auto",
+          paddingLeft: "calc(var(--bs-gutter-x)* .5)",
+          paddingRight: "calc(var(--bs-gutter-x)* .5)",
+        }}
       >
-        {/* <div
+        <div
           className="row d-flex align-items-center p-3 p-lg-5 margin-bottom-0px"
   
         >
@@ -127,7 +127,7 @@ const Section2 = () => {
             <div className="d-flex justify-content-center align-items-center gap-3 contact-btn">
               <button className="contact-button">
                 <a
-                  href={`tel:${getData && getData.number}`}
+                  href={`tel:${ getData && getData.number}`}
                   className="text-decoration-none text-white"
                 >
                   <i className="fa fa-phone me-2" aria-hidden="true"></i>Call
@@ -149,7 +149,7 @@ const Section2 = () => {
               </button>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
