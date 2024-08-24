@@ -67,8 +67,7 @@ const Section2 = () => {
                             Call Now
                           </a>
                         </button>
-                        <button className="main-page-b
-                        tn">
+                        <button className="main-page-btn">
                           <a
                             // href="https://wa.me/+919819508829"
                             href={`https://wa.me/+91${
@@ -89,9 +88,15 @@ const Section2 = () => {
                           <h4 className="color-primary ">
                             Connect with phone call
                           </h4>
+                          <a
+                            href={`tel:+91${getData && getData.number}`}
+                            className="text-decoration-none main-btn-a"
+                          >
                           <h1 className="fw-bolder color-primary roboto-light font-size-2rem">
                             +91 {getData && getData.number}
                           </h1>
+                          </a>
+
                         </div>
                     </div>
                   </div>
