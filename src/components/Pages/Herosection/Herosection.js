@@ -67,7 +67,8 @@ const Section2 = () => {
                             Call Now
                           </a>
                         </button>
-                        <button className="main-page-btn">
+                        <button className="main-page-b
+                        tn">
                           <a
                             // href="https://wa.me/+919819508829"
                             href={`https://wa.me/+91${
