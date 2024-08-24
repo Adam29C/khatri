@@ -260,7 +260,7 @@ export const Ten = [
     { id: 200, value: "68", color: "black" },
     { id: 201, value: "45", color: "black" },
     { id: 202, value: "71", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 203, value: "23", color: "black" },
   ],
   
 ];
@@ -527,7 +527,7 @@ export const Eleven = [
     { id: 200, value: "32", color: "black" },
     { id: 201, value: "21", color: "black" },
     { id: 202, value: "19", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 203, value: "29", color: "black" },
   ],
   
 ];
@@ -794,7 +794,7 @@ export const Twelve = [
     { id: 200, value: "16", color: "black" },
     { id: 201, value: "57", color: "black" },
     { id: 202, value: "38", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 203, value: "13", color: "black" },
   ],
 
 ];
@@ -1061,7 +1061,7 @@ export const One = [
     { id: 200, value: "47", color: "black" },
     { id: 201, value: "69", color: "black" },
     { id: 202, value: "27", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 203, value: "56", color: "black" },
   ],
 ];
 
@@ -1326,7 +1326,7 @@ export const Two = [
     { id: 200, value: "25", color: "black" },
     { id: 201, value: "94", color: "black" },
     { id: 202, value: "64", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 203, value: "64", color: "black" },
   ],
 
 ];
@@ -1593,7 +1593,7 @@ export const Three = [
     { id: 200, value: "54", color: "black" },
     { id: 201, value: "82", color: "black" },
     { id: 202, value: "56", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 203, value: "16", color: "black" },
   ],
  
 ];
@@ -1858,8 +1858,8 @@ export const Four = [
     { id: 199, value: "66", color: "black" },
     { id: 200, value: "73", color: "black" },
     { id: 201, value: "34", color: "black" },
-    { id: 202, value: "**", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 202, value: "55", color: "black" },
+    { id: 203, value: "98", color: "black" },
   ],
   
 ];
@@ -2124,8 +2124,8 @@ export const Five = [
     { id: 199, value: "68", color: "black" },
     { id: 200, value: "55", color: "black" },
     { id: 201, value: "11", color: "black" },
-    { id: 202, value: "**", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 202, value: "74", color: "black" },
+    { id: 203, value: "88", color: "black" },
   ],
 
 ];
@@ -2409,8 +2409,8 @@ export const Six = [
     { id: 212, value: "20", color: "black" },
     { id: 213, value: "99", color: "black" },
     { id: 214, value: "53", color: "black" },
-    { id: 215, value: "**", color: "black" },
-    { id: 216, value: "**", color: "black" },
+    { id: 215, value: "12", color: "black" },
+    { id: 216, value: "43", color: "black" },
   ],
 
 ];
@@ -2676,8 +2676,8 @@ export const Seven = [
     { id: 199, value: "29", color: "black" },
     { id: 200, value: "91", color: "black" },
     { id: 201, value: "88", color: "black" },
-    { id: 202, value: "**", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 202, value: "98", color: "black" },
+    { id: 203, value: "54", color: "black" },
   ],
 
 ];
@@ -2952,8 +2952,8 @@ export const Eight = [
     { id: 206, value: "12", color: "black" },
     { id: 207, value: "23", color: "black" },
     { id: 208, value: "27", color: "black" },
-    { id: 209, value: "**", color: "black" },
-    { id: 210, value: "**", color: "black" },
+    { id: 209, value: "47", color: "black" },
+    { id: 210, value: "51", color: "black" },
   ],
  
 ];
@@ -3218,8 +3218,8 @@ export const Nine = [
     { id: 199, value: "18", color: "black" },
     { id: 200, value: "56", color: "black" },
     { id: 201, value: "66", color: "black" },
-    { id: 202, value: "**", color: "black" },
-    { id: 203, value: "**", color: "black" },
+    { id: 202, value: "43", color: "black" },
+    { id: 203, value: "62", color: "black" },
   ],
 
 ];

@@ -286,7 +286,7 @@ export const ShreeDevi = [
     { id: 207, value: "83", color: "black" },
     { id: 208, value: "08", color: "black" },
     { id: 209, value: "82", color: "black" },
-    { id: 210, value: "**", color: "black" },
+    { id: 210, value: "48", color: "black" },
   ],
 ];
 
@@ -931,24 +931,7 @@ export const TimeBazar = [
     { id: 496, value: "84", color: "black" },
     { id: 497, value: "**", color: "black" },
   ],
-  // [
-  //   { id: 498, value: "6*", color: "black" },
-  //   { id: 499, value: "92", color: "black" },
-  //   { id: 500, value: "32", color: "black" },
-  //   { id: 501, value: "00", color: "black" },
-  //   { id: 502, value: "45", color: "black" },
-  //   { id: 503, value: "16", color: "black" },
-  //   { id: 504, value: "**", color: "black" },
-  // ],
-  // [
-  //   { id: 505, value: "25", color: "black" },
-  //   { id: 506, value: "93", color: "black" },
-  //   { id: 507, value: "**", color: "black" },
-  //   { id: 508, value: "**", color: "black" },
-  //   { id: 509, value: "**", color: "black" },
-  //   { id: 510, value: "**", color: "black" },
-  //   { id: 511, value: "**", color: "black" },
-  // ],
+ 
 ];
 
 //  Madhur Day
@@ -1600,7 +1583,7 @@ export const MadhurDay = [
     { id: 501, value: "81", color: "black" },
     { id: 502, value: "81", color: "black" },
     { id: 503, value: "63", color: "black" },
-    { id: 504, value: "**", color: "black" },
+    { id: 504, value: "80", color: "black" },
   ],
 ];
 
