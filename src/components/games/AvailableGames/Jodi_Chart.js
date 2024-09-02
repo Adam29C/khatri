@@ -7,6 +7,7 @@ import { nameRejext } from "../../Helpers/StringRejex";
 import { getWeekStartAndEndDates, fa_time } from "../../Helpers/getWeekDays";
 
 import MadhurDay from "../../Charts/JodiCharts/MadhurDay";
+import MadhurNight from "../../Charts/JodiCharts/MadhurNight";
 
 import MilanDay from "../../Charts/JodiCharts/MilanDay";
 import MilanNight from "../../Charts/JodiCharts/MilanNight";
@@ -104,6 +105,9 @@ const Pana_Chart = () => {
             <div className="table-responsive  text-center col-xl-8 col-lg-12 col-md-12 col-sm-12 ">
               {nameRejext(location.state.title) === nameRejext("MADHUR DAY") ? (
                 <MadhurDay chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("MADHUR NIGHT") ? (
+                <MadhurNight chartData={getData.data} />
               ) : nameRejext(location.state.title) ===
                 nameRejext("MILAN DAY") ? (
                 <MilanDay chartData={getData.data} />
