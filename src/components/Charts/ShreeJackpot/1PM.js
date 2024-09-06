@@ -1,5 +1,7 @@
 import React from "react";
-import { One } from "../ShreeJackpot/Chart.config";
+import { One  } from "../ShreeJackpot/Chart.config";
+import { redJodi } from "../JodiCharts/Chart.config";
+
 const ShreeDay = ({ chartData }) => {
   return (
     <div>
@@ -19,9 +21,15 @@ const ShreeDay = ({ chartData }) => {
           {One.map((group, groupIndex) => (
             <tr key={groupIndex}>
               {group.map((item) => (
-                <td className="cc">
+                <td >
                   <div className="kalyan-chart-number-black">
-                    <span className="cp">{item.value}</span>
+                    <span className={`cp ${
+                   redJodi
+                     .map((j) => parseInt(j))
+                     .includes(parseInt(item.value))
+                     ? "text-danger"
+                     : "text-dark"
+                 }`}>{item.value}</span>
                   </div>
                 </td>
               ))}
@@ -32,7 +40,13 @@ const ShreeDay = ({ chartData }) => {
             chartData.map((item1) => (
               <tr key={item1.id}>
                 {item1.data.map((nestedItem) => (
-                  <td key={nestedItem.id} className="cc">
+                  <td key={nestedItem.id} className={`cp ${
+                   redJodi
+                     .map((j) => parseInt(j))
+                     .includes(parseInt(item1.value))
+                     ? "text-danger"
+                     : "text-dark"
+                 }`}>
                     <div className="kalyan-chart-number-black">
                       <span className="cp">
                         {nestedItem.relatedData[0] &&

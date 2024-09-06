@@ -38,7 +38,7 @@ export function f_time(date) {
   return format(new Date(date), "yyyy-MM-dd");
 }
 export function fa_time(date) {
-  return format(new Date(date), "MM/dd/yyyy");
+  return format(new Date(date), "dd/MM/yyyy");
 }
 
 export function get_thre_digit_month(date) {

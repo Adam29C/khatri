@@ -27,6 +27,8 @@ import KalyanNight from "../../Charts/starLinePanaChart/11Am";
 
 import TimeBazar from "../../Charts/starLinePanaChart/9PM";
 import MainBazar from "../../Charts/starLinePanaChart/2PM";
+
+import AllStarline from "../../Charts/starLinePanaChart/AllStarline"
 import { GetAllCharts } from "../../Helpers/GetCharts";
 const Pana_Chart = () => {
   const navigate = useNavigate();
@@ -50,53 +52,56 @@ const Pana_Chart = () => {
   };
 
   const getResponseData = async () => {
-    const req = nameRejext(location.state.title);
-    const res = await GetAllCharts(GET_ALL_STARLINE_GAME_PANA_CHART, req);
-    setgetData(res);
 
-    if (res.status) {
-      const convertedData = {
-        data: [],
-      };
-
-      res.data.forEach((weekData) => {
-        const resultDates = weekData.data.map(
-          (item) => new Date(item.resultDate)
-        );
-
-        const week = {
-          weekStartDay: getActualDateFormate(weekData.startDate),
-          weekEndDay: getActualDateFormate(weekData.endDate),
-          data: [],
-        };
-
-        let currentResultDate = "";
-        let relatedData = [];
-
-        weekData.data.forEach((item) => {
-          if (item.resultDate !== currentResultDate) {
-            if (currentResultDate !== "") {
-              week.data.push({
-                resultDate: currentResultDate,
-                relatedData: relatedData,
-              });
-            }
-            currentResultDate = item.resultDate;
-            relatedData = [];
-          }
-          relatedData.push(item);
-        });
-
-        week.data.push({
-          resultDate: currentResultDate,
-          relatedData: relatedData,
-        });
-
-        convertedData.data.push(week);
-      });
-
-      setgetData(convertedData);
+    if (location.state.title != "allratanstarline") {
+      const req = nameRejext(location.state.title);
+      const res = await GetAllCharts(GET_ALL_STARLINE_GAME_PANA_CHART, req);
+      setgetData(res);
     }
+
+    // if (res.status) {
+    //   const convertedData = {
+    //     data: [],
+    //   };
+
+    //   res.data.forEach((weekData) => {
+    //     const resultDates = weekData.data.map(
+    //       (item) => new Date(item.resultDate)
+    //     );
+
+    //     const week = {
+    //       weekStartDay: getActualDateFormate(weekData.startDate),
+    //       weekEndDay: getActualDateFormate(weekData.endDate),
+    //       data: [],
+    //     };
+
+    //     let currentResultDate = "";
+    //     let relatedData = [];
+
+    //     weekData.data.forEach((item) => {
+    //       if (item.resultDate !== currentResultDate) {
+    //         if (currentResultDate !== "") {
+    //           week.data.push({
+    //             resultDate: currentResultDate,
+    //             relatedData: relatedData,
+    //           });
+    //         }
+    //         currentResultDate = item.resultDate;
+    //         relatedData = [];
+    //       }
+    //       relatedData.push(item);
+    //     });
+
+    //     week.data.push({
+    //       resultDate: currentResultDate,
+    //       relatedData: relatedData,
+    //     });
+
+    //     convertedData.data.push(week);
+    //   });
+
+    //   setgetData(convertedData);
+    // }
   };
   useEffect(() => {
     getResponseData();
@@ -114,11 +119,11 @@ const Pana_Chart = () => {
               <h2 className="chart-header-font">
                 <strong style={{ color: "rgb(51, 51, 51)" }}>
                   Ratan Starline &nbsp;
-                  {location.state.title}&nbsp; Chart
+                  {location.state.title === 'allratanstarline' ? "" : location.state.title}&nbsp; Chart
                 </strong>
               </h2>
               <p>
-                {location.state.title}&nbsp; Pana Chart Satta Matka Record Old
+                {location.state.title === 'allratanstarline' ? "" : location.state.title}&nbsp; Pana Chart Satta Matka Record Old
                 History Historical Data Bracket Results Chart Online Live Book
                 Digits Numbers
               </p>
@@ -174,6 +179,8 @@ const Pana_Chart = () => {
                 <TimeBazar chartData={getData.data} />
               ) : nameRejext(location.state.title) === nameRejext("2:00PM") ? (
                 <MainBazar chartData={getData.data} />
+              ) : nameRejext(location.state.title) === nameRejext("allratanstarline") ? (
+                <AllStarline chartData={getData.data} />
               ) : (
                 ""
               )}

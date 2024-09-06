@@ -1,4 +1,5 @@
 import { Nine } from "./Chart.config";
+import { redJodi } from "../JodiCharts/Chart.config";
 const ShreeDevi = ({ chartData }) => {
   return (
     <div>
@@ -34,7 +35,7 @@ const ShreeDevi = ({ chartData }) => {
               ))}
             </tr>
           ))}
-          {chartData &&
+             {chartData &&
             chartData.map((item1) => (
               <tr key={item1.id}>
                 <td className="cc td-width-13">
@@ -44,26 +45,52 @@ const ShreeDevi = ({ chartData }) => {
                     <span className="result_date"> {item1.weekEndDay}</span>
                   </div>
                 </td>
-                {item1.data.map((nestedItem) => (
-                  <td key={nestedItem.id} className="cc">
-                    <div className="kalyan-chart-number-black">
-                      <span className="cp">
-                        {nestedItem.relatedData[0] &&
-                          nestedItem.relatedData[0].winningDigit}
-                      </span>
-                      <span className="cp">
-                        {nestedItem.relatedData[0] &&
-                          nestedItem.relatedData[0].winningDigitFamily}
-                        {nestedItem.relatedData[1] &&
-                          nestedItem.relatedData[1].winningDigitFamily}
-                      </span>
-                      <span className="cp">
-                        {nestedItem.relatedData[1] &&
-                          nestedItem.relatedData[1].winningDigit}
-                      </span>
-                    </div>
-                  </td>
-                ))}
+                {item1.data.map((nestedItem) => {
+                  const value0 = nestedItem.relatedData[0]
+                    ? parseInt(nestedItem.relatedData[0].winningDigitFamily)
+                    : null;
+                  const value1 = nestedItem.relatedData[1]
+                    ? parseInt(nestedItem.relatedData[1].winningDigitFamily)
+                    : null;
+                  const combinedValue = `${value0}${value1}`;
+
+                  const isInRedJodi = redJodi
+                    .map((j) => parseInt(j))
+                    .includes(parseInt(combinedValue));
+
+                  return (
+                    <td key={nestedItem.id} className="cc">
+                      <div className="kalyan-chart-number-black">
+                        <span
+                          className={`cp ${
+                            isInRedJodi ? "text-danger" : "text-dark"
+                          }`}
+                        >
+                          {nestedItem.relatedData[0] &&
+                            nestedItem.relatedData[0].winningDigit}
+                        </span>
+                        <span
+                          className={`cp ${
+                            isInRedJodi ? "text-danger" : "text-dark"
+                          }`}
+                        >
+                          {nestedItem.relatedData[0] &&
+                            nestedItem.relatedData[0].winningDigitFamily}
+                          {nestedItem.relatedData[1] &&
+                            nestedItem.relatedData[1].winningDigitFamily}
+                        </span>
+                        <span
+                          className={`cp ${
+                            isInRedJodi ? "text-danger" : "text-dark"
+                          }`}
+                        >
+                          {nestedItem.relatedData[1] &&
+                            nestedItem.relatedData[1].winningDigit}
+                        </span>
+                      </div>
+                    </td>
+                  );
+                })}
               </tr>
             ))}
         </tbody>

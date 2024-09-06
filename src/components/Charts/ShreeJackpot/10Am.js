@@ -1,5 +1,7 @@
 import React from "react";
 import { Ten } from "../ShreeJackpot/Chart.config";
+import { redJodi } from "../JodiCharts/Chart.config";
+
 const ShreeDay = ({ chartData }) => {
   return (
     <div>
@@ -19,9 +21,19 @@ const ShreeDay = ({ chartData }) => {
           {Ten.map((group, groupIndex) => (
             <tr key={groupIndex}>
               {group.map((item) => (
-                <td className="cc">
+                <td>
                   <div className="kalyan-chart-number-black">
-                    <span className="cp">{item.value}</span>
+                    <span
+                      className={`cp ${
+                        redJodi
+                          .map((j) => parseInt(j))
+                          .includes(parseInt(item.value))
+                          ? "text-danger"
+                          : "text-dark"
+                      }`}
+                    >
+                      {item.value}
+                    </span>
                   </div>
                 </td>
               ))}
@@ -32,9 +44,17 @@ const ShreeDay = ({ chartData }) => {
             chartData.map((item1) => (
               <tr key={item1.id}>
                 {item1.data.map((nestedItem) => (
-                  <td key={nestedItem.id} className="cc">
+                  <td key={nestedItem.id}>
                     <div className="kalyan-chart-number-black">
-                      <span className="cp">
+                      <span
+                        className={`cp ${
+                          redJodi
+                            .map((j) => parseInt(j))
+                            .includes(parseInt(item1.value))
+                            ? "text-danger"
+                            : "text-dark"
+                        }`}
+                      >
                         {nestedItem.relatedData[0] &&
                           nestedItem.relatedData[0].winningDigit}
                       </span>

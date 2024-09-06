@@ -3,11 +3,7 @@ import { GET_JACKPOT_JODI_CHART } from "../../service/admin.service";
 import Navbar from "../../Pages/Navbar/Navbar";
 import { useNavigate, useLocation } from "react-router-dom";
 import Footer from "../../Pages/Footer/Footer";
-import {
-  getWeekStartAndEndDates,
-  getActualDateFormate,
-  fa_time,
-} from "../../Helpers/getWeekDays";
+
 import { nameRejext } from "../../Helpers/StringRejex";
 
 import ShreeDay from "../../Charts/ShreeJackpot/7PM";
@@ -27,10 +23,16 @@ import KalyanNight from "../../Charts/ShreeJackpot/11Am";
 
 import TimeBazar from "../../Charts/ShreeJackpot/9PM";
 import MainBazar from "../../Charts/ShreeJackpot/2PM";
+
 import { GetAllCharts } from "../../Helpers/GetCharts";
+import AllJackpot from "../../Charts/ShreeJackpot/AllJackpot";
 const Andar_Bahar_Chart = (props) => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  console.log('====================================');
+  console.log("location.state.title" ,location.state.title);
+  console.log('====================================');
 
   const [getData, setgetData] = useState([]);
 
@@ -50,53 +52,54 @@ const Andar_Bahar_Chart = (props) => {
   };
 
   const getResponseData = async () => {
-    const req = nameRejext(location.state.title);
-    const res = await GetAllCharts(GET_JACKPOT_JODI_CHART, req);
-    setgetData(res);
-
-    if (res.status) {
-      const convertedData = {
-        data: [],
-      };
-
-      res.data.forEach((weekData) => {
-        const resultDates = weekData.data.map(
-          (item) => new Date(item.resultDate)
-        );
-
-        const week = {
-          weekStartDay: getActualDateFormate(weekData.startDate),
-          weekEndDay: getActualDateFormate(weekData.endDate),
-          data: [],
-        };
-
-        let currentResultDate = "";
-        let relatedData = [];
-
-        weekData.data.forEach((item) => {
-          if (item.resultDate !== currentResultDate) {
-            if (currentResultDate !== "") {
-              week.data.push({
-                resultDate: currentResultDate,
-                relatedData: relatedData,
-              });
-            }
-            currentResultDate = item.resultDate;
-            relatedData = [];
-          }
-          relatedData.push(item);
-        });
-
-        week.data.push({
-          resultDate: currentResultDate,
-          relatedData: relatedData,
-        });
-
-        convertedData.data.push(week);
-      });
-
-      setgetData(convertedData);
+    if (location.state.title != "allratanjackpot") {
+      const req = nameRejext(location.state.title);
+      const res = await GetAllCharts(GET_JACKPOT_JODI_CHART, req);
+      setgetData(res);
     }
+    // if (res.status) {
+    //   const convertedData = {
+    //     data: [],
+    //   };
+
+    //   res.data.forEach((weekData) => {
+    //     const resultDates = weekData.data.map(
+    //       (item) => new Date(item.resultDate)
+    //     );
+
+    //     const week = {
+    //       weekStartDay: getActualDateFormate(weekData.startDate),
+    //       weekEndDay: getActualDateFormate(weekData.endDate),
+    //       data: [],
+    //     };
+
+    //     let currentResultDate = "";
+    //     let relatedData = [];
+
+    //     weekData.data.forEach((item) => {
+    //       if (item.resultDate !== currentResultDate) {
+    //         if (currentResultDate !== "") {
+    //           week.data.push({
+    //             resultDate: currentResultDate,
+    //             relatedData: relatedData,
+    //           });
+    //         }
+    //         currentResultDate = item.resultDate;
+    //         relatedData = [];
+    //       }
+    //       relatedData.push(item);
+    //     });
+
+    //     week.data.push({
+    //       resultDate: currentResultDate,
+    //       relatedData: relatedData,
+    //     });
+
+    //     convertedData.data.push(week);
+    //   });
+
+    //   setgetData(convertedData);
+    // }
   };
   useEffect(() => {
     getResponseData();
@@ -114,11 +117,11 @@ const Andar_Bahar_Chart = (props) => {
               <h2 className="chart-header-font">
                 <strong className="color-dark-gray ">
                   Ratan Jackpot &nbsp;
-                  {location.state.title}&nbsp; Chart
+                  {location.state.title === 'allratanjackpot' ? "" : location.state.title}&nbsp; Chart
                 </strong>
               </h2>
               <p>
-                {location.state.title}&nbsp; Pana Chart Satta Matka Record Old
+                {location.state.title === 'allratanjackpot' ? "" : location.state .title}&nbsp; Pana Chart Satta Matka Record Old
                 History Historical Data Bracket Results Chart Online Live Book
                 Digits Numbers
               </p>
@@ -174,9 +177,13 @@ const Andar_Bahar_Chart = (props) => {
                 <TimeBazar chartData={getData.data} />
               ) : nameRejext(location.state.title) === nameRejext("2:30PM") ? (
                 <MainBazar chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("allratanjackpot") ? (
+                <AllJackpot chartData={getData.data} />
               ) : (
                 ""
               )}
+
               <div className="row justify-content-start">
                 <button
                   className=" btn  rounded-pill back-btn mt-2"

@@ -1,8 +1,7 @@
-import { SRIDEVINIGHT } from "./Chart.config";
+import { KALYANNIGHT } from "./Chart.config";
 import { redJodi } from "../JodiCharts/Chart.config";
 
 const ShreeDevi = ({ chartData }) => {
-
   return (
     <div>
       <table className="table fw-bold" border="collapse">
@@ -19,7 +18,7 @@ const ShreeDevi = ({ chartData }) => {
           </tr>
         </thead>
         <tbody>
-          {Object.entries(SRIDEVINIGHT).map(([week, days], index) => (
+          {Object.entries(KALYANNIGHT).map(([week, days], index) => (
             <tr key={index}>
               <td className="cc td-width-13">
                 <div className="pana-chart-main">
@@ -70,7 +69,7 @@ const ShreeDevi = ({ chartData }) => {
               ))}
             </tr>
           ))}
-          {chartData &&
+           {chartData &&
             chartData.map((item1) => (
               <tr key={item1.id}>
                 <td className="cc td-width-13">

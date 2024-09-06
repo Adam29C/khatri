@@ -5,6 +5,9 @@ export const GetAllCharts = async (apiEndPOint, title) => {
   const req = nameRejext(title);
 
   const res = await apiEndPOint({ name: req });
+
+
+  
   if (res.status) {
     const convertedData = {
       data: [],
@@ -15,6 +18,8 @@ export const GetAllCharts = async (apiEndPOint, title) => {
     );
 
     res.data.forEach((weekData) => {
+
+
       const resultDates = aa.map((item) => new Date(item.resultDate));
 
       const week = {
@@ -26,6 +31,8 @@ export const GetAllCharts = async (apiEndPOint, title) => {
       let currentResultDate = "";
       let relatedData = [];
 
+
+  console.log("weekData" ,weekData);
 
       
       weekData.data.forEach((item) => {

@@ -16,12 +16,15 @@ import RajdhaniDay from "../../Charts/JodiCharts/RajdhaniDay";
 import RajdhaniNight from "../../Charts/JodiCharts/RajdhaniNight";
 
 import Kalyan from "../../Charts/JodiCharts/Kalyan";
+import KalyanNight from "../../Charts/JodiCharts/KalyanNight";
 
 import TimeBazar from "../../Charts/JodiCharts/TimeBazar";
 import MainBazar from "../../Charts/JodiCharts/MainBazar";
 
 import ShreeDevi from "../../Charts/JodiCharts/ShreeDevi";
 import ShreeDeviNight from "../../Charts/JodiCharts/ShreeDeviNight";
+
+
 
 import { GetAllCharts } from "../../Helpers/GetCharts";
 
@@ -122,6 +125,9 @@ const Pana_Chart = () => {
                 <RajdhaniNight chartData={getData.data} />
               ) : nameRejext(location.state.title) === nameRejext("KALYAN") ? (
                 <Kalyan chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("KALYAN night") ? (
+                <KalyanNight chartData={getData.data} />
               ) : nameRejext(location.state.title) ===
                 nameRejext("TIME BAZAR") ? (
                 <TimeBazar chartData={getData.data} />

@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "../assets/css/Section4.css";
 import { Link } from "react-router-dom";
-// import Charts from "./Charts";
-// import Footer from "./Footer"
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Table from "react-bootstrap/Table";
 import { GET_ALL_GAMES } from "../service/admin.service";
 import star from "../../images/Star-Icon.svg";
-//
 import { downloadAPK } from "../Helpers/DownloadAPK";
 
 const Section4 = ({ GameData, title, showPana }) => {

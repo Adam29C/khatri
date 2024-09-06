@@ -8,6 +8,8 @@ const StartLine = () => {
   const [getData, setgetData] = useState([]);
   const [AppUrl, setAppUrl] = useState("");
   const getResponseData = async () => {
+
+    
     const res = await GET_ALL_JACKPOT_GAME();
     if (res.status) {
       setgetData(res.data);
@@ -244,79 +246,9 @@ const StartLine = () => {
           </div>
         </div>
 
-        {/* <Modal show={show} centered onHide={handleClose} size="lg">
-          <Modal.Header closeButton>
-            <Modal.Title>{RowData.title} 05:30 PM</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Table striped>
-              <thead className="text-center bg-primary">
-                <tr>
-                  <th>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i> Open Bid
-                    Time
-                  </th>
-                  <th>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i> Close Bid
-                    Time
-                  </th>
-                  <th>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i> Open Bit
-                    Result Time
-                  </th>
-                  <th>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i> Close Bit
-                    Result Time
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="text-center">
-                <tr>
-                  <td>{ModalData.OBT}</td>
-                  <td>{ModalData.CBT}</td>
-                  <td>{ModalData.OBRT}</td>
-                  <td>{ModalData.CBRT}</td>
-                </tr>
-              </tbody>
-            </Table>
-          </Modal.Body>
-        </Modal> */}
       </div>
     </div>
   );
 };
 
 export default StartLine;
-
-// import { useState, useEffect } from "react";
-// import { GET_ALL_JACKPOT_GAME } from "../../service/admin.service";
-// import ReusableCard from "../ReusableCard";
-
-// const AvailableGames = () => {
-//   // const [ModalData, setModalData] = useState([]);
-//   const [AppUrl, setAppUrl] = useState("");
-//   const [getData, setgetData] = useState([]);
-
-//   const getResponseData = async () => {
-//     const res = await GET_ALL_JACKPOT_GAME();
-
-//     if (res.status) {
-//       setgetData(res.data);
-//       setAppUrl(res.appInfo);
-//     }
-//   };
-//   useEffect(() => {
-//     getResponseData();
-//   }, []);
-//   return (
-//     <div>
-//       <ReusableCard
-//         GameData={getData}
-//         title={"SHREE JACKPOT"}
-//         showPana={false}
-//       />
-//     </div>
-//   );
-// };
-
-// export default AvailableGames;

@@ -4,7 +4,9 @@ import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { GET_ALL_GAMESLIST } from "../../service/admin.service";
 import infinity from "../../../images/infinit.svg";
-const Charts_Container = ({ title, data, link , responsive_Class }) => {
+const Charts_Container = ({ title, data, link, responsive_Class }) => {
+  console.log("title", title);
+
   //   const [getData, setgetData] = useState([]);
 
   //   console.log("getData" ,getData);
@@ -32,79 +34,57 @@ const Charts_Container = ({ title, data, link , responsive_Class }) => {
 
   return (
     <>
-      {/* <div className="container">
-        <div className="row"> */}
-          <div className={responsive_Class}>
-            <div className="shadow card rounded-3 border-0 timetable">
-              <div className="card-body">
-                <h3 className="ms-2 fw-bold pt-2 pb-4">    {title}</h3>
-                <div>
-                  {data &&
-                    data?.map((data1, index) => (
-                      <>
-                        <div className=" d-flex align-items-center ">
-                          <img src={infinity} alt="" className="mx-2 img-hover-rotate " />
-                          <h4
-                           className="mx-4"
-                          >
-                            <Link
-                              to={Details(link, data1.providerName)}
-                              state={{ title: data1.providerName }}
-                              className="text-decoration-none primary-color"
-                            >
-                              {data1.providerName.toUpperCase()}
-                            </Link>
-                          </h4>
-                       
-                        </div>
-                        <hr />
-                      </>
-                    ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        
-        {/* </div>
-      </div> */}
-
-      {/* <main
-        className="container"
-        style={{ padding: "0px 10px", marginBottom: "40px" }}
-      >
-        <h2
-          className="h2 mb-20 text-decoration-underline"
-          style={{
-            textAlign: "center",
-            lineHeight: "1.3",
-            fontWeight: "600",
-            marginBottom: "20px",
-          }}
-        >
-          {title}
-        </h2>
-        <section>
-          <div className="col-xl-6 col-md-6 ">
-            {data &&
-              data.map((data1, index) => (
-                <div className="shadow card rounded border-0 timetable">
-                  <div className="card-body" style={{ textAlign: "center" }}>
-                    <a
-                      className="chart-link"
-                      style={{
-                        transition: "all 0.3s ease 0s",
-                        textDecoration: "none",
-                        color: "#191d3b",
-                      }}
-                    >
-                      <h4
-                        style={{
-                          fontWeight: "500",
-                          color: "rgb(34, , 34)",
-                          borderLeft: "4px solid #191d3b ",
-                          margin: "0px",
+      <div className={responsive_Class}>
+        <div className="shadow card rounded-3 border-0 timetable">
+          <div className="card-body">
+            <h3 className="ms-2 fw-bold pt-2 pb-4"> {title}</h3>
+            <div>
+              {title === "Ratan Starline" || title === "Ratan Jackpot" ? (
+                <>
+                  <div className=" d-flex align-items-center ">
+                    <img
+                      src={infinity}
+                      alt=""
+                      className="mx-2 img-hover-rotate "
+                    />
+                    <h4 className="mx-4">
+                      <Link
+                        to={
+                          title === "Ratan Starline"
+                            ? "/starline/allratanstarline"
+                            : "/andarbahar/allratanjackpot"
+                        }
+                        className="text-decoration-none primary-color"
+                        state={{
+                          title:
+                            title === "Ratan Starline"
+                              ? "allratanstarline"
+                              : "allratanjackpot",
                         }}
                       >
+                        {/* {data1.providerName.toUpperCase()} */}
+                        {title === "Ratan Starline"
+                          ? "ALL RATAN STARLINE CHART"
+                          : "ALL RATAN JACKPOT CHART"}
+                      </Link>
+                    </h4>
+                  </div>
+                  <hr />
+                </>
+              ) : (
+                ""
+              )}
+
+              {data &&
+                data?.map((data1, index) => (
+                  <>
+                    <div className=" d-flex align-items-center ">
+                      <img
+                        src={infinity}
+                        alt=""
+                        className="mx-2 img-hover-rotate "
+                      />
+                      <h4 className="mx-4">
                         <Link
                           to={Details(link, data1.providerName)}
                           state={{ title: data1.providerName }}
@@ -113,13 +93,14 @@ const Charts_Container = ({ title, data, link , responsive_Class }) => {
                           {data1.providerName.toUpperCase()}
                         </Link>
                       </h4>
-                    </a>
-                  </div>
-                </div>
-              ))}
+                    </div>
+                    <hr />
+                  </>
+                ))}
+            </div>
           </div>
-        </section>
-      </main> */}
+        </div>
+      </div>
     </>
   );
 };
