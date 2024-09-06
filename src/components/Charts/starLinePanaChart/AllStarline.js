@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AllSingleDayChart } from "./Chart.config";
-import { redJodi } from "../JodiCharts/Chart.config";
+import { redPana } from "../JodiCharts/Chart.config";
 import { useNavigate, useLocation } from "react-router-dom";
 import { GET_ALL_STARLINE_PANA_CHART } from "../../service/admin.service";
 
@@ -40,7 +40,7 @@ const AllJackpot = ({}) => {
         </thead>
         <tbody>
       
-          {Object.entries(AllSingleDayChart).map(([week, days], index) => (
+          {/* {Object.entries(AllSingleDayChart).map(([week, days], index) => (
             <tr key={index}>
               <td className="cc td-width-13">
                 <div className="pana-chart-main">
@@ -50,13 +50,14 @@ const AllJackpot = ({}) => {
 
               {Object.entries(days).map(([day, values], id) => (
                 <td key={id} className="cc">
+{                  console.log("values" ,values)}
                   <div className="kalyan-chart-number-black">
                     <div className="kalyan-chart-number-black">
                       <span
                         className={`cp ${
-                          redJodi
+                          redPana
                             .map((j) => parseInt(j))
-                            .includes(parseInt(values[1]))
+                            .includes(parseInt(values[0]))
                             ? "text-danger"
                             : "text-dark"
                         }`}
@@ -65,9 +66,9 @@ const AllJackpot = ({}) => {
                       </span>
                       <span
                         className={`cp ${
-                          redJodi
+                          redPana
                             .map((j) => parseInt(j))
-                            .includes(parseInt(values[1]))
+                            .includes(parseInt(values[0]))
                             ? "text-danger"
                             : "text-dark"
                         }`}
@@ -79,7 +80,7 @@ const AllJackpot = ({}) => {
                 </td>
               ))}
             </tr>
-          ))}
+          ))} */}
           {chartData.data &&
             chartData.data.map((item1) => (
               <tr key={item1.id}>
@@ -89,7 +90,7 @@ const AllJackpot = ({}) => {
                   </div>
                 </td>
                 {item1.results.map((nestedItem) => {
-                  const isInRedJodi = redJodi
+                  const isInRedJodi = redPana
                     .map((j) => parseInt(j))
                     .includes(parseInt(nestedItem.winningDigitFamily));
 

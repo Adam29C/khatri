@@ -38,7 +38,7 @@ const ShreeDay = () => {
           </tr>
         </thead>
         <tbody>
-          {allJackpot.map((group, groupIndex) => (
+          {/* {allJackpot.map((group, groupIndex) => (
             <tr>
               {Object.entries(group).map(([day, values], id) => (
                 <>
@@ -51,7 +51,7 @@ const ShreeDay = () => {
                 </>
               ))}
             </tr>
-          ))}
+          ))} */}
           {chartData.data &&
             chartData.data.map((item1 , index) => (
               <tr key={item1}>
