@@ -39,48 +39,6 @@ const AllJackpot = ({}) => {
           </tr>
         </thead>
         <tbody>
-      
-          {/* {Object.entries(AllSingleDayChart).map(([week, days], index) => (
-            <tr key={index}>
-              <td className="cc td-width-13">
-                <div className="pana-chart-main">
-                  <span className="result_date">{week}</span>
-                </div>
-              </td>
-
-              {Object.entries(days).map(([day, values], id) => (
-                <td key={id} className="cc">
-{                  console.log("values" ,values)}
-                  <div className="kalyan-chart-number-black">
-                    <div className="kalyan-chart-number-black">
-                      <span
-                        className={`cp ${
-                          redPana
-                            .map((j) => parseInt(j))
-                            .includes(parseInt(values[0]))
-                            ? "text-danger"
-                            : "text-dark"
-                        }`}
-                      >
-                        {values[0]}
-                      </span>
-                      <span
-                        className={`cp ${
-                          redPana
-                            .map((j) => parseInt(j))
-                            .includes(parseInt(values[0]))
-                            ? "text-danger"
-                            : "text-dark"
-                        }`}
-                      >
-                        {values[1]}
-                      </span>
-                    </div>
-                  </div>
-                </td>
-              ))}
-            </tr>
-          ))} */}
           {chartData.data &&
             chartData.data.map((item1) => (
               <tr key={item1.id}>
@@ -93,8 +51,6 @@ const AllJackpot = ({}) => {
                   const isInRedJodi = redPana
                     .map((j) => parseInt(j))
                     .includes(parseInt(nestedItem.winningDigit));
-// console.log("isInRedJodi" ,nestedItem.winningDigitFamily);
-
                   return (
                     <td key={nestedItem.id} className="cc">
                       <div className="kalyan-chart-number-black">

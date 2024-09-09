@@ -23,16 +23,16 @@ const ShreeDay = ({ chartData }) => {
             <tr key={groupIndex}>
               {group.map((item) => (
                 <td
-                  className={`cp ${
+                  
+                >
+                  <div className="kalyan-chart-number-black">
+                    <span className={`cp ${
                     redJodi
                       .map((j) => parseInt(j))
                       .includes(parseInt(item.value))
                       ? "text-danger"
                       : "text-dark"
-                  }`}
-                >
-                  <div className="kalyan-chart-number-black">
-                    <span className="cp">{item.value}</span>
+                  }`}>{item.value}</span>
                   </div>
                 </td>
               ))}
@@ -45,16 +45,16 @@ const ShreeDay = ({ chartData }) => {
                 {item1.data.map((nestedItem) => (
                   <td
                     key={nestedItem.id}
-                    className={`cp ${
+                    
+                  >
+                    <div className="kalyan-chart-number-black">
+                      <span className={`cp ${
                       redJodi
                         .map((j) => parseInt(j))
                         .includes(parseInt(item1.value))
                         ? "text-danger"
                         : "text-dark"
-                    }`}
-                  >
-                    <div className="kalyan-chart-number-black">
-                      <span className="cp">
+                    }`}>
                         {nestedItem.relatedData[0] &&
                           nestedItem.relatedData[0].winningDigitFamily}
                         {nestedItem.relatedData[1] &&

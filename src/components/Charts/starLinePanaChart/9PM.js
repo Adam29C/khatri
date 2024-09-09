@@ -1,5 +1,5 @@
 import { Nine } from "./Chart.config";
-import { redJodi } from "../JodiCharts/Chart.config";
+import { redPana } from "../JodiCharts/Chart.config";
 const ShreeDevi = ({ chartData }) => {
   return (
     <div>
@@ -17,7 +17,7 @@ const ShreeDevi = ({ chartData }) => {
           </tr>
         </thead>
         <tbody>
-          {Object.entries(Nine).map(([week, days], index) => (
+        {Object.entries(Nine).map(([week, days], index) => (
             <tr key={index}>
               <td className="cc td-width-13">
                 <div className="pana-chart-main">
@@ -28,14 +28,36 @@ const ShreeDevi = ({ chartData }) => {
               {Object.entries(days).map(([day, values], id) => (
                 <td key={id} className="cc">
                   <div className="kalyan-chart-number-black">
-                    <span className="cp">{values[0]}</span>
-                    <span className="cp">{values[1]}</span>
+                    <div className="kalyan-chart-number-black">
+                      <span
+                        className={`cp ${
+                          redPana
+                            .map((j) => parseInt(j))
+                            .includes(parseInt(values[0]))
+                            ? "text-danger"
+                            : "text-dark"
+                        }`}
+                      >
+                        {values[0]}
+                      </span>
+                      <span
+                        className={`cp ${
+                          redPana
+                            .map((j) => parseInt(j))
+                            .includes(parseInt(values[0]))
+                            ? "text-danger"
+                            : "text-dark"
+                        }`}
+                      >
+                        {values[1]}
+                      </span>
+                    </div>
                   </div>
                 </td>
               ))}
             </tr>
           ))}
-             {chartData &&
+              {chartData &&
             chartData.map((item1) => (
               <tr key={item1.id}>
                 <td className="cc td-width-13">
@@ -47,14 +69,14 @@ const ShreeDevi = ({ chartData }) => {
                 </td>
                 {item1.data.map((nestedItem) => {
                   const value0 = nestedItem.relatedData[0]
-                    ? parseInt(nestedItem.relatedData[0].winningDigitFamily)
+                    ? parseInt(nestedItem.relatedData[0].winningDigit)
                     : null;
                   const value1 = nestedItem.relatedData[1]
-                    ? parseInt(nestedItem.relatedData[1].winningDigitFamily)
+                    ? parseInt(nestedItem.relatedData[1].winningDigit)
                     : null;
                   const combinedValue = `${value0}${value1}`;
 
-                  const isInRedJodi = redJodi
+                  const isInRedJodi = redPana
                     .map((j) => parseInt(j))
                     .includes(parseInt(combinedValue));
 

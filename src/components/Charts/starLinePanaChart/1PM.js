@@ -1,5 +1,5 @@
 import { One } from "./Chart.config";
-import { redJodi } from "../JodiCharts/Chart.config";
+import { redPana } from "../JodiCharts/Chart.config";
 
 const ShreeDevi = ({ chartData }) => {
   return (
@@ -18,7 +18,7 @@ const ShreeDevi = ({ chartData }) => {
           </tr>
         </thead>
         <tbody>
-          {Object.entries(One).map(([week, days], index) => (
+        {Object.entries(One).map(([week, days], index) => (
             <tr key={index}>
               <td className="cc td-width-13">
                 <div className="pana-chart-main">
@@ -32,9 +32,9 @@ const ShreeDevi = ({ chartData }) => {
                     <div className="kalyan-chart-number-black">
                       <span
                         className={`cp ${
-                          redJodi
+                          redPana
                             .map((j) => parseInt(j))
-                            .includes(parseInt(values[1]))
+                            .includes(parseInt(values[0]))
                             ? "text-danger"
                             : "text-dark"
                         }`}
@@ -43,9 +43,9 @@ const ShreeDevi = ({ chartData }) => {
                       </span>
                       <span
                         className={`cp ${
-                          redJodi
+                          redPana
                             .map((j) => parseInt(j))
-                            .includes(parseInt(values[1]))
+                            .includes(parseInt(values[0]))
                             ? "text-danger"
                             : "text-dark"
                         }`}
@@ -58,7 +58,7 @@ const ShreeDevi = ({ chartData }) => {
               ))}
             </tr>
           ))}
-          {chartData &&
+              {chartData &&
             chartData.map((item1) => (
               <tr key={item1.id}>
                 <td className="cc td-width-13">
@@ -70,14 +70,14 @@ const ShreeDevi = ({ chartData }) => {
                 </td>
                 {item1.data.map((nestedItem) => {
                   const value0 = nestedItem.relatedData[0]
-                    ? parseInt(nestedItem.relatedData[0].winningDigitFamily)
+                    ? parseInt(nestedItem.relatedData[0].winningDigit)
                     : null;
                   const value1 = nestedItem.relatedData[1]
-                    ? parseInt(nestedItem.relatedData[1].winningDigitFamily)
+                    ? parseInt(nestedItem.relatedData[1].winningDigit)
                     : null;
                   const combinedValue = `${value0}${value1}`;
 
-                  const isInRedJodi = redJodi
+                  const isInRedJodi = redPana
                     .map((j) => parseInt(j))
                     .includes(parseInt(combinedValue));
 
