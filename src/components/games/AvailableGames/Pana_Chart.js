@@ -24,6 +24,8 @@ import MainBazar from "../../Charts/PanaCharts/MainBazar";
 import ShreeDevi from "../../Charts/PanaCharts/ShreeDevi";
 import ShreeDeviNight from "../../Charts/PanaCharts/ShreeDeviNight";
 
+import MayaMorning from "../../Charts/PanaCharts/MayaMorning";
+
 import { GetAllCharts } from "../../Helpers/GetCharts";
 
 const Pana_Chart = () => {
@@ -137,6 +139,9 @@ const Pana_Chart = () => {
               ) : nameRejext(location.state.title) ===
                 nameRejext("sridevinight") ? (
                 <ShreeDeviNight chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("MayaMorning") ? (
+                <MayaMorning chartData={getData.data} />
               ) : (
                 ""
               )}

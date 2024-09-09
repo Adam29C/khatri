@@ -24,7 +24,7 @@ import MainBazar from "../../Charts/JodiCharts/MainBazar";
 import ShreeDevi from "../../Charts/JodiCharts/ShreeDevi";
 import ShreeDeviNight from "../../Charts/JodiCharts/ShreeDeviNight";
 
-
+import MayaMorning from "../../Charts/JodiCharts/MayaMorning";
 
 import { GetAllCharts } from "../../Helpers/GetCharts";
 
@@ -139,6 +139,9 @@ const Pana_Chart = () => {
               ) : nameRejext(location.state.title) ===
                 nameRejext("sridevinight") ? (
                 <ShreeDeviNight chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("mayamorning") ? (
+                <MayaMorning chartData={getData.data} />
               ) : (
                 ""
               )}

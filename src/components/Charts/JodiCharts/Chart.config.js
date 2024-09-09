@@ -7973,6 +7973,11 @@ export const MainBazar = [
   ],
 ];
 
+// maya morning 
+
+export const MayaMorning = []
+
+
 export const redJodi = [
   "11",
   "16",

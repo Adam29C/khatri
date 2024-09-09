@@ -92,7 +92,8 @@ const AllJackpot = ({}) => {
                 {item1.results.map((nestedItem) => {
                   const isInRedJodi = redPana
                     .map((j) => parseInt(j))
-                    .includes(parseInt(nestedItem.winningDigitFamily));
+                    .includes(parseInt(nestedItem.winningDigit));
+// console.log("isInRedJodi" ,nestedItem.winningDigitFamily);
 
                   return (
                     <td key={nestedItem.id} className="cc">

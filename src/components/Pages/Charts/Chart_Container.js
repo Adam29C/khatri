@@ -5,18 +5,7 @@ import { Link } from "react-router-dom";
 import { GET_ALL_GAMESLIST } from "../../service/admin.service";
 import infinity from "../../../images/infinit.svg";
 const Charts_Container = ({ title, data, link, responsive_Class }) => {
-  console.log("title", title);
-
-  //   const [getData, setgetData] = useState([]);
-
-  //   console.log("getData" ,getData);
-  //   const getResponseData = async () => {
-  //     const res = await GET_ALL_GAMESLIST();
-  //     setgetData(res.data);
-  //   };
-  //   useEffect(() => {
-  //     getResponseData();
-  //   }, []);
+ 
 
   const Details = (route, name) => {
     if (route === "jodi") {

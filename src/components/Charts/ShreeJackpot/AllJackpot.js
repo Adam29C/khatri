@@ -64,7 +64,7 @@ const ShreeDay = () => {
                         className={`cp ${
                           redJodi
                             .map((j) => parseInt(j))
-                            .includes(parseInt(nestedItem.value))
+                            .includes(parseInt(nestedItem.winningDigit))
                             ? "text-danger"
                             : "text-dark"
                         }`}
