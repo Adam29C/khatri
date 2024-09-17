@@ -1,7 +1,8 @@
 import React from "react";
-import { Ten } from "./Chart.config";
-import { redJodi } from "../JodiCharts/Chart.config";
+import { MAYADAY } from "./Chart.config";
+import { redJodi } from "./Chart.config";
 
+// import { Data } from "../ShreeJackpot/Chart.config";
 const ShreeDay = ({ chartData }) => {
   return (
     <div>
@@ -18,7 +19,7 @@ const ShreeDay = ({ chartData }) => {
           </tr>
         </thead>
         <tbody>
-          {Ten.map((group, groupIndex) => (
+          {MAYADAY.map((group, groupIndex) => (
             <tr key={groupIndex}>
               {group.map((item) => (
                 <td>
@@ -56,7 +57,9 @@ const ShreeDay = ({ chartData }) => {
                         }`}
                       >
                         {nestedItem.relatedData[0] &&
-                          nestedItem.relatedData[0].winningDigit}
+                          nestedItem.relatedData[0].winningDigitFamily}
+                        {nestedItem.relatedData[1] &&
+                          nestedItem.relatedData[1].winningDigitFamily}
                       </span>
                     </div>
                   </td>

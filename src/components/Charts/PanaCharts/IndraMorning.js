@@ -1,4 +1,4 @@
-import { KALYANNIGHT } from "./Chart.config";
+import { INDRAMORNING } from "./Chart.config";
 import { redJodi } from "../JodiCharts/Chart.config";
 
 const ShreeDevi = ({ chartData }) => {
@@ -18,57 +18,56 @@ const ShreeDevi = ({ chartData }) => {
           </tr>
         </thead>
         <tbody>
-          {Object.entries(KALYANNIGHT).map(([week, days], index) => (
+          {Object.entries(INDRAMORNING).map(([week, days], index) => (
             <tr key={index}>
               <td className="cc td-width-13">
                 <div className="pana-chart-main">
                   <span className="result_date">{week}</span>
                 </div>
               </td>
+
               {Object.entries(days).map(([day, values], id) => (
                 <td key={id} className="cc">
                   <div className="kalyan-chart-number-black">
-                    <div className="kalyan-chart-number-black">
-                      <span
-                        className={`cp ${
-                          redJodi
-                            .map((j) => parseInt(j))
-                            .includes(parseInt(values[1]))
-                            ? "text-danger"
-                            : "text-dark"
-                        }`}
-                      >
-                        {values[0]}
-                      </span>
-                      <span
-                        className={`cp ${
-                          redJodi
-                            .map((j) => parseInt(j))
-                            .includes(parseInt(values[1]))
-                            ? "text-danger"
-                            : "text-dark"
-                        }`}
-                      >
-                        {values[1]}
-                      </span>
-                      <span
-                        className={`cp ${
-                          redJodi
-                            .map((j) => parseInt(j))
-                            .includes(parseInt(values[1]))
-                            ? "text-danger"
-                            : "text-dark"
-                        }`}
-                      >
-                        {values[2]}
-                      </span>
-                    </div>
+                    <span
+                      className={`cp ${
+                        redJodi
+                          .map((j) => parseInt(j))
+                          .includes(parseInt(values[1]))
+                          ? "text-danger"
+                          : "text-dark"
+                      }`}
+                    >
+                      {values[0]}
+                    </span>
+                    <span
+                      className={`cp ${
+                        redJodi
+                          .map((j) => parseInt(j))
+                          .includes(parseInt(values[1]))
+                          ? "text-danger"
+                          : "text-dark"
+                      }`}
+                    >
+                      {values[1]}
+                    </span>
+                    <span
+                      className={`cp ${
+                        redJodi
+                          .map((j) => parseInt(j))
+                          .includes(parseInt(values[1]))
+                          ? "text-danger"
+                          : "text-dark"
+                      }`}
+                    >
+                      {values[2]}
+                    </span>
                   </div>
                 </td>
               ))}
             </tr>
           ))}
-           {chartData &&
+          {chartData &&
             chartData.map((item1) => (
               <tr key={item1.id}>
                 <td className="cc td-width-13">

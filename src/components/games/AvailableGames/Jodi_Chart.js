@@ -26,6 +26,12 @@ import ShreeDeviNight from "../../Charts/JodiCharts/ShreeDeviNight";
 
 import MayaMorning from "../../Charts/JodiCharts/MayaMorning";
 
+import INDRADAY from "../../Charts/JodiCharts/INDRADAY";
+import INDRAMORNING from "../../Charts/JodiCharts/INDRAMORNING";
+import INDRANIGHT from "../../Charts/JodiCharts/INDRANIGHT";
+import MAYADAY from "../../Charts/JodiCharts/MAYADAY";
+import MAYANIGHT from "../../Charts/JodiCharts/MAYANIGHT";
+
 import { GetAllCharts } from "../../Helpers/GetCharts";
 
 const Pana_Chart = () => {
@@ -142,7 +148,22 @@ const Pana_Chart = () => {
               ) : nameRejext(location.state.title) ===
                 nameRejext("mayamorning") ? (
                 <MayaMorning chartData={getData.data} />
-              ) : (
+              ) : nameRejext(location.state.title) ===
+                nameRejext("MAYANIGHT") ? (
+                <MAYANIGHT chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("MAYADAY") ? (
+                <MAYADAY chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("INDRANIGHT") ? (
+                <INDRANIGHT chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("INDRAMORNING") ? (
+                <INDRAMORNING chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+              nameRejext("INDRADAY") ? (
+              <INDRADAY chartData={getData.data} />
+            ) : (
                 ""
               )}
 

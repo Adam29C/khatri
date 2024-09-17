@@ -26,6 +26,14 @@ import ShreeDeviNight from "../../Charts/PanaCharts/ShreeDeviNight";
 
 import MayaMorning from "../../Charts/PanaCharts/MayaMorning";
 
+import IndraMorning from "../../Charts/PanaCharts/IndraMorning";
+import INDRADAY from "../../Charts/PanaCharts/INDRADAY";
+import INDRANIGHT from "../../Charts/PanaCharts/INDRANIGHT";
+import MAYADAY from "../../Charts/PanaCharts/MAYADAY";
+import MAYANIGHT from "../../Charts/PanaCharts/MAYANIGHT";
+
+
+
 import { GetAllCharts } from "../../Helpers/GetCharts";
 
 const Pana_Chart = () => {
@@ -142,6 +150,20 @@ const Pana_Chart = () => {
               ) : nameRejext(location.state.title) ===
                 nameRejext("MayaMorning") ? (
                 <MayaMorning chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("IndraMorning") ? (
+                <IndraMorning chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("MAYANIGHT") ? (
+                <MAYANIGHT chartData={getData.data} />
+              ) : nameRejext(location.state.title) === nameRejext("MAYADAY") ? (
+                <MAYADAY chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("INDRANIGHT") ? (
+                <INDRANIGHT chartData={getData.data} />
+              )  : nameRejext(location.state.title) ===
+                nameRejext("INDRADAY") ? (
+                <INDRADAY chartData={getData.data} />
               ) : (
                 ""
               )}

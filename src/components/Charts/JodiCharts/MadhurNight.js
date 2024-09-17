@@ -1,6 +1,6 @@
 import React from "react";
 import { MadhurNight  } from "./Chart.config";
-import { redJodi } from "../JodiCharts/Chart.config";
+import { redJodi } from "./Chart.config";
 
 const ShreeDay = ({ chartData }) => {
   return (

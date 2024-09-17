@@ -7978,6 +7978,14 @@ export const MainBazar = [
 export const MayaMorning = []
 
 
+export const INDRAMORNING = [];
+export const INDRADAY = [];
+export const INDRANIGHT = [];
+export const MAYADAY = [];
+export const MAYANIGHT = [];
+
+
+
 export const redJodi = [
   "11",
   "16",

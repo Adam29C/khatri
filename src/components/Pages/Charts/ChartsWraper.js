@@ -6,10 +6,10 @@ import {
   GET_ALL_JACKPOT_GAME_CHART,
   GET_ALL_STARTLINE_GAMES_CHART,
 } from "../../service/admin.service";
-import Jodi_Chart from "../Charts/JodiChart";
-import Pana_Chart from "../Charts/PanaChart";
-import Shree_Jackpot from "../Charts/Shree_Jackpot";
-import Shree_Starline from "../Charts/Shree_Starline";
+import Jodi_Chart from "./JodiChart";
+import Pana_Chart from "./PanaChart";
+import Shree_Jackpot from "./Shree_Jackpot";
+import Shree_Starline from "./Shree_Starline";
 
 const Charts = () => {
   const [getChart, setgetChartData] = useState([]);

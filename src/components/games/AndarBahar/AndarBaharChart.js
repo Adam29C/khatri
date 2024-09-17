@@ -30,9 +30,6 @@ const Andar_Bahar_Chart = (props) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  console.log('====================================');
-  console.log("location.state.title" ,location.state.title);
-  console.log('====================================');
 
   const [getData, setgetData] = useState([]);
 

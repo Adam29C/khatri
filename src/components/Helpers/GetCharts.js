@@ -5,9 +5,6 @@ export const GetAllCharts = async (apiEndPOint, title) => {
   const req = nameRejext(title);
 
   const res = await apiEndPOint({ name: req });
-
-
-  
   if (res.status) {
     const convertedData = {
       data: [],
@@ -16,10 +13,7 @@ export const GetAllCharts = async (apiEndPOint, title) => {
     let aa = res.data.sort(
       (a, b) => new Date(a.startDate) - new Date(b.startDate)
     );
-
     res.data.forEach((weekData) => {
-
-
       const resultDates = aa.map((item) => new Date(item.resultDate));
 
       const week = {
@@ -30,10 +24,6 @@ export const GetAllCharts = async (apiEndPOint, title) => {
 
       let currentResultDate = "";
       let relatedData = [];
-
-
-  console.log("weekData" ,weekData);
-
       
       weekData.data.forEach((item) => {
         if (item.resultDate !== currentResultDate) {

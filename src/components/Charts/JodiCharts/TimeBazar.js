@@ -1,6 +1,6 @@
 import React from "react";
 import { TimeBazar } from "./Chart.config";
-import { redJodi } from "../JodiCharts/Chart.config";
+import { redJodi } from "./Chart.config";
 
 // import { Data } from "../ShreeJackpot/Chart.config";
 const ShreeDay = ({ chartData }) => {

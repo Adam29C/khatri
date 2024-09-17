@@ -1,5 +1,5 @@
 import React from "react";
-import { Eight  } from "../ShreeJackpot/Chart.config";
+import { Eight  } from "./Chart.config";
 import { redJodi } from "../JodiCharts/Chart.config";
 
 const ShreeDay = ({ chartData }) => {
