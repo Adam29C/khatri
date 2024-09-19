@@ -8017,8 +8017,8 @@ export const MayaMorning = [
     { id: 9, value: "11" },
     { id: 10, value: "65" },
     { id: 11, value: "20" },
-    { id: 12, value: "**" },
-    { id: 13, value: "**" },
+    { id: 12, value: "24" },
+    { id: 13, value: "12" },
     { id: 14, value: "88" },
   ],
   [
@@ -8079,9 +8079,9 @@ export const MayaMorning = [
     { id: 1, value: "28" },
     { id: 2, value: "89" },
     { id: 3, value: "20" },
-    { id: 4, value: "**" },
-    { id: 5, value: "**" },
-    { id: 6, value: "**" },
+    { id: 4, value: "28" },
+    { id: 5, value: "49" },
+    { id: 6, value: "93" },
     { id: 7, value: "76" },
   ],
   [
@@ -8124,7 +8124,7 @@ export const MayaMorning = [
     { id: 43, value: "41" },
     { id: 44, value: "91" },
     { id: 45, value: "33" },
-    { id: 46, value: "**" },
+    { id: 46, value: "91" },
     { id: 47, value: "96" },
     { id: 48, value: "66" },
     { id: 49, value: "93" },
@@ -8156,42 +8156,7 @@ export const MayaMorning = [
     { id: 69, value: "42" },
     { id: 70, value: "74" },
   ],
-  [
-    { id: 43, value: "41" },
-    { id: 44, value: "91" },
-    { id: 45, value: "33" },
-    { id: 46, value: "**" },
-    { id: 47, value: "96" },
-    { id: 48, value: "66" },
-    { id: 49, value: "07" },
-  ],
-  [
-    { id: 50, value: "98" },
-    { id: 51, value: "90" },
-    { id: 52, value: "53" },
-    { id: 53, value: "66" },
-    { id: 54, value: "08" },
-    { id: 55, value: "29" },
-    { id: 56, value: "**" },
-  ],
-  [
-    { id: 57, value: "73" },
-    { id: 58, value: "91" },
-    { id: 59, value: "68" },
-    { id: 60, value: "01" },
-    { id: 61, value: "71" },
-    { id: 62, value: "87" },
-    { id: 63, value: "**" },
-  ],
-  [
-    { id: 64, value: "46" },
-    { id: 65, value: "11" },
-    { id: 66, value: "72" },
-    { id: 67, value: "27" },
-    { id: 68, value: "26" },
-    { id: 69, value: "42" },
-    { id: 70, value: "**" },
-  ],
+  
   [
     { id: 1, value: "98" },
     { id: 2, value: "06" },
@@ -8199,7 +8164,7 @@ export const MayaMorning = [
     { id: 4, value: "83" },
     { id: 5, value: "57" },
     { id: 6, value: "87" },
-    { id: 7, value: "**" },
+    { id: 7, value: "68" },
   ],
   [
     { id: 1, value: "84" },
@@ -8208,7 +8173,7 @@ export const MayaMorning = [
     { id: 4, value: "53" },
     { id: 5, value: "97" },
     { id: 6, value: "60" },
-    { id: 7, value: "**" },
+    { id: 7, value: "09" },
   ],
   [
     { id: 1, value: "20" },
@@ -8217,7 +8182,7 @@ export const MayaMorning = [
     { id: 4, value: "65" },
     { id: 5, value: "48" },
     { id: 6, value: "10" },
-    { id: 7, value: "**" },
+    { id: 7, value: "83" },
   ],
   [
     { id: 1, value: "98" },
@@ -8226,7 +8191,7 @@ export const MayaMorning = [
     { id: 4, value: "83" },
     { id: 5, value: "57" },
     { id: 6, value: "87" },
-    { id: 7, value: "**" },
+    { id: 7, value: "80" },
   ],
   [
     { id: 1, value: "84" },
@@ -8235,7 +8200,7 @@ export const MayaMorning = [
     { id: 4, value: "53" },
     { id: 5, value: "97" },
     { id: 6, value: "60" },
-    { id: 7, value: "**" },
+    { id: 7, value: "66" },
   ],
   [
     { id: 1, value: "20" },
@@ -8244,7 +8209,7 @@ export const MayaMorning = [
     { id: 4, value: "65" },
     { id: 5, value: "48" },
     { id: 6, value: "10" },
-    { id: 7, value: "**" },
+    { id: 7, value: "80" },
   ],
   [
     { id: 1, value: "89" },
@@ -8253,7 +8218,7 @@ export const MayaMorning = [
     { id: 4, value: "57" },
     { id: 5, value: "34" },
     { id: 6, value: "12" },
-    { id: 7, value: "**" },
+    { id: 7, value: "83" },
   ],
   [
     { id: 1, value: "90" },
@@ -8262,7 +8227,7 @@ export const MayaMorning = [
     { id: 4, value: "68" },
     { id: 5, value: "33" },
     { id: 6, value: "18" },
-    { id: 7, value: "**" },
+    { id: 7, value: "66" },
   ],
   [
     { id: 1, value: "44" },
@@ -8271,7 +8236,7 @@ export const MayaMorning = [
     { id: 4, value: "90" },
     { id: 5, value: "40" },
     { id: 6, value: "55" },
-    { id: 7, value: "**" },
+    { id: 7, value: "90" },
   ],
 
   [
@@ -8281,7 +8246,7 @@ export const MayaMorning = [
     { id: 4, value: "77" },
     { id: 5, value: "23" },
     { id: 6, value: "39" },
-    { id: 7, value: "**" },
+    { id: 7, value: "90" },
   ],
   [
     { id: 1, value: "88" },
@@ -8290,7 +8255,7 @@ export const MayaMorning = [
     { id: 4, value: "33" },
     { id: 5, value: "64" },
     { id: 6, value: "90" },
-    { id: 7, value: "**" },
+    { id: 7, value: "53" },
   ],
   [
     { id: 1, value: "88" },
@@ -8299,7 +8264,7 @@ export const MayaMorning = [
     { id: 4, value: "41" },
     { id: 5, value: "90" },
     { id: 6, value: "55" },
-    { id: 7, value: "**" },
+    { id: 7, value: "90" },
   ],
   [
     { id: 1, value: "66" },
@@ -8308,7 +8273,7 @@ export const MayaMorning = [
     { id: 4, value: "15" },
     { id: 5, value: "34" },
     { id: 6, value: "58" },
-    { id: 7, value: "**" },
+    { id: 7, value: "06" },
   ],
   [
     { id: 1, value: "25" },
@@ -8317,7 +8282,7 @@ export const MayaMorning = [
     { id: 4, value: "03" },
     { id: 5, value: "02" },
     { id: 6, value: "09" },
-    { id: 7, value: "**" },
+    { id: 7, value: "14" },
   ],
   [
     { id: 1, value: "89" },
@@ -8326,7 +8291,7 @@ export const MayaMorning = [
     { id: 4, value: "75" },
     { id: 5, value: "52" },
     { id: 6, value: "11" },
-    { id: 7, value: "**" },
+    { id: 7, value: "64" },
   ],
   [
     { id: 1, value: "90" },
@@ -8335,7 +8300,7 @@ export const MayaMorning = [
     { id: 4, value: "14" },
     { id: 5, value: "22" },
     { id: 6, value: "99" },
-    { id: 7, value: "**" },
+    { id: 7, value: "33" },
   ],
   [
     { id: 1, value: "67" },
@@ -8344,7 +8309,7 @@ export const MayaMorning = [
     { id: 4, value: "27" },
     { id: 5, value: "90" },
     { id: 6, value: "29" },
-    { id: 7, value: "**" },
+    { id: 7, value: "67" },
   ],
   [
     { id: 1, value: "64" },
@@ -8353,7 +8318,7 @@ export const MayaMorning = [
     { id: 4, value: "47" },
     { id: 5, value: "55" },
     { id: 6, value: "68" },
-    { id: 7, value: "**" },
+    { id: 7, value: "67" },
   ],
 ];
 
