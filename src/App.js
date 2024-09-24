@@ -28,7 +28,6 @@ const App = () => {
         <Route path="/jodi-chart/:title/:Chart" element={<Jodi_Chart />} />
         <Route path="/terms-conditions" element={<TermsCondition />} />
         <Route path="/how-to-play" element={<AboutGames />} />
-        {/* <Route path="/about-us" element={<AboutUs />} /> */}
 
       </Routes>
     </Router>
