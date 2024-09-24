@@ -1,0 +1,1241 @@
+@media (max-width: 320px) {
+  .main-page-btn {
+    min-width: 120px;
+
+    padding: 0.2rem 1rem;
+  }
+  .mt-30px {
+    margin-top: 0px;
+  }
+  .title-text {
+    color: var(--color-primary);
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+  }
+
+  .main-title-text {
+    margin-top: -25px;
+    margin-left: 20px;
+  }
+
+  .second-card .chat-btn {
+    margin-top: 10px;
+    min-width: 100px;
+    padding: 0 0px !important;
+    font-size: 14px;
+  }
+
+  button.navbar-toggler.navbar-toggler-btn {
+    padding: 0px;
+  }
+
+  .Card_Size {
+    width: 100%;
+  }
+  .banner-text-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 15px;
+    gap: 5px;
+  }
+  .banner-text-section h1 {
+    font-size: 15px;
+    white-space: nowrap;
+    align-items: center;
+  }
+  .back-btn {
+    width: 130px;
+  }
+  .hzeyLF p {
+
+    line-height: 20px !important;
+
+
+}
+}
+
+@media (max-width: 375px) {
+  .gCDmxv {
+    padding: 0px;
+  }
+
+  .margin-img {
+    margin-top: 7px;
+  }
+  .footer-text {
+    line-height: 24px;
+  }
+  .footer-para-test {
+    padding: 0 0px;
+    margin-left: 20px;
+    text-align: justify;
+    line-height: 26px;
+  }
+  .footer-right-image {
+    display: flex;
+    margin: 24px 7px 0;
+  }
+
+  .footer-img-3 {
+    width: 100%;
+  }
+  .footer-image {
+    width: 50%;
+  }
+  .footer-container {
+    padding: 0;
+  }
+  .mt-30px {
+    margin-top: 0px;
+  }
+
+  .banner-text-section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  .chart-home-page {
+    background-image: url("/src/images/bhau-images/Banner\ Mobile.svg");
+    background-size: cover;
+    /* height: 90vh; */
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  .home-page {
+    background-image: url("/src/images/bhau-images/Banner\ Mobile.svg");
+    background-size: cover;
+    /* height: auto; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .header-content-main {
+    padding: 10px 10px 0px 10px;
+  }
+  .footer-para-test {
+    padding: 10px 0px 0px 0px;
+    text-align: justify;
+    line-height: 20px;
+  }
+  .footer-img-sec {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .f-size {
+    font-size: 15px;
+  }
+  .Card_Size {
+    width: 47%;
+  }
+
+  .sub_heading {
+    font-size: 1rem;
+  }
+  .heading {
+    font-size: 0.8rem;
+  }
+  .navbar-nav .nav-link.active {
+    color: black;
+  }
+
+  .nav-link,
+  .nav-link.active {
+    font-size: 1rem;
+    color: black;
+  }
+  .card {
+    width: 100%;
+  }
+  #navbarSupportedContent {
+    text-align: center;
+    padding: 0 10px 10px;
+    background: "#237F8A";
+    color: black;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+    width: 239px;
+    position: absolute;
+    right: 14px;
+    top: 68px;
+    border-radius: 12px;
+  }
+
+  #navbarSupportedContent {
+    background-color: #fff;
+  }
+
+  .download-btn button {
+    color: #f8fdfe;
+    background: none;
+    border-radius: 30px;
+    color: var(--color-primary);
+    padding: 8px 30px;
+    text-decoration: none;
+    border: 1px solid var(--color-primary);
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+
+  .banner-left {
+    margin: 0 0 3rem 0;
+  }
+
+  .table-responsive {
+    font-size: 10px;
+    width: 100%;
+  }
+  .gCDmxv {
+    padding: 0px 0px;
+  }
+
+  .footer-right-image {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner-container {
+    padding-bottom: 20px;
+  }
+  .hzeyLF {
+    margin-bottom: 15px;
+  }
+  .about-game-main {
+    padding: 25px 20px 0px 20px;
+  }
+  .hzeyLF p {
+    padding-bottom: 0px;
+  }
+  .terms-condition-main {
+    padding: 30px 10px 0px 10px;
+  }
+  .footer-btn-scroll-main {
+    margin-top: 30px;
+  }
+  .Card_Size {
+    width: 100%;
+  }
+  .chart-header {
+    padding: 20px;
+  }
+  #navbarSupportedContent {
+    z-index: 2;
+    padding: 20px;
+  }
+  .cKTdPD {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 430px) {
+  .banner-text-section h1 {
+    font-size: 21px;
+    white-space: nowrap;
+    align-items: center;
+  }
+
+  .banner-text-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 0px;
+    gap: 5px;
+  }
+}
+@media (min-width: 540px) and (max-width: 540px) {
+  .header-content-main {
+    padding: 20px 15px 0px 20px;
+  }
+  .logo_navbar {
+    width: 10rem;
+  }
+}
+@media (max-width: 450px) {
+  .logo_navbar {
+    width: 10rem;
+  }
+  .chart-home-page {
+    background-image: url("/src/images/bhau-images/Banner\ Mobile.svg") !important;
+    background-size: cover;
+    background-position: center;
+    /* height: 90vh; */
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  .home-page {
+    background-image: url("/src/images/bhau-images/Banner\ Mobile.svg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: auto; */
+    background: center;
+  }
+
+  .md-h1 {
+    text-align: center;
+    margin-left: 6rem;
+  }
+  .custom-card,
+  .second-card {
+    padding: 20px 20px 5px 20px;
+  }
+
+  .card-text-main h5 {
+    font-size: 13px;
+    margin-left: 0rem;
+  }
+  .card-text-main h3 {
+    font-size: 15px;
+  }
+  .card-text-main h6 {
+    font-size: 15px;
+  }
+  .second-card .chat-btn {
+    margin-top: 10px;
+    min-width: 100px;
+    padding: 0 0px !important;
+    font-size: 14px;
+  }
+  .card-text-main h4 {
+    font-size: 20px;
+    margin-left: 0rem;
+  }
+
+  .result__time {
+    padding: 0px;
+  }
+  .result__time span {
+    font-size: 13px;
+  }
+  .banner-text-section h1 {
+    font-size: 16px;
+    white-space: nowrap;
+    align-items: center;
+  }
+
+  .banner-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 0px;
+    gap: 5px;
+  }
+  .chart-header-table {
+    padding: 20px 0px 10px 0px;
+  }
+  .header-content-main {
+    padding: 20px 0px 0px 10px;
+  }
+  .chart-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 80px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .footer-container{
+    border-top-left-radius: 130px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+  .banner-left {
+    /* margin: 0;
+    padding: 20px 0px 0px 20px; */
+  }
+  .banner-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 0px;
+    gap: 5px;
+  }
+  .banner-text-section h1 {
+    font-size: 22px;
+    white-space: nowrap;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+  .banner-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 0px;
+    gap: 5px;
+  }
+  .banner-text-section h1 {
+    font-size: 30px;
+    white-space: nowrap;
+    align-items: center;
+  }
+  /* .header-content-main {
+    padding: 30px 30px 30px 30px;
+  } */
+}
+@media (max-width: 576px) {
+  .chart-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+  .ilkgnf {
+    font-size: clamp(1.8rem, 1.25366rem + 3.12195vw, 5rem);
+    font-weight: 700;
+    letter-spacing: -2px;
+    text-align: center;
+
+}
+  .hzeyLF p {
+    width: 100%;
+    padding-bottom: 0px;
+    line-height: 23px;
+    font-size: clamp(0.75rem, 0.673171rem + 0.439024vw, 1.2rem);
+
+}
+  .count-img {
+    width: 100% !important;
+    height: 30px;
+  }
+  .heading-sec-custom h1 {
+    font-size: 20px;
+  }
+
+  .main-contain-row {
+    margin-top: 0px;
+  }
+  .banner-img {
+    margin: 0px;
+    margin-top: -20px;
+  }
+  .banner-img {
+    border-radius: 30px;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    width: auto;
+    height: 15rem;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    aspect-ratio: auto 680 / 1394;
+  }
+  .line {
+    font-size: 20px;
+    display: inline-block;
+  }
+  .banner-left {
+    padding: 50px 0px 35px 0px;
+    margin: 0px 0;
+  }
+  .banner-text-section {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-contain-row {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo_navbar {
+    width: 11rem;
+  }
+  .table_Responsive {
+    display: flex;
+  }
+  .chart-home-page {
+    background-image: url("/src/images/bhau-images/tablet\ 768.svg");
+    background-size: cover;
+    /* height: 90vh; */
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  .home-page {
+    background-image: url("/src/images/bhau-images/tablet\ 768.svg");
+    background-size: cover;
+    /* height: auto; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .gCDmxv {
+    padding: 0px 100px;
+  }
+  .col-md-6 {
+    flex: 0 0 auto;
+  }
+
+  .second-card-top-sec {
+    width: 95%;
+  }
+
+  .card-text-main h5 {
+    font-size: 20px;
+    margin-left: 0rem;
+  }
+
+  .second-card .chat-btn {
+    margin-top: 10px;
+  }
+
+  .result__time {
+    padding: 0px;
+  }
+  .result__time span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link:focus,
+  .nav-link:hover {
+    color: var(--color-black);
+  }
+
+  .chart-home-page {
+    background-image: url("/src/images/bhau-images/tablet\ 768.svg");
+    background-size: cover;
+    /* height: 90vh; */
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-repeat: no-repeat;
+  }
+  .home-page {
+    background-image: url("/src/images/bhau-images/tablet\ 768.svg");
+    background-size: cover;
+    /* height: auto; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .line {
+    font-size: 24px;
+    display: inline-block;
+  }
+  .contact-number-main {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-btn-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chart-header {
+    padding: 20px;
+  }
+  .Card_Size {
+    width: 32%;
+  }
+
+  .sub_heading {
+    font-size: 1.2rem;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+
+  .scroll-down-btn {
+    width: 100%;
+    padding: 10px 50px;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+  }
+  .cKTdPD {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    padding: 20px 0px;
+    width: 100%;
+  }
+  /* .chart-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  } */
+
+  #navbarSupportedContent {
+    padding: 20px;
+  }
+  .link-25 {
+    font-weight: 600;
+
+    padding-bottom: 10px;
+  }
+
+  .link-25:hover {
+    border-bottom-color: #888;
+    color: #555;
+    transition: border-bottom-color 0.3s, color 0.3s;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-number-main {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .contact-btn-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    justify-content: flex-end;
+  }
+  .table_Responsive {
+    display: flex;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-direction: row;
+  }
+  /* .header-content-main {
+    padding: 20px 50px 0px 50px;
+  } */
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .second-card .chat-btn {
+    margin-top: 10px;
+    min-width: 130px;
+    padding: 0 10px;
+  }
+  .second-card-top-sec {
+    width: 95%;
+  }
+
+  .card-text-main h5 {
+    font-size: 20px;
+    margin-left: 0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scroll-down-btn {
+    cursor: pointer;
+
+    padding: 10px 20px;
+    color: var(--color-black);
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out 0s;
+    background-color: var(--color-white);
+  }
+  .contact-number-main {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .contact-btn-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    justify-content: flex-end;
+  }
+  .banner-text-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chart-home-page {
+    background-image: url("/src/images/bhau-images/Herro\ Banner.svg");
+    background-size: cover;
+    height: 580px;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-repeat: no-repeat;
+    /* padding: 3px; */
+  }
+  .home-page {
+    background-image: url("/src/images/bhau-images/1024\ Size\ background.svg");
+    background-size: cover;
+    height: 580px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+  }
+  .header-content-main {
+    padding: 20px 50px 0px 50px;
+  }
+
+  .chart-header {
+    padding: 50px 50px;
+  }
+
+  .Card_Size {
+    width: 24%;
+  }
+
+  .sub_heading {
+    font-size: 1.2rem;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+
+  .responsive_Nav {
+    display: flex;
+  }
+
+  .footer-sub-container {
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .footer-contain {
+    width: 50%;
+  }
+
+  .terms-condition-contain h1 {
+    letter-spacing: 0px;
+  }
+
+  .gCDmxv {
+    padding: 10px 80px;
+  }
+  .footer-last-content {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .custome-nav {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-link:focus,
+  .nav-link:hover {
+    color: var(--color-white);
+  }
+
+  .ilkgnf {
+    letter-spacing: 0px;
+  }
+  .dROOdw {
+    padding: 10px 16px;
+  }
+
+  .cKTdPD li {
+    width: 50%;
+  }
+  .cKTdPD {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 414px) {
+  .banner-text-section h1 {
+    font-size: 15px;
+    white-space: nowrap;
+    align-items: center;
+  }
+}
+@media (min-width: 390px) and (max-width: 390px) {
+  .banner-text-section h1 {
+    font-size: 15px;
+    white-space: nowrap;
+    align-items: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .jgmYWX p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  .jgmYWX h1 {
+    padding-top: 25px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .jgmYWX span {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #eb5758;
+    color: white;
+    padding: 0px 10px 0px 10px !important;
+    margin-top: 30px;
+    border-radius: 25px;
+  }
+  .jgmYWX span svg {
+    width: 2rem;
+  }
+
+  .cKTdPD {
+    padding: 0px 0px;
+  }
+  .terms-condition-main {
+    padding: 40px 20px 0px 20px;
+  }
+  .terms-condition-contain h1 {
+    padding-top: 0px;
+  }
+
+  .kDBKpC {
+    padding-top: 10px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gCDmxv {
+    padding: 0px 10px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .gCDmxv {
+    padding: 0px 12px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 375px) {
+  .banner-text-section h1 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 425px) {
+  .header-content-main {
+    padding: 0px 0px 0px 10px;
+  }
+  .footer-img-sec img {
+    width: 100px;
+  }
+
+  .terms-condition-contain h1 {
+    padding-top: 0px;
+  }
+  .gCDmxv {
+    padding: 0px 10px !important;
+  }
+  .footer-btn-scroll-main {
+    margin-top: 0px;
+  }
+  .f-size {
+    font-size: 14px;
+  }
+  .header-container {
+    padding: 10px;
+  }
+
+  .cKTdPD li {
+    padding: 10px;
+  }
+  .banner-text-section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .banner-text-section h1 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 991px) {
+  .chart-header {
+    padding: 20px;
+  }
+  .table-responsive {
+    font-size: 10px;
+    width: 100%;
+  }
+  #navbarSupportedContent {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    color: black;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+    width: 239px;
+    position: absolute;
+    right: 14px;
+    top: 68px;
+    border-radius: 12px;
+    z-index: 2;
+  }
+  .nav-link {
+    color: black;
+  }
+
+  .download-btn button {
+    color: #f8fdfe;
+    background: none;
+    border-radius: 30px;
+    color: var(--color-primary);
+    padding: 8px 30px;
+    text-decoration: none;
+    border: 1px solid var(--color-primary);
+  }
+  .Card_Size {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .navbar-nav .nav-link:hover .shape {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards infinite;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  .about-game-main {
+    padding: 30px 50px 15px 50px;
+  }
+  .gCDmxv {
+    padding: 0px 50px;
+  }
+  .terms-condition-main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+
+  .header-container {
+    padding: 30px;
+  }
+
+  button.navbar-toggler.navbar-toggler-btn {
+    display: block;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    flex-basis: auto;
+  }
+  .navigation-links {
+    display: block;
+  }
+  .responsive_Nav {
+    display: flex;
+  }
+
+  #navbarSupportedContent {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    color: black;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+    width: 239px;
+    position: absolute;
+    right: 14px;
+    top: 68px;
+    border-radius: 12px;
+    z-index: 2;
+  }
+  .nav-link {
+    color: black;
+  }
+
+  .download-btn button {
+    margin-left: 5px;
+    padding: 5px 20px;
+  }
+
+  .banner-left {
+    margin: 0;
+    padding: 15px 0px 0px 20px;
+  }
+  .footer-para-test {
+    padding: 10px 0px;
+    text-align: justify;
+    line-height: 26px;
+  }
+
+  .footer-right-image {
+    display: flex;
+    margin: 23px 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-img-sec {
+    margin: 0px 20px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    padding-bottom: 10px;
+  }
+  .banner-text-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 15px;
+    gap: 5px;
+  }
+  .banner-text-section h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .display-5 {
+    font-size: 3rem;
+  }
+  .col-xl-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .table_Responsive {
+    display: flex;
+  }
+  .banner-left {
+    /* margin: 2rem 0; */
+  }
+  .responsive_Nav {
+    display: flex;
+  }
+
+  .Card_Size {
+    width: 24%;
+  }
+
+  .sub_heading {
+    font-size: 1.2rem;
+  }
+  .sub_heading {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1030px) {
+  .banner-img {
+    height: 20rem;
+  }
+  .banner-text-section h1 {
+    font-weight: 700;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .chart-container {
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .banner-left {
+    /* margin: 0rem 0; */
+    margin-top: 60px;
+  }
+  .footer-para-test {
+    padding: 17px 0px;
+    text-align: justify;
+    line-height: 26px;
+  }
+
+  .footer-right-image {
+    display: flex;
+    margin: 23px 40px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-img-sec {
+    margin: 0px 60px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+  }
+  .text-alignment {
+    text-align: center;
+  }
+  .footer-image {
+    margin-bottom: 20px;
+  }
+  .footer-img-3 {
+    margin-bottom: 25px;
+  }
+  .chart-header {
+    padding: 50px 130px;
+  }
+
+  .chart-header-font {
+    font-size: 50px;
+  }
+  .scroll-down-btn {
+    cursor: pointer;
+
+    padding: 10px 20px;
+    color: var(--color-black);
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out 0s;
+    background-color: var(--color-white);
+  }
+  .about-game-main {
+    padding: 50px 80px 100px 80px;
+  }
+}
+
+/* Medium screens: between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-font-size{
+    font-size: 20px;
+  }
+  .header-container {
+    padding: 20px 20px 0px 20px;
+  }
+  .banner-img {
+    height: 15rem;
+  }
+  .home-page,
+  .chart-home-page {
+    height: 500px; /* Adjust to 400px for medium screens */
+  }
+  .hzeyLF p {
+    width: 100%;
+    padding-bottom: 10px;
+    line-height: 25px;
+  }
+  .scroll-down-btn {
+    width: 100%;
+    padding: 10px 50px;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+  }
+  .content-center {
+    justify-content: center;
+  }
+  .count-img {
+    width: 100% !important;
+    height: 35px;
+  }
+}
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .home-page,
+  .chart-home-page {
+    height: 500px; 
+  }
+}
+
+
+@media (max-width: 424px) {
+  .home-page,
+  .chart-home-page {
+    height: 500px; 
+  }
+
+}

@@ -7,7 +7,6 @@ const HeaderSvg = () => {
     height="6"
     viewBox="0 0 37 6"
     fill="none"
-    xmlns="http://www.w3.org/2000/svg"
     class="sc-6fad5eaa-3 bCoDJi"
   >
     <path

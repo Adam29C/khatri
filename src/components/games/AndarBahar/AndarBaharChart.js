@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
 import { GET_JACKPOT_JODI_CHART } from "../../service/admin.service";
 import Navbar from "../../Pages/Navbar/Navbar";
-import { useNavigate, useLocation } from "react-router-dom";
 import Footer from "../../Pages/Footer/Footer";
 import {
-  getWeekStartAndEndDates,
   getActualDateFormate,
-  fa_time,
+
 } from "../../Helpers/getWeekDays";
 import { nameRejext } from "../../Helpers/StringRejex";
 
@@ -28,11 +25,12 @@ import KalyanNight from "../../Charts/ShreeJackpot/11Am";
 import TimeBazar from "../../Charts/ShreeJackpot/9PM";
 import MainBazar from "../../Charts/ShreeJackpot/2PM";
 import { GetAllCharts } from "../../Helpers/GetCharts";
+import { PagesIndex } from "../../Pages/PagesIndex";
 const Andar_Bahar_Chart = (props) => {
-  const navigate = useNavigate();
-  const location = useLocation();
+  const navigate = PagesIndex.useNavigate();
+  const location = PagesIndex.useLocation();
 
-  const [getData, setgetData] = useState([]);
+  const [getData, setgetData] = PagesIndex.useState([]);
 
   const handleClick = () => {
     const targetElement = document.getElementById("scroll-down");
@@ -98,56 +96,50 @@ const Andar_Bahar_Chart = (props) => {
       setgetData(convertedData);
     }
   };
-  useEffect(() => {
+  PagesIndex.useEffect(() => {
     getResponseData();
   }, []);
 
   return (
     <>
+        <div className="chart-home-page">
       <div id="scroll-up"></div>
-      <Navbar />
+     
+ <Navbar />
 
-      <div className="container-fluid">
+      <div className="container-fluid ">
         <div className="row">
-          <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header ">
+          <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header-table ">
             <div className="pt-110 text-alignment">
               <h2 className="chart-header-font">
-                <strong className="color-dark-gray ">
-                  Khatri Jackpot &nbsp;
+                <strong className="color-white">
+                Shree Jackpot &nbsp;
                   {location.state.title}&nbsp; Chart
                 </strong>
               </h2>
-              <p>
+              <p className="color-white">
                 {location.state.title}&nbsp; Pana Chart Satta Matka Record Old
                 History Historical Data Bracket Results Chart Online Live Book
                 Digits Numbers
               </p>
             </div>
-
+            <div className="d-flex alighn-item-center justify-content-center">
             <button
-              className="btn-scroll my-3"
+              className="scroll-btn my-3"
               onClick={handleClick}
               id="scroll-down-button"
             >
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth={0}
-                viewBox="0 0 512 512"
-                height={20}
-                width={20}
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M348.3 295.6c-5-5.1-13.3-5.1-18.4-.1L269 356.2V124.9c0-7.1-5.8-12.9-13-12.9s-13 5.8-13 12.9v231.3l-60.9-60.8c-5.1-5-13.3-4.9-18.4.1-5 5.1-5 13.2.1 18.3l83 82.4c1.2 1.1 2.5 2 4.1 2.7 1.6.7 3.3 1 5 1 3.4 0 6.6-1.3 9.1-3.7l83-82.4c5.2-4.9 5.3-13.1.3-18.2z" />
-              </svg>
-              Go To Bottom
+             
+              Scroll Down
             </button>
+          </div>
           </div>
         </div>
       </div>
 
+
       <div className="container ">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center ">
           <div className="p-0 text-center d-flex justify-content-center   col-xl-12 col-q-12 col-md-12 col-sm-12 ">
             <div className="table-responsive  text-center col-xl-8 col-lg-12 col-md-12 col-sm-12 ">
               {nameRejext(location.state.title) === nameRejext("7:30PM") ? (
@@ -177,15 +169,23 @@ const Andar_Bahar_Chart = (props) => {
               ) : (
                 ""
               )}
-              <div className="row justify-content-start">
+                    
+              {/* <div className="row justify-content-center mt-2 gap-4"> */}
                 <button
-                  className=" btn  rounded-pill back-btn mt-2"
+                  className=" btn  rounded-pill back-btn "
                   onClick={() => navigate(-1)}
                   id="scroll-down-button"
                 >
                   Back
                 </button>
-              </div>
+                <button
+              className=" btn rounded-pill back-btn "
+              onClick={handleClickUp}
+              id="scroll-down-button"
+            >
+              Scroll to Top
+            </button>
+              {/* </div> */}
             </div>
           </div>
         </div>
@@ -193,6 +193,7 @@ const Andar_Bahar_Chart = (props) => {
 
       <Footer />
       <div id="scroll-down"></div>
+      </div>
     </>
   );
 };

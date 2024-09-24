@@ -59,8 +59,6 @@ export const getActualDateFormate = (inputDateString) => {
   const year = inputDateString.substring(0, 4);
   const month = inputDateString.substring(5, 7);
   const day = inputDateString.substring(8, 10);
-
-  // Format the date in the desired format
   const formattedDate = `${month}/${day}/${year}`;
 
   return formattedDate;

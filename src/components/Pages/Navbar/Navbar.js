@@ -1,16 +1,15 @@
+
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
-import headerLog from "../../../images/khatri_new_logo.svg";
-import HeaderSvg from "../../Helpers/HeaderSvg";
+import headerLogo from "../../../images/bhau-images/Logo for green background.svg";
+
+
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const collapseRef = useRef(null);
 
-  
-  // const toggleNavbar = () => {
-  //   setIsCollapsed(!isCollapsed);
-  // };
+
 
   const handleClickOutside = (event) => {
     if (collapseRef.current && !collapseRef.current.contains(event.target)) {
@@ -44,7 +43,6 @@ const Navbar = () => {
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                {/* Conditionally render NavigationLinks and DownloadButton based on isCollapsed state */}
                 <div
                   className={`collapse navbar-collapse custome-nav  ${
                     isCollapsed ? "" : "show"
@@ -52,15 +50,14 @@ const Navbar = () => {
                   id="navbarSupportedContent"
                   ref={collapseRef}
                 >
-                  <div className="navigation-links">
-                    {/* <NavigationLinks /> */}
+                  <div className="navigation-links"></div>
+
+                  <div className="navigation-links ">
+                    <NavigationLinks />
                   </div>
 
-                  <div className="navigation-links responsive_Nav">
-                    <NavigationLinks />
-                    <div className="download-btn ">
-                      <DownloadButton />
-                    </div>
+                  <div className="download-btn ">
+                    <DownloadButton />
                   </div>
                 </div>
               </div>
@@ -74,51 +71,47 @@ const Navbar = () => {
 
 const Logo = () => {
   return (
-    <Link className="nav-link  active" aria-current="page" to="/">
+       <Link className="nav-link  active" aria-current="page" to="/">
       <img
         className="logo_navbar img-fluid"
-        src={headerLog}
+        src={headerLogo}
         alt="Logo"
-
-      />
+/>
     </Link>
   );
 };
 
 const NavigationLinks = () => {
   return (
-    <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+    <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-0">
       <li className="nav-item ">
-        <Link className="nav-link d-flex flex-column" aria-current="page" to="/">
+        <Link
+          className="nav-link link-25 d-flex flex-column"
+          aria-current="page"
+          to="/"
+        >
           Home
-      <HeaderSvg/>
-        </Link>
-     
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link d-flex flex-column" to="/about-us">
-        About Us
-        <HeaderSvg/>
+        
         </Link>
       </li>
+
       <li className="nav-item">
-        <Link className="nav-link d-flex flex-column" to="/charts">
+        <Link className="nav-link link-25 d-flex flex-column" to="/charts">
           Charts
-          <HeaderSvg/>
+          
         </Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link d-flex flex-column" to="/how-to-play">
+        <Link className="nav-link link-25 d-flex flex-column" to="/how-to-play">
           How To Play
-          <HeaderSvg/>
+         
         </Link>
       </li>
-    
+
       <li className="nav-item">
-        <Link className="nav-link d-flex flex-column" to="/terms-conditions">
+        <Link className="nav-link d-flex link-25 flex-column" to="/terms-conditions">
           Terms & Condition
-          <HeaderSvg/>
-        </Link>
+         </Link>
       </li>
     </ul>
   );
@@ -131,9 +124,8 @@ const download = async () => {
 const DownloadButton = () => {
   return (
     <button onClick={download}>
-      Get Free App <i className="fa fa-arrow-right" aria-hidden="true"></i>
+      Get Free App <i className="fa fa-arrow-right ms-2" aria-hidden="true"></i>
     </button>
   );
 };
-
 export default Navbar;

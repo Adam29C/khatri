@@ -1,36 +1,27 @@
 import React, { useEffect, useState } from "react";
-import "../assets/css/Section4.css";
 import { Link } from "react-router-dom";
-// import Charts from "./Charts";
-// import Footer from "./Footer"
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import cardImage from "../../images/bhau-images/card-top-image.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Table from "react-bootstrap/Table";
 import { GET_ALL_GAMES } from "../service/admin.service";
-import star from "../../images/Star-Icon.svg";
-//
+import star from "../../images/bhau-images/star-image.svg";
 import { downloadAPK } from "../Helpers/DownloadAPK";
+import CardModel from "../Helpers/CardModel";
 
 const Section4 = ({ GameData, title, showPana }) => {
-  //   const [getData, setgetData] = useState([]);
-  const [ModalData, setModalData] = useState([]);
-  const [AppUrl, setAppUrl] = useState("");
-  //  Modal
 
+  const [AppUrl, setAppUrl] = useState("");
+  const [ModalData, setModalData] = useState([]);
   const [show, setShow] = useState(false);
   const [RowData, setRowData] = useState([]);
+console.log(ModalData)
 
-  const handleClose = () => setShow(false);
-  const handleShow = (data) => {
-    setShow(true);
-    setRowData(data);
-  };
-
+const handleOpenCardModel =(row)=>{
+  setModalData(row?.gameDetails?.[0])
+  setShow(true);
+}
   const getResponseData = async () => {
     const res = await GET_ALL_GAMES();
     if (res.status) {
-      //   setgetData(res.data);
       setAppUrl(res.appInfo);
     }
   };
@@ -69,9 +60,9 @@ const Section4 = ({ GameData, title, showPana }) => {
   return (
     <>
       <div className="available-component">
-        <div className="heding-sec heading-sec-custom m-4 d-flex text-center justify-content-center align-items-center">
+        <div className="heding-sec heading-sec-custom m-2 d-flex text-center justify-content-center align-items-center">
           <img src={star} alt="" />
-          <h5 className="mb-0 ms-2 me-2 font-700">{title}</h5>
+          <h1 className="mb-3 mt-3 ms-2 me-2 font-700">Available Games</h1>
           <img src={star} alt="" />
         </div>
 
@@ -79,22 +70,19 @@ const Section4 = ({ GameData, title, showPana }) => {
           <div className="row">
             {GameData &&
               GameData?.map((data, index) => (
-                <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-3">
-                  <div className="second-card">
-                    <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center">
+                <div key={index} className="col-xl-4 col-lg-4 col-md-12 mb-3">
+                  <div className="second-card ">
+                    <div className="second-card-image-main">
+                      <img src={cardImage} onClick={()=>handleOpenCardModel(data)}/>
+                    </div>
+
+                    <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center ">
                       <div className="card-text">
-                        <div className="card-text-main">
+                        <div className="card-text-main set-margin">
                           <h5 className="primary-color font-700">
                             {data.providerName.toUpperCase()}
-                            <i
-                              className="fa fa-info-circle mx-2"
-                              aria-hidden="true"
-                              onClick={() => {
-                                handleShow(data);
-                                setModalData(showData(data?.gameDetails));
-                              }}
-                            ></i>
                           </h5>
+
                           <h3 className="font-700">{data.providerResult}</h3>
                           <h6
                             className={`mb-1 batting_size ${
@@ -145,7 +133,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                                 showData(data?.gameDetails)?.message ===
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#237F8A"
+                                  : "#478767"
                               }
                             ></path>
                             <path
@@ -157,7 +145,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                                 showData(data?.gameDetails)?.message ===
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#237F8A"
+                                  : "#478767"
                               }
                             ></path>
                             <g
@@ -248,42 +236,7 @@ const Section4 = ({ GameData, title, showPana }) => {
 
       {/* .................................................. */}
 
-      <Modal show={show} centered onHide={handleClose} size="lg">
-        <Modal.Header closeButton>
-          <Modal.Title>{RowData?.title} 05:30 PM</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Table striped>
-            <thead className="text-center bg-primary">
-              <tr>
-                <th>
-                  <i class="fa fa-clock-o" aria-hidden="true"></i> Open Bid Time
-                </th>
-                <th>
-                  <i class="fa fa-clock-o" aria-hidden="true"></i> Close Bid
-                  Time
-                </th>
-                <th>
-                  <i class="fa fa-clock-o" aria-hidden="true"></i> Open Bid
-                  Result Time
-                </th>
-                <th>
-                  <i class="fa fa-clock-o" aria-hidden="true"></i> Close Bid
-                  Result Time
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-center">
-              <tr>
-                <td>{ModalData?.OBT}</td>
-                <td>{ModalData?.CBT}</td>
-                <td>{ModalData?.OBRT}</td>
-                <td>{ModalData?.CBRT}</td>
-              </tr>
-            </tbody>
-          </Table>
-        </Modal.Body>
-      </Modal>
+<CardModel ModalData={ModalData} setShow={setShow} show={show}/>
     </>
   );
 };

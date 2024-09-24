@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import "./aboutgame.css"
 import { GET_CONTACT } from '../../service/admin.service'
+import HomeImagePage from '../../Helpers/HomeImagePage'
 const AboutGames = () => {
   const [getData, setgetData] = useState([]);
 
@@ -22,18 +23,18 @@ const AboutGames = () => {
   }
 
   return (
-    <div >
+    <>
+      <HomeImagePage>
 
-    <Navbar/>
     <div className="about-game-main gGTSDy">
       <div className="hzeyLF">
         <h2
           style={{ paddingTop: 10, textAlign: "start" }}
-          className="ilkgnf"
+          className="ilkgnf color-white"
         >
           About The Game
         </h2>
-        <p className='f-size'>
+        <p className='f-size color-white'>
           Satta is a broad word to describe&nbsp;“betting”&nbsp;in India or Hindi.
           The Matka game is sometimes referred to as Indian Satta Matka because of
           its early popularity. If you are interested in betting games, you can
@@ -42,29 +43,31 @@ const AboutGames = () => {
           can become online matka play king and earn huge amount. The kalyan matka
           game which is the online matka play market was the first online matka
           market introduced by Kalyanji Bhagat in 1962 and the online matka Waroli
-          market was introduced back in 70’s by Ratan Khatri.
+          market was introduced back in 70’s by Bhau777.
         </p>
-        <button className="dROOdw "     
+        <button className="scroll-down-btn"     
         onClick={handleClick}
           id="scroll-down-button">
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            strokeWidth={0}
-            viewBox="0 0 512 512"
-            height={20}
-            width={20}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M348.3 295.6c-5-5.1-13.3-5.1-18.4-.1L269 356.2V124.9c0-7.1-5.8-12.9-13-12.9s-13 5.8-13 12.9v231.3l-60.9-60.8c-5.1-5-13.3-4.9-18.4.1-5 5.1-5 13.2.1 18.3l83 82.4c1.2 1.1 2.5 2 4.1 2.7 1.6.7 3.3 1 5 1 3.4 0 6.6-1.3 9.1-3.7l83-82.4c5.2-4.9 5.3-13.1.3-18.2z" />
-          </svg>
-          Go To Bottom
+         <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth={0}
+                  viewBox="0 0 512 512"
+                  height={20}
+                  width={20}
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M348.3 295.6c-5-5.1-13.3-5.1-18.4-.1L269 356.2V124.9c0-7.1-5.8-12.9-13-12.9s-13 5.8-13 12.9v231.3l-60.9-60.8c-5.1-5-13.3-4.9-18.4.1-5 5.1-5 13.2.1 18.3l83 82.4c1.2 1.1 2.5 2 4.1 2.7 1.6.7 3.3 1 5 1 3.4 0 6.6-1.3 9.1-3.7l83-82.4c5.2-4.9 5.3-13.1.3-18.2z" />
+                </svg>
+  Go To Bottom
         </button>
       </div>
     </div>
+    </HomeImagePage>
     <div className="about-game-main dFgvOd">
+
       <div className="jcyUcB">
-        <h1 className="h1-fw-600 mt-30px">This is how you play matka on Khatri555:</h1>
+        <h1 className="h1-fw-600 mt-30px">This is how you play matka on BHAU777:</h1>
         <ul className="iKDfcs">
           <li className="hTaGYD f-size">
             <span >1.</span>Step 1 is to pick (3) numbers from 0–9. For example
@@ -90,7 +93,7 @@ const AboutGames = () => {
         </ul>
       </div>
       <div className="jcyUcB">
-        <h1 className="h1-fw-600">How to add money in Khatri555?</h1>
+        <h1 className="h1-fw-600">How to add money in BHAU777?</h1>
         <ul className="iKDfcs">
           <li className="hTaGYD f-size">
             <span>1{/* */}.</span>Minimum Deposit is 100 /- Rs
@@ -129,7 +132,7 @@ const AboutGames = () => {
         >
           The game you played and got lucky enough to win it then accordingly your
           points will be increased.If you wish to encash the points, just apply
-          for withdrawal request on our Khatri555 Mobile App.
+          for withdrawal request on our BHAU777 Mobile App.
         </li>
         <li className='f-size'
         >
@@ -148,7 +151,7 @@ const AboutGames = () => {
           Satta is a broad word to describe “betting” in India or Hindi. The Matka
           game is sometimes referred to as Indian Satta Matka because of its early
           popularity. If you are interested in betting games, you can check out
-          the numbers game at Khatri555.com
+          the numbers game at BHAU777.com
         </p>
       </div>
       <div className="jcyUcB">
@@ -317,7 +320,7 @@ const AboutGames = () => {
           Nowadays, Matka betting, or Satta King, is a popular lottery-style game.
           It involves the selection of random numbers in the hopes of hitting the
           right number combination. The winner becomes the Satta King and they
-          earn the bulk of the prize pool. The legendary Ratan Khatri is popularly
+          earn the bulk of the prize pool. The legendary Bhau777 is popularly
           known as the Matka King. After his arrest in 1995, he had to discontinue
           his games and now crooks are running the game he loved so much by fixing
           the numbers. A big fall from grace, but his name remains legendary among
@@ -329,18 +332,20 @@ const AboutGames = () => {
         <p className='f-size'
         >
           Big-time enthusiasts still play this game and they remember the days of
-          Ratan having celebrities pull draws for him. The game has since lost
+          Bhau777 having celebrities pull draws for him. The game has since lost
           most of its following. Indians have chosen the faster-paced action of
           online cricket betting or live dealer casinos on their mobile devices.
           IPL betting draws people like nothing else in India and fans wait
           eagerly to place bets on the event.
         </p>
       </div>
+
     </div>
-    <div />
+    
+ 
     <div id='scroll-down'></div>
 <Footer/>
-  </div>
+  </>
   
   )
 }

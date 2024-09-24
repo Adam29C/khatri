@@ -6015,49 +6015,50 @@ export const MainBazar = [
     { id: 91, value: "**", color: "black" },
   ],
   [
-    { "id": 1, "value": "48", "color": "black" },
-    { "id": 2, "value": "93", "color": "black" },
-    { "id": 3, "value": "52", "color": "black" },
-    { "id": 4, "value": "97", "color": "black" },
-    { "id": 5, "value": "97", "color": "black" },
-    { "id": 6, "value": "**", "color": "black" },
-    { "id": 7, "value": "**", "color": "black" }
-],
-[
-    { "id": 8, "value": "32", "color": "black" },
-    { "id": 9, "value": "50", "color": "black" },
-    { "id": 10, "value": "47", "color": "black" },
-    { "id": 11, "value": "89", "color": "black" },
-    { "id": 12, "value": "12", "color": "black" },
-    { "id": 13, "value": "**", "color": "black" },
-    { "id": 14, "value": "**", "color": "black" }
-],
-[
-    { "id": 15, "value": "09", "color": "black" },
-    { "id": 16, "value": "96", "color": "black" },
-    { "id": 17, "value": "25", "color": "black" },
-    { "id": 18, "value": "13", "color": "black" },
-    { "id": 19, "value": "81", "color": "black" },
-    { "id": 20, "value": "**", "color": "black" },
-    { "id": 21, "value": "**", "color": "black" }
-],
-[
-    { "id": 22, "value": "82", "color": "black" },
-    { "id": 23, "value": "67", "color": "black" },
-    { "id": 24, "value": "95", "color": "black" },
-    { "id": 25, "value": "68", "color": "black" },
-    { "id": 26, "value": "44", "color": "black" },
-    { "id": 27, "value": "**", "color": "black" },
-    { "id": 28, "value": "**", "color": "black" }
-],
-[
-    { "id": 29, "value": "40", "color": "black" },
-    { "id": 30, "value": "45", "color": "black" },
-    { "id": 31, "value": "40", "color": "black" },
-    { "id": 32, "value": "82", "color": "black" },
-    { "id": 33, "value": "13", "color": "black" },
-    { "id": 34, "value": "**", "color": "black" },
-    { "id": 35, "value": "**", "color": "black" }
-],
-
+    { id: 1, value: "48", color: "black" },
+    { id: 2, value: "93", color: "black" },
+    { id: 3, value: "52", color: "black" },
+    { id: 4, value: "97", color: "black" },
+    { id: 5, value: "97", color: "black" },
+    { id: 6, value: "**", color: "black" },
+    { id: 7, value: "**", color: "black" },
+  ],
+  [
+    { id: 8, value: "32", color: "black" },
+    { id: 9, value: "50", color: "black" },
+    { id: 10, value: "47", color: "black" },
+    { id: 11, value: "89", color: "black" },
+    { id: 12, value: "12", color: "black" },
+    { id: 13, value: "**", color: "black" },
+    { id: 14, value: "**", color: "black" },
+  ],
+  [
+    { id: 15, value: "09", color: "black" },
+    { id: 16, value: "96", color: "black" },
+    { id: 17, value: "25", color: "black" },
+    { id: 18, value: "13", color: "black" },
+    { id: 19, value: "81", color: "black" },
+    { id: 20, value: "**", color: "black" },
+    { id: 21, value: "**", color: "black" },
+  ],
+  [
+    { id: 22, value: "82", color: "black" },
+    { id: 23, value: "67", color: "black" },
+    { id: 24, value: "95", color: "black" },
+    { id: 25, value: "68", color: "black" },
+    { id: 26, value: "44", color: "black" },
+    { id: 27, value: "**", color: "black" },
+    { id: 28, value: "**", color: "black" },
+  ],
+  [
+    { id: 29, value: "40", color: "black" },
+    { id: 30, value: "45", color: "black" },
+    { id: 31, value: "40", color: "black" },
+    { id: 32, value: "82", color: "black" },
+    { id: 33, value: "13", color: "black" },
+    { id: 34, value: "**", color: "black" },
+    { id: 35, value: "**", color: "black" },
+  ],
 ];
+
+export const MayaMorning = [];

@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.bfb93e77.css",
-    "main.js": "/static/js/main.1bf32d3f.js",
-    "static/media/khatri_new_logo.svg": "/static/media/khatri_new_logo.22b7a24f6ccaec9b012afbaead4ceb5f.svg",
-    "static/media/BeGamble-Aware.svg": "/static/media/BeGamble-Aware.561918329563ffecaf9ee579d305eef4.svg",
-    "static/media/green_khatri_logo.svg": "/static/media/green_khatri_logo.323aa48cedde2e5e7543a7cb46bcec16.svg",
-    "static/media/gambling-therapy.svg": "/static/media/gambling-therapy.afd35abde3f0456228ac7c51a4576733.svg",
-    "static/media/18+Icon.svg": "/static/media/18+Icon.ed14938020502d57683031e745e8c396.svg",
+    "main.css": "/static/css/main.5d1f83f9.css",
+    "main.js": "/static/js/main.2df99e8d.js",
+    "static/media/Men Image.svg": "/static/media/Men Image.f434bb26eb996527ea7a10071e40f853.svg",
+    "static/media/Counting.svg": "/static/media/Counting.e48125d2b39770444f7b9fe5d87dc66d.svg",
+    "static/media/gamble Therapy.svg": "/static/media/gamble Therapy.64b10d3ea5e9741edf1232366014cc61.svg",
+    "static/media/Begamble.svg": "/static/media/Begamble.c41ef205a25125e5707103f42ad7ec60.svg",
+    "static/media/Logo for green background.svg": "/static/media/Logo for green background.356238d854e0b4f9a55671411b85cb30.svg",
+    "static/media/Logo for white background.svg": "/static/media/Logo for white background.19c1a39f1c44f31b5225dff858bcc2df.svg",
+    "static/media/card-top-image.svg": "/static/media/card-top-image.d33aba8715c9cd9bece48a111cfcaf86.svg",
     "index.html": "/index.html",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/18+.svg": "/static/media/18+.d170e20474bf0995a18a6480c6ff1a23.svg",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/Star-Icon.svg": "/static/media/Star-Icon.d62883a191752f12fe0c3cdc99c2b4be.svg",
-    "static/media/grid-svgrepo-com (2).svg": "/static/media/grid-svgrepo-com (2).795e940a644f44732878.svg",
-    "static/media/header-bg.svg": "/static/media/header-bg.4e69664c85e58671e8da.svg",
-    "static/media/mobile-header-image-375.svg": "/static/media/mobile-header-image-375.71a8305f07b16a8a1352.svg",
-    "static/media/Mobile-Header-Wave.svg": "/static/media/Mobile-Header-Wave.5971a3a9ae89faf63311.svg",
-    "static/media/infinit.svg": "/static/media/infinit.72fdab84b8103674f6d2dfd7e36390be.svg",
-    "main.bfb93e77.css.map": "/static/css/main.bfb93e77.css.map",
-    "main.1bf32d3f.js.map": "/static/js/main.1bf32d3f.js.map"
+    "static/media/star-image.svg": "/static/media/star-image.03ba3310e53c4e40031704b6c6744eae.svg",
+    "static/media/tablet 768.svg": "/static/media/tablet 768.3e6b4c4d49b156e74ff1.svg",
+    "static/media/Banner Mobile.svg": "/static/media/Banner Mobile.3d53344295b4dad2645f.svg",
+    "static/media/1024 Size background.svg": "/static/media/1024 Size background.f348985ad6fbc4e8bf3b.svg",
+    "static/media/Herro Banner.svg": "/static/media/Herro Banner.f0c1871ec623529d47fa.svg",
+    "static/media/Menu-Icon-svg.svg": "/static/media/Menu-Icon-svg.72abbff2ca3d5d1f926a.svg",
+    "main.5d1f83f9.css.map": "/static/css/main.5d1f83f9.css.map",
+    "main.2df99e8d.js.map": "/static/js/main.2df99e8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfb93e77.css",
-    "static/js/main.1bf32d3f.js"
+    "static/css/main.5d1f83f9.css",
+    "static/js/main.2df99e8d.js"
   ]
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { TimeBazar } from "./Chart.config";
-// import { Data } from "../ShreeJackpot/Chart.config";
 const ShreeDay = ({ chartData }) => {
   return (
     <div>

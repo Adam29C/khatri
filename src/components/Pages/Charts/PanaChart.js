@@ -3,7 +3,7 @@ import Chart_Container from "./Chart_Container";
 const PanaChart = (props) => {
   return (
  
-      <Chart_Container {...props}   responsive_Class={"col-xxl-6 col-xl-6  col-md-6 "}/>
+      <Chart_Container {...props}   responsive_Class={"col-xxl-12 col-xl-12  col-md-12  "}/>
  
   );
 };

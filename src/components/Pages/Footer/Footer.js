@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../../images/BeGamble-Aware.svg";
-import img2 from "../../../images/gambling-therapy.svg";
-import img3 from "../../../images/18+Icon.svg";
-import logo from "../../../images/green_khatri_logo.svg";
+import begamble from "../../../images/bhau-images/Begamble.svg";
+import gambling from "../../../images/bhau-images/gamble Therapy.svg";
+import eighteen from "../../../images/bhau-images/18+.svg";
+import logo from "../../../images/bhau-images/Logo for white background.svg";
 import "../../../App.css";
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="footer-container text-center mt-3 " id="scroll-up">
+      <div className="footer-container text-center " id="scroll-up">
         
         <div className="container">
         <div className="footer-btn-scroll-main">
@@ -38,27 +38,27 @@ const Footer = () => {
             </button>
           </div>
           <div className="row">
-            <div className="col-md-6 d-flex flex-column">
+            <div className="col-xl-6 col-md-12 d-flex flex-column">
               <div className=" d-flex">
                 <img src={logo} className="img-fluid footer-image float-left" alt="" />
               </div>
 
               <p className="footer-text f-size">
-                Our website is operated by Khatri555 International, a company
+                Our website is operated by Bhau777 International, a company
                 established under the law of Isle of Man, with registered
                 address at 1-10 Ballanoa Meadow IM4-2HT, Isle Of Man, and having
                 its gaming sublicense issued by Isle of Man e-Gaming and all
                 rights to operate the gaming software worldwide.
               </p>
             </div>
-            <div className="col-md-6 ">
+            <div className="col-xl-6 col-md-12 ">
               <div className="footer-right-image">
                 <div className="margin-img">
                   <img
                     fetchpriority="high"
                     decoding="async"
                     data-nimg="fill"
-                    src={img3}
+                    src={eighteen}
                      className="footer-img-3"
                      />
                      </div>
@@ -70,8 +70,8 @@ const Footer = () => {
 
               </div>
               <div className="footer-img-sec">
-              <img className="img1" src={img1} alt="" />
-              <img className="img2" src={img2} alt="" />
+              <img className="img1" src={begamble} alt="" />
+              <img className="img2" src={gambling} alt="" />
               
               
               </div>
@@ -81,7 +81,7 @@ const Footer = () => {
     
           <div className="footer-last-content gCDmxv">
             <p className="copyright-text f-size">
-              Copyright © 2024 - Khatri555. All Rights Reserved
+              Copyright © 2024 - Bhau777. All Rights Reserved
             </p>
             <p  className='f-size'>
               <Link className='f-size' to="/terms-conditions" onClick={handleClickUp}>

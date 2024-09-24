@@ -1,36 +1,41 @@
 import React, { useEffect, useState } from "react";
-import "../../assets/css/Section3.css";
-// import Section4 from "./Section4";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import star from '../../../images/Star-Icon.svg'
+import star from "../../../images/bhau-images/star-image.svg";
+import { GET_CONTACT } from "../../service/admin.service";
 
 const Section3 = () => {
+  const [getData, setgetData] = useState([]);
+
+  const getResponseData = async () => {
+    const res = await GET_CONTACT();
+    setgetData(res?.data?.[0]);
+  };
+
   useEffect(() => {
-    // This will run once when the component mounts
-    // It's used to initialize any third-party libraries or perform other setup tasks
-    // For Slick slider, no additional setup is required here because we've imported the necessary CSS files
+    getResponseData();
   }, []);
+
+  useEffect(() => {}, []);
 
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
     autoplay: true,
-    // autoplaySpeed: 10,
 
-    slidesToShow: 4, 
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, 
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 3, 
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 600, 
+        breakpoint: 600,
         settings: {
           slidesToShow: 2,
         },
@@ -42,66 +47,90 @@ const Section3 = () => {
         },
       },
     ],
-    beforeChange: (oldIndex, newIndex) => {
-    },
+    beforeChange: (oldIndex, newIndex) => {},
   };
   return (
     <>
-      <div className="container">
+      <div className="container ">
+        <div className="row contact-number-main ">
+          <div className="col-12 col-lg-6 ">
+            <h4 className="primary-color">Connect with phone call</h4>
+            <h1 className="display-5 fw-bolder primary-color roboto-light font-size-2rem">
+              {getData && getData.number}
+            </h1>
+          </div>
+          <div className="col-12 col-lg-6">
+            <div className="contact-btn-main gap-3 contact-btn">
+              <button className="contact-button">
+                <a
+                  href={`tel:${getData && getData.number}`}
+                  className="text-decoration-none text-white"
+                >
+                  <i className="fa fa-phone me-2" aria-hidden="true"></i>Call
+                  Now
+                </a>
+              </button>
+              <button className="contact-button-whatsapp contact-btn-backgcolor">
+                <a
+                  href={`https://wa.me/+${getData && getData.number}`}
+                  className="text-decoration-none text-white"
+                >
+                  <i className="fa fa-whatsapp me-2" aria-hidden="true"></i>
+                  WhatsApp
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
         <div className="winner-container">
           <div className="heding-sec heading-sec-custom m-2 d-flex text-center justify-content-center align-items-center">
-            <img
-              src={star}
-              alt=""
-            />
-            <h1 className="mb-0 mt-3 ms-2 me-2 font-700">Today's Top Winners</h1>
-            <img
-              src={star}
-              alt=""
-            />
+            <img src={star} alt="" />
+            <h1 className="mb-0 ms-2 me-2 font-700">Today's Top Winners</h1>
+            <img src={star} alt="" />
           </div>
           <Slider {...settings}>
             <div>
-              <div className="custom-card custom-card-padding">
-                <h4 className="primary-color">Amit</h4>
-                <h4 className="font-700 color-primary">₹61,000</h4>
+              <div className="custom-card custom-card-padding card-design">
+                <h4 className="">Amit</h4>
+                <h4 className="font-700 ">₹61,000</h4>
               </div>
             </div>
             <div>
-              <div className="custom-card">
-                <h4 className="primary-color">Priya</h4>
-                <h4 className="font-700 color-primary">₹35,000</h4>
+              <div className="custom-card card-design">
+                <h4 className="">Priya</h4>
+                <h4 className="font-700 ">₹35,000</h4>
               </div>
             </div>
             <div>
-              <div className="custom-card">
-                <h4 className="primary-color">Himanshu</h4>
-                <h4 className="font-700 color-primary">₹51,000</h4>
+              <div className="custom-card card-design">
+                <h4 className="">Himanshu</h4>
+                <h4 className="font-700 ">₹51,000</h4>
               </div>
             </div>
             <div>
-              <div className="custom-card">
-                <h4 className="primary-color">Garima</h4>
-                <h4 className="font-700 color-primary">₹25,000</h4>
+              <div className="custom-card card-design">
+                <h4 className="">Garima</h4>
+                <h4 className="font-700 ">₹25,000</h4>
               </div>
             </div>
             <div>
-              <div className="custom-card">
-                <h4 className="primary-color">Yash</h4>
-                <h4 className="font-700 color-primary">₹45,200</h4>
+              <div className="custom-card card-design">
+                <h4 className="">Yash</h4>
+                <h4 className="font-700 ">₹45,200</h4>
               </div>
             </div>
             <div>
-              <div className="custom-card">
-                <h4 className="primary-color">Ajit</h4>
-                <h4 className="font-700 color-primary">₹45,200</h4>
+              <div className="custom-card card-design">
+                <h4 className="">Ajit</h4>
+                <h4 className="font-700 ">₹45,200</h4>
               </div>
             </div>
           </Slider>
         </div>
-
-        {/* ..................................... */}
       </div>
+      
     </>
   );
 };

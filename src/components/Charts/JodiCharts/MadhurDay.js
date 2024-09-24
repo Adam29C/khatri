@@ -1,6 +1,5 @@
 import React from "react";
 import { MadhurDay } from "./Chart.config";
-// import { Data } from "../ShreeJackpot/Chart.config";
 const ShreeDay = ({ chartData }) => {
   return (
     <div>
@@ -17,9 +16,9 @@ const ShreeDay = ({ chartData }) => {
           </tr>
         </thead>
         <tbody>
-          {MadhurDay.map((group, groupIndex) => (
+          {MadhurDay?.map((group, groupIndex) => (
             <tr key={groupIndex}>
-              {group.map((item) => (
+              {group?.map((item) => (
                 <td className="cc">
                   <div className="kalyan-chart-number-black">
                     <span className="cp">{item.value}</span>
@@ -30,9 +29,9 @@ const ShreeDay = ({ chartData }) => {
           ))}
 
           {chartData &&
-            chartData.map((item1) => (
+            chartData?.map((item1) => (
               <tr key={item1.id}>
-                {item1.data.map((nestedItem) => (
+                {item1?.data?.map((nestedItem) => (
                   <td key={nestedItem.id} className="cc">
                     <div className="kalyan-chart-number-black">
                       <span className="cp">

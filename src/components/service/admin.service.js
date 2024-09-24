@@ -1,5 +1,5 @@
 import axios from "axios";
-// import Files
+
 import * as Config from "../Config/config";
 
 // GET CONTACT
@@ -9,11 +9,11 @@ export async function GET_CONTACT(data, token) {
       `${Config.base_url}api/web/walletContact`,
       data,
       {
-        // headers: header(token),
+        
         data: {},
       }
     );
-    // console.log("res", res);
+   
     return await res?.data;
   } catch (err) {
     return err;
@@ -24,10 +24,10 @@ export async function GET_CONTACT(data, token) {
 export async function GET_ALL_GAMESLIST(data, token) {
   try {
     const res = await axios.get(`${Config.base_url}api/web/allgames`, data, {
-      // headers: header(token),
+     
       data: {},
     });
-    // console.log("res", res);
+   
     return await res?.data;
   } catch (err) {
     return err;
@@ -38,10 +38,10 @@ export async function GET_ALL_GAMESLIST(data, token) {
 export async function GET_ALL_GAMES(data, token) {
   try {
     const res = await axios.get(`${Config.base_url}api/web/games`, data, {
-      // headers: header(token),
+    
       data: {},
     });
-    // console.log("res", res);
+   
     return await res?.data;
   } catch (err) {
     return err;
@@ -51,10 +51,10 @@ export async function GET_ALL_GAMES(data, token) {
 export async function GET_ALL_GAMERATES(data, token) {
   try {
     const res = await axios.get(`${Config.base_url}api/web/gamerates`, data, {
-      // headers: header(token),
+    
       data: {},
     });
-    // console.log("res", res);
+   
     return await res?.data;
   } catch (err) {
     return err;
@@ -64,10 +64,10 @@ export async function GET_ALL_GAMERATES(data, token) {
 export async function GET_ALL_STARTLINE_GAMES(data, token) {
   try {
     const res = await axios.get(`${Config.base_url}api/web/startline`, data, {
-      // headers: header(token),
+      
       data: {},
     });
-    // console.log("res", res);
+    
     return await res?.data;
   } catch (err) {
     return err;
@@ -78,7 +78,7 @@ export async function GET_ALL_STARTLINE_GAMES(data, token) {
 export async function GET_ALL_GAMES_RESULT(data, token) {
   try {
     const res = await axios.post(`${Config.base_url}api/web/panachart`, data, {
-      // headers: header(token),
+     
       data: {},
     });
     return await res?.data;
@@ -91,7 +91,7 @@ export async function GET_ALL_GAMES_RESULT(data, token) {
 export async function GET_ALL_JODI_CHART(data, token) {
   try {
     const res = await axios.post(`${Config.base_url}api/web/jodichart`, data, {
-      // headers: header(token),
+   
       data: {},
     });
     return await res?.data;
@@ -107,7 +107,7 @@ export async function GET_ALL_STARLINE_GAME_PANA_CHART(data, token) {
       `${Config.base_url}api/web/startline_pana_chart`,
       data,
       {
-        // headers: header(token),
+        
         data: {},
       }
     );
@@ -120,9 +120,9 @@ export async function GET_ALL_STARLINE_GAME_PANA_CHART(data, token) {
 //GET ALL JACKPOT
 export async function GET_ALL_JACKPOT_GAME(data, token) {
   try {
-    // const res = await axios.get(`${Config.base_url}api/web/allAbList`, data, {
+    
     const res = await axios.get(`${Config.base_url}api/web/AbList`, data, {
-      // headers: header(token),
+      
       data: {},
     });
     return await res?.data;
@@ -134,7 +134,7 @@ export async function GET_ALL_JACKPOT_GAME(data, token) {
 export async function GET_JACKPOT_JODI_CHART(data, token) {
   try {
     const res = await axios.post(`${Config.base_url}api/web/jackpot_jodi_chart`, data, {
-      // headers: header(token),
+      
       data: {},
     });
     return await res?.data;
@@ -146,7 +146,7 @@ export async function GET_JACKPOT_JODI_CHART(data, token) {
 export async function GET_APK_LINK(data, token) {
   try {
     const res = await axios.get(`${Config.base_url}api/web/app_url`, data, {
-      // headers: header(token),
+     
       data: {},
     });
     return await res?.data;
@@ -162,8 +162,7 @@ export async function GET_APK_LINK(data, token) {
 export async function GET_ALL_JACKPOT_GAME_CHART(data, token) {
   try {
     const res = await axios.get(`${Config.base_url}api/web/allAbList`, data, {
-    // const res = await axios.get(`${Config.base_url}api/web/AbList`, data, {
-      // headers: header(token),
+   
       data: {},
     });
     return await res?.data;
@@ -176,8 +175,7 @@ export async function GET_ALL_JACKPOT_GAME_CHART(data, token) {
 export async function GET_ALL_STARTLINE_GAMES_CHART(data, token) {
   try {
     const res = await axios.get(`${Config.base_url}api/web/allStartLine`, data, {
-    // const res = await axios.get(`${Config.base_url}api/web/AbList`, data, {
-      // headers: header(token),
+   
       data: {},
     });
     return await res?.data;

@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import star from "../../../images/Star-Icon.svg";
+import star from "../../../images/bhau-images/star-image.svg";
+import cardImage from "../../../images/bhau-images/card-top-image.svg";
 
 import { GET_ALL_STARTLINE_GAMES } from "../../service/admin.service";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
+import CardModel from "../../Helpers/CardModel";
 
 const StartLine = () => {
   const [getData, setgetData] = useState([]);
   const [AppUrl, setAppUrl] = useState("");
+  const [ModalData, setModalData] = useState([]);
+  const [show, setShow] = useState(false);
   const getResponseData = async () => {
     const res = await GET_ALL_STARTLINE_GAMES();
     if (res.status) {
@@ -18,6 +22,11 @@ const StartLine = () => {
   useEffect(() => {
     getResponseData();
   }, []);
+
+  const handleOpenCardModel =(row)=>{
+    setModalData(row?.gameDetails?.[0])
+    setShow(true);
+  }
 
   const showData = (data) => {
     const weekday = [
@@ -44,26 +53,29 @@ const StartLine = () => {
     }
   };
 
-  const downloadFile = async() => {
-   await downloadAPK()
-
+  const downloadFile = async () => {
+    await downloadAPK();
   };
   return (
     <div>
       <div className="available-component">
-        <div className="heding-sec heading-sec-custom m-4  d-flex text-center justify-content-center align-items-center">
+
+        <div className="heding-sec heading-sec-custom m-2 d-flex text-center justify-content-center align-items-center">
           <img src={star} alt="" />
-          <h5 className="mb-0 ms-2 me-2 font-700">RATAN STARLINE GAMES</h5>
+          <h1 className="mb-3 mt-3 ms-2 me-2 font-700">SHREE STARLINE</h1>
           <img src={star} alt="" />
         </div>
         <div className="container">
           <div className="row">
             {getData?.map((data, index) => (
-              <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-3">
+              <div key={index} className="col-xl-4 col-lg-4 col-md-12 mb-3">
                 <div className="second-card">
+                <div className="second-card-image-main">
+                      <img src={cardImage} onClick={()=>handleOpenCardModel(data)}/>
+                    </div>
                   <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center">
                     <div className="card-text">
-                      <div className="card-text-main">
+                      <div className="card-text-main set-margin">
                         <h4 className="primary-color font-700 ">
                           {data.providerName.toUpperCase()}
                         </h4>
@@ -92,7 +104,8 @@ const StartLine = () => {
                     </div>
                     <div
                       className={`play-icon  ${
-                        showData(data?.gameDetails)?.message == "Close for today"
+                        showData(data?.gameDetails)?.message ==
+                        "Close for today"
                           ? ""
                           : "zoom-in-zoom-out"
                       } `}
@@ -103,7 +116,7 @@ const StartLine = () => {
                           downloadFile(showData(data?.gameDetails)?.message)
                         }
                       >
-                       <svg
+                        <svg
                           id="video"
                           xmlns="http://www.w3.org/2000/svg"
                           width="50"
@@ -120,7 +133,7 @@ const StartLine = () => {
                               showData(data?.gameDetails)?.message ==
                               "Close for today"
                                 ? "#6c757d"
-                                : "#237F8A"
+                                : "#478767"
                             }`}
                           ></path>
                           <path
@@ -132,7 +145,7 @@ const StartLine = () => {
                               showData(data?.gameDetails)?.message ==
                               "Close for today"
                                 ? "#6c757d"
-                                : "#237F8A"
+                                : "#478767"
                             }`}
                           ></path>
                           <g
@@ -207,6 +220,7 @@ const StartLine = () => {
             ))}
           </div>
         </div>
+        <CardModel ModalData={ModalData} setShow={setShow} show={show}/>
 
       </div>
     </div>
@@ -215,33 +229,3 @@ const StartLine = () => {
 
 export default StartLine;
 
-
-
-// import { useState , useEffect } from "react";
-// import { GET_ALL_STARTLINE_GAMES } from "../../service/admin.service";
-// import ReusableCard from "../ReusableCard";
-
-// const AvailableGames = () => {
-//   // const [ModalData, setModalData] = useState([]);
-//   const [AppUrl, setAppUrl] = useState("");
-//   const [getData, setgetData] = useState([]);
-
-//   const getResponseData = async () => {
-//       const res = await GET_ALL_STARTLINE_GAMES();
-
-//     if (res.status) {
-//       setgetData(res.data);
-//       setAppUrl(res.appInfo);
-//     }
-//   };
-//   useEffect(() => {
-//     getResponseData();
-//   }, []);
-//   return (
-//     <div>
-//       <ReusableCard  GameData={getData} title={"STARLINE GAMES" } showPana={false}/>
-//     </div>
-//   );
-// };
-
-// export default AvailableGames;

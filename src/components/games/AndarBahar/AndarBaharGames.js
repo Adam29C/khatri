@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import star from "../../../images/Star-Icon.svg";
+import star from "../../../images/bhau-images/star-image.svg";
 import { GET_ALL_JACKPOT_GAME } from "../../service/admin.service";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
+import cardImage from "../../../images/bhau-images/card-top-image.svg";
+import CardModel from "../../Helpers/CardModel";
+import { PagesIndex } from "../../Pages/PagesIndex";
 
 const StartLine = () => {
-  const [getData, setgetData] = useState([]);
-  const [AppUrl, setAppUrl] = useState("");
+  const [getData, setgetData] = PagesIndex.useState([]);
+  const [AppUrl, setAppUrl] = PagesIndex.useState("");
+  const [ModalData, setModalData] = PagesIndex.useState([]);
+  const [show, setShow] = PagesIndex.useState(false);
   const getResponseData = async () => {
     const res = await GET_ALL_JACKPOT_GAME();
     if (res.status) {
@@ -14,9 +17,15 @@ const StartLine = () => {
       setAppUrl(res.appInfo);
     }
   };
-  useEffect(() => {
+  PagesIndex.useEffect(() => {
     getResponseData();
   }, []);
+
+  const handleOpenCardModel =(row)=>{
+    setModalData(row?.gameDetails?.[0])
+    setShow(true);
+  }
+
 
   const showData = (data) => {
     const weekday = [
@@ -50,10 +59,10 @@ const StartLine = () => {
   return (
     <div>
       <div className="available-component">
-        <div className="heding-sec m-4 d-flex text-center justify-content-center align-items-center">
+   
+        <div className="heding-sec heading-sec-custom m-2 d-flex text-center justify-content-center align-items-center">
           <img src={star} alt="" />
-          <h5 className="mb-0 ms-2 me-2 font-700">RATAN JACKPOT GAMES</h5>
-
+          <h1 className="mb-3 mt-3 ms-2 me-2 font-700">SHREE JACKPOT</h1>
           <img src={star} alt="" />
         </div>
         <div className="container">
@@ -64,40 +73,23 @@ const StartLine = () => {
                 showData(data?.gameDetails)?.message;
 
               return (
-                <div key={index} className="col-xl-4 col-lg-4 col-md-6  mb-3">
+                <div key={index} className="col-xl-4 col-lg-4 col-md-12  mb-3">
                   <div className="second-card">
+                  <div className="second-card-image-main">
+                      <img src={cardImage} onClick={()=>handleOpenCardModel(data)}/>
+                    </div>
                     <div className="top-sec second-card-top-sec d-flex justify-content-between align-items-center">
                       <div className="card-text">
-                        <div className="card-text-main">
+                        <div className="card-text-main set-margin">
                           <h4 className="primary-color font-700 ">
                             {data.providerName.toUpperCase()}
                      
-                            {/* <i
-                            class="fa fa-info-circle mx-2"
-                            aria-hidden="true"
-                            // onClick={() => {
-                            //   handleShow(data);
-                            //   setModalData(
-                            //     showData(data.gameDetails) != undefined &&
-                            //       showData(data.gameDetails)
-                            //   );
-                            // }}
-                          ></i> */}
+                  
                           </h4>
                           <h3 className="font-700 ">{data.providerResult}</h3>
                          
                           <h6
-                            // className="mb-1"
-                            // style={{
-                            //   color:
-                            //     getmsg == "Close for today"
-                            //       ? "red"
-                            //       : getmsg == "Betting is running for close"
-                            //       ? "#11305c"
-                            //       : getmsg == "Betting is running for open"
-                            //       ? "#37a148"
-                            //       : "#d65f78",
-                            // }}
+                    
                             className={`mb-1 ${getmsg == "Close for today"  ? "close-for-today"  : getmsg == "Betting is running for close"  ? "betting-closed": getmsg == "Betting is running for open" ? "default-message":"default-message"}`}
                           >
                             {getmsg}
@@ -112,25 +104,7 @@ const StartLine = () => {
                             : "zoom-in-zoom-out"
                         } `}
                       >
-                        {/* <img
-                        className="play-img "
-                        style={{
-                          height: "50px",
-                          width: "50px",
-                          color:
-                            showData(data.gameDetails) != undefined &&
-                            showData(data.gameDetails).isClosed == "1"
-                              ? "transparent"
-                              : "inherit",
-                          filter:
-                            showData(data.gameDetails) != undefined &&
-                            showData(data.gameDetails).isClosed == "1"
-                              ? "grayscale(100%)"
-                              : "grayscale(0)",
-                        }}
-                        src="https://mama567.com/_next/static/media/Play.018a4a69.svg"
-                        alt=""
-                      /> */}
+                 
 
                         <a
                           href="#"
@@ -155,7 +129,7 @@ const StartLine = () => {
                                 getmsg ==
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#237F8A"
+                                  : "#478767"
                               }`}
                             ></path>
                             <path
@@ -167,7 +141,7 @@ const StartLine = () => {
                                 getmsg ==
                                 "Close for today"
                                   ? "#6c757d"
-                                  : "#237F8A"
+                                  : "#478767"
                               }`}
                             ></path>
                             <g
@@ -209,7 +183,7 @@ const StartLine = () => {
                       </div>
                     </div>
                     <div className="bottom-sec d-flex align-items-center justify-content-center">
-                      <Link
+                      <PagesIndex.Link
                         to={`/andarbahar/${data.providerName
                           .toLowerCase()
                           .replace(/\s+/g, "")}`}
@@ -218,7 +192,7 @@ const StartLine = () => {
                         
                       >
                         <span>Jodi Chart</span>
-                      </Link>
+                      </PagesIndex.Link>
                     </div>
                     <hr />
                     <div class="result__time d-flex justify-content-between">
@@ -243,44 +217,8 @@ const StartLine = () => {
             })}
           </div>
         </div>
+        <CardModel ModalData={ModalData} setShow={setShow} show={show}/>
 
-        {/* <Modal show={show} centered onHide={handleClose} size="lg">
-          <Modal.Header closeButton>
-            <Modal.Title>{RowData.title} 05:30 PM</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Table striped>
-              <thead className="text-center bg-primary">
-                <tr>
-                  <th>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i> Open Bid
-                    Time
-                  </th>
-                  <th>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i> Close Bid
-                    Time
-                  </th>
-                  <th>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i> Open Bit
-                    Result Time
-                  </th>
-                  <th>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i> Close Bit
-                    Result Time
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="text-center">
-                <tr>
-                  <td>{ModalData.OBT}</td>
-                  <td>{ModalData.CBT}</td>
-                  <td>{ModalData.OBRT}</td>
-                  <td>{ModalData.CBRT}</td>
-                </tr>
-              </tbody>
-            </Table>
-          </Modal.Body>
-        </Modal> */}
       </div>
     </div>
   );
@@ -288,35 +226,3 @@ const StartLine = () => {
 
 export default StartLine;
 
-// import { useState, useEffect } from "react";
-// import { GET_ALL_JACKPOT_GAME } from "../../service/admin.service";
-// import ReusableCard from "../ReusableCard";
-
-// const AvailableGames = () => {
-//   // const [ModalData, setModalData] = useState([]);
-//   const [AppUrl, setAppUrl] = useState("");
-//   const [getData, setgetData] = useState([]);
-
-//   const getResponseData = async () => {
-//     const res = await GET_ALL_JACKPOT_GAME();
-
-//     if (res.status) {
-//       setgetData(res.data);
-//       setAppUrl(res.appInfo);
-//     }
-//   };
-//   useEffect(() => {
-//     getResponseData();
-//   }, []);
-//   return (
-//     <div>
-//       <ReusableCard
-//         GameData={getData}
-//         title={"SHREE JACKPOT"}
-//         showPana={false}
-//       />
-//     </div>
-//   );
-// };
-
-// export default AvailableGames;
