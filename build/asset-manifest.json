@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d1f83f9.css",
-    "main.js": "/static/js/main.2df99e8d.js",
+    "main.css": "/static/css/main.bd8ef04d.css",
+    "main.js": "/static/js/main.917b02c5.js",
     "static/media/Men Image.svg": "/static/media/Men Image.f434bb26eb996527ea7a10071e40f853.svg",
     "static/media/Counting.svg": "/static/media/Counting.e48125d2b39770444f7b9fe5d87dc66d.svg",
     "static/media/gamble Therapy.svg": "/static/media/gamble Therapy.64b10d3ea5e9741edf1232366014cc61.svg",
@@ -21,11 +21,11 @@
     "static/media/1024 Size background.svg": "/static/media/1024 Size background.f348985ad6fbc4e8bf3b.svg",
     "static/media/Herro Banner.svg": "/static/media/Herro Banner.f0c1871ec623529d47fa.svg",
     "static/media/Menu-Icon-svg.svg": "/static/media/Menu-Icon-svg.72abbff2ca3d5d1f926a.svg",
-    "main.5d1f83f9.css.map": "/static/css/main.5d1f83f9.css.map",
-    "main.2df99e8d.js.map": "/static/js/main.2df99e8d.js.map"
+    "main.bd8ef04d.css.map": "/static/css/main.bd8ef04d.css.map",
+    "main.917b02c5.js.map": "/static/js/main.917b02c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d1f83f9.css",
-    "static/js/main.2df99e8d.js"
+    "static/css/main.bd8ef04d.css",
+    "static/js/main.917b02c5.js"
   ]
 }
