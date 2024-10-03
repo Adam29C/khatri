@@ -13,9 +13,9 @@ const Section4 = ({ GameData, title, showPana }) => {
   const [ModalData, setModalData] = useState([]);
   const [show, setShow] = useState(false);
   const [RowData, setRowData] = useState([]);
-console.log(ModalData)
-
+console.log(RowData)
 const handleOpenCardModel =(row)=>{
+  setRowData(row.providerName.toUpperCase())
   setModalData(row?.gameDetails?.[0])
   setShow(true);
 }
@@ -236,7 +236,7 @@ const handleOpenCardModel =(row)=>{
 
       {/* .................................................. */}
 
-<CardModel ModalData={ModalData} setShow={setShow} show={show}/>
+<CardModel ModalData={ModalData} setShow={setShow} show={show} title={RowData}/>
     </>
   );
 };

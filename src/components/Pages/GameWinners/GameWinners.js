@@ -20,7 +20,7 @@ const Section3 = () => {
   useEffect(() => {}, []);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     autoplay: true,
@@ -60,8 +60,8 @@ const Section3 = () => {
             </h1>
           </div>
           <div className="col-12 col-lg-6">
-            <div className="contact-btn-main gap-3 contact-btn">
-              <button className="contact-button">
+            <div className=" contact-btn-main gap-3 contact-btn">
+              <button className="btn-hover-effect contact-button">
                 <a
                   href={`tel:${getData && getData.number}`}
                   className="text-decoration-none text-white"
@@ -70,7 +70,7 @@ const Section3 = () => {
                   Now
                 </a>
               </button>
-              <button className="contact-button-whatsapp contact-btn-backgcolor">
+              <button className="wbtn-hover-effect contact-button-whatsapp ">
                 <a
                   href={`https://wa.me/+${getData && getData.number}`}
                   className="text-decoration-none text-white"

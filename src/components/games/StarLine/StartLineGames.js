@@ -109,7 +109,7 @@ const Pana_Chart = () => {
               <div className="pt-110 text-alignment">
                 <h2 className="chart-header-font color-white">
                   <strong>
-                    Shree Starline &nbsp;
+                  Queen Starline &nbsp;
                     {location.state.title}&nbsp; Chart
                   </strong>
                 </h2>

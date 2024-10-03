@@ -9,7 +9,9 @@ const StartLine = () => {
   const [getData, setgetData] = PagesIndex.useState([]);
   const [AppUrl, setAppUrl] = PagesIndex.useState("");
   const [ModalData, setModalData] = PagesIndex.useState([]);
+  const [RowData, setRowData] = PagesIndex.useState([]);
   const [show, setShow] = PagesIndex.useState(false);
+  
   const getResponseData = async () => {
     const res = await GET_ALL_JACKPOT_GAME();
     if (res.status) {
@@ -22,6 +24,7 @@ const StartLine = () => {
   }, []);
 
   const handleOpenCardModel =(row)=>{
+    setRowData(row.providerName.toUpperCase())
     setModalData(row?.gameDetails?.[0])
     setShow(true);
   }
@@ -62,7 +65,7 @@ const StartLine = () => {
    
         <div className="heding-sec heading-sec-custom m-2 d-flex text-center justify-content-center align-items-center">
           <img src={star} alt="" />
-          <h1 className="mb-3 mt-3 ms-2 me-2 font-700">SHREE JACKPOT</h1>
+          <h1 className="mb-3 mt-3 ms-2 me-2 font-700">QUEEN JACKPOT</h1>
           <img src={star} alt="" />
         </div>
         <div className="container">
@@ -217,7 +220,7 @@ const StartLine = () => {
             })}
           </div>
         </div>
-        <CardModel ModalData={ModalData} setShow={setShow} show={show}/>
+        <CardModel ModalData={ModalData} setShow={setShow} show={show} title={RowData}/>
 
       </div>
     </div>

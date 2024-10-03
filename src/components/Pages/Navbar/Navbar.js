@@ -8,14 +8,19 @@ import headerLogo from "../../../images/bhau-images/Logo for green background.sv
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const collapseRef = useRef(null);
+  const toggleButtonRef = useRef(null);
 
 
-
-  const handleClickOutside = (event) => {
-    if (collapseRef.current && !collapseRef.current.contains(event.target)) {
-      setIsCollapsed(true);
-    }
-  };
+const handleClickOutside = (event) => {
+  if (
+    collapseRef.current &&
+    !collapseRef.current.contains(event.target) &&
+    toggleButtonRef.current &&
+    !toggleButtonRef.current.contains(event.target)
+  ) {
+    setIsCollapsed(true);
+  }
+};
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -38,8 +43,10 @@ const Navbar = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
+                  aria-expanded={!isCollapsed} 
                   aria-label="Toggle navigation"
+                  onClick={() => setIsCollapsed(!isCollapsed)} 
+                  ref={toggleButtonRef}
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>

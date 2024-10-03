@@ -4,7 +4,8 @@ import gambling from "../../../images/bhau-images/gamble Therapy.svg";
 import eighteen from "../../../images/bhau-images/18+.svg";
 import logo from "../../../images/bhau-images/Logo for white background.svg";
 import "../../../App.css";
-import { Link } from "react-router-dom";
+
+
 const Footer = () => {
   const handleClickUp = () => {
     const targetElement = document.getElementById("root");
@@ -16,9 +17,8 @@ const Footer = () => {
   return (
     <>
       <div className="footer-container text-center " id="scroll-up">
-        
         <div className="container">
-        <div className="footer-btn-scroll-main">
+          <div className="footer-btn-scroll-main">
             <button
               className="footer-btn-scroll"
               onClick={handleClickUp}
@@ -38,20 +38,16 @@ const Footer = () => {
             </button>
           </div>
           <div className="row">
-            <div className="col-xl-6 col-md-12 d-flex flex-column">
-              <div className=" d-flex">
-                <img src={logo} className="img-fluid footer-image float-left" alt="" />
+            <div className="col-xl-12 col-md-12 d-flex flex-column">
+              <div className=" d-flex justify-content-center">
+                <img
+                  src={logo}
+                  className="img-fluid footer-image float-left"
+                  alt=""
+                />
               </div>
-
-              <p className="footer-text f-size">
-                Our website is operated by Bhau777 International, a company
-                established under the law of Isle of Man, with registered
-                address at 1-10 Ballanoa Meadow IM4-2HT, Isle Of Man, and having
-                its gaming sublicense issued by Isle of Man e-Gaming and all
-                rights to operate the gaming software worldwide.
-              </p>
             </div>
-            <div className="col-xl-6 col-md-12 ">
+            <div className="col-xl-12 col-md-12 ">
               <div className="footer-right-image">
                 <div className="margin-img">
                   <img
@@ -59,34 +55,36 @@ const Footer = () => {
                     decoding="async"
                     data-nimg="fill"
                     src={eighteen}
-                     className="footer-img-3"
-                     />
-                     </div>
+                    className="footer-img-3"
+                  />
+                </div>
 
                 <p className="footer-para-test f-size">
                   Players need to be 18+ in order to register. Underage gambling
                   is prohibited.
                 </p>
-
               </div>
               <div className="footer-img-sec">
-              <img className="img1" src={begamble} alt="" />
-              <img className="img2" src={gambling} alt="" />
-              
-              
+                <img className="img1" src={begamble} alt="" />
+                <img className="img2" src={gambling} alt="" />
               </div>
+              <p className="footer-text f-size ">
+                <b> Cambridge CB2 1TN, United Kingdom</b>
+              </p>
+              <p className="footer-text f-size">
+                Our website is operated by Bhau777 International B.V., a company
+                established under the laws of United Kingdom, with registered
+                address at #506 IT Park Towers Cambridge CB2 1TN, United
+                Kingdom, and having its gaming sublicence issued, by United
+                Kingdom e-Gaming and all rights to operate the gaming software
+                worldwide.
+              </p>
             </div>
           </div>
 
-    
           <div className="footer-last-content gCDmxv">
             <p className="copyright-text f-size">
-              Copyright © 2024 - Bhau777. All Rights Reserved
-            </p>
-            <p  className='f-size'>
-              <Link className='f-size' to="/terms-conditions" onClick={handleClickUp}>
-                Terms & Conditions
-              </Link>
+              Copyright © 2024 - Bhau777 | All Rights Reserved
             </p>
           </div>
         </div>

@@ -17,7 +17,7 @@ const GameRateSection = () => {
   return (
   
     <div className="container">
-    <div className="game-rate-container">
+    <div className="game-rate-container p-3">
       <div className="heding-sec heading-sec-custom m-4 d-flex text-center justify-content-center align-items-center">
         <img
           src={doller}
@@ -29,14 +29,15 @@ const GameRateSection = () => {
           alt=""
         />
       </div>
-      <div className="row custom-card game-rate-card-design p-0 m-0">
+      <div className="row game-rate-card-main g-4   " >
         {getData.map((items, index) => (
-          <div key={index} className="col-12 col-sm-12 col-lg-12 col-xl-4">
-            <div
-              style={{ marginTop: "10px" }}
-              className="border-card text-center"
+          <div key={index}  className="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-12 game-rate me-2">
+            <div 
+        
+              className="game-rate-card p-2"
             >
-              <h4 className="primary-color">{items.gameName}</h4>
+              <h4 className="primary-color"><i class="fa fa-hand-o-right margin-r-10" aria-hidden="true"></i>
+              {items.gameName}</h4>
               <h4 className="font-400"> 1 RS KA {items.gamePrice}</h4>
             </div>
           </div>

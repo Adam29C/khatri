@@ -12,6 +12,7 @@ const StartLine = () => {
   const [AppUrl, setAppUrl] = useState("");
   const [ModalData, setModalData] = useState([]);
   const [show, setShow] = useState(false);
+  const [RowData, setRowData] = useState([]);
   const getResponseData = async () => {
     const res = await GET_ALL_STARTLINE_GAMES();
     if (res.status) {
@@ -24,6 +25,7 @@ const StartLine = () => {
   }, []);
 
   const handleOpenCardModel =(row)=>{
+    setRowData(row.providerName.toUpperCase())
     setModalData(row?.gameDetails?.[0])
     setShow(true);
   }
@@ -62,7 +64,7 @@ const StartLine = () => {
 
         <div className="heding-sec heading-sec-custom m-2 d-flex text-center justify-content-center align-items-center">
           <img src={star} alt="" />
-          <h1 className="mb-3 mt-3 ms-2 me-2 font-700">SHREE STARLINE</h1>
+          <h1 className="mb-3 mt-3 ms-2 me-2 font-700">QUEEN STARLINE</h1>
           <img src={star} alt="" />
         </div>
         <div className="container">
@@ -220,7 +222,7 @@ const StartLine = () => {
             ))}
           </div>
         </div>
-        <CardModel ModalData={ModalData} setShow={setShow} show={show}/>
+        <CardModel ModalData={ModalData} setShow={setShow} show={show} title={RowData}/>
 
       </div>
     </div>

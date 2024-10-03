@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   font-optical-sizing: auto;
@@ -20,9 +19,6 @@
   --color-red: red;
   --color-primary: #478767;
   --bg-primary: #fcf3e5;
-  /* --bg-light: #edefef; */
-  /* --color-orange: #11305c; */
-  /* --light-black: #acaebb; */
   transition: --vh 0.3s ease;
 }
 .f-size {
@@ -125,17 +121,11 @@ th {
 }
 
 .footer-container {
-  /* background-color: #ffffff; */
   color: black;
-  /* padding: 2rem; */
-  border-top-left-radius: 200px;
-  border-top-right-radius: 30px;
-  /* border-radius: 120px 120px 0px 0px; */
   padding: 0rem 2rem 1rem 2rem;
-  /* background: gray; */
   background: #4a8c6b2e;
-  box-shadow: rgba(21, 156, 39, 0.25) 0px 30px 50px -12px inset, rgba(21, 95, 52, 0.3) 0px 18px 26px -18px inset;
-
+  box-shadow: rgba(21, 156, 39, 0.25) 0px 30px 50px -12px inset,
+    rgba(21, 95, 52, 0.3) 0px 18px 26px -18px inset;
 }
 
 .footer-sub-container {
@@ -193,13 +183,12 @@ th {
   gap: 32px;
 }
 .footer-img-sec img {
-  width: 120px;
+  width: 140px;
 }
 
 .footer-last-content {
   padding-top: 30px;
   padding-bottom: 32px;
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -432,9 +421,6 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   font-size: 2rem;
 }
 
-.contact-btn-backgcolor {
-  background-color: rgb(37, 211, 102);
-}
 
 .span-tag-color {
   color: rgb(222, 223, 223);
@@ -471,9 +457,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   font-size: 2rem;
 }
 
-.contact-btn-backgcolor {
-  background-color: rgb(37, 211, 102);
-}
+
 
 .span-tag-color {
   color: rgb(222, 223, 223);
@@ -514,7 +498,6 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 .custom-toggler .navbar-toggler-icon {
-  /* background-image: url("./images/grid-svgrepo-com\ \(2\).svg"); */
   background-image: url("./images/bhau-images/Menu-Icon-svg.svg");
   width: 30px;
   height: 20px;
@@ -549,7 +532,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 .footer-text {
-  text-align: justify;
+  text-align: center;
   line-height: 30px;
 
   padding-top: 10px;
@@ -572,10 +555,6 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 .chart-header {
   padding: 50px 130px;
 }
-
-/* .accordion-container .accordion-section {
-  color: var(--btn-color) !important;
-} */
 
 .footer-sub-container {
   padding-top: 0px;
@@ -607,9 +586,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   width: clamp(7rem, 6.14634rem + 4.87805vw, 12rem);
   height: auto;
 }
-.kDBKpC {
-  /* padding-top: 30px !important; */
-}
+
 .kDBKpC p {
   font-size: clamp(0.75rem, 0.673171rem + 0.439024vw, 1.2rem);
   font-weight: 400;
@@ -695,6 +672,88 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 .download-now-btn:hover {
   box-shadow: 0 0.6em 0.5em -0.4em rgb(209, 208, 208);
   transform: translateY(-0.25em);
-  /* background: #fa4343; */
   transition: 0.2s ease-in-out;
+}
+
+.btn-hover-effect:hover{
+  box-shadow: 0 0.6em 0.5em -0.4em #4787678f;
+  transform: translateX(-0.25em);
+  transition: 0.2s ease-in-out;
+
+}
+
+.wbtn-hover-effect:hover{
+  box-shadow: 0 0.6em 0.5em -0.4em #4787678f;
+  transform: translateX(0.25em);
+  transition: 0.2s ease-in-out;
+
+}
+
+.bid-time-modal-main{
+  -webkit-box-shadow: 12px 13px 36px -17px rgba(71,135,103,1);
+-moz-box-shadow: 12px 13px 36px -17px rgba(71,135,103,1);
+box-shadow: 12px 13px 36px -17px rgba(71,135,103,1);
+}
+
+
+.table-main-card th,td{
+  border: 2px solid var(--btn-color) !important;
+  color: rgb(70, 70, 70) !important;
+}
+
+.table-main-card th{
+  color: var(--btn-color) !important;
+}
+
+.bid-time-header-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+
+  color: var(--color-primary);
+}
+
+.bid-time-header-main p{
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.bid-time-modal-main .modal-header {
+  padding: 0px 20px 0px 20px!important;
+}
+
+.hand-icon {
+  display: inline-block;
+  animation: bounce 0.9s infinite;
+ 
+ 
+}
+.hand-icon:nth-child(1){
+ margin-right: 10px;
+}
+.hand-icon:nth-child(2){
+ 
+  margin-left: 10px;
+
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Start at default position */
+  }
+  25% {
+    transform: translateY(-5px); /* Move up */
+  }
+  50% {
+    transform: translateY(0); /* Back to default position */
+  }
+  75% {
+    transform: translateY(5px); /* Move down */
+  }
+  100% {
+    transform: translateY(0); /* Back to default position */
+  }
 }

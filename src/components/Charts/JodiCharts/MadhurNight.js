@@ -1,9 +1,11 @@
 import React from "react";
-import { MainBazar ,redJodi  } from "./Chart.config";
+import { MadhurNight  } from "./Chart.config";
+import { redJodi } from "./Chart.config";
+
 const ShreeDay = ({ chartData }) => {
   return (
     <div>
-        <table className="table fw-bold" border="collapse">
+      <table className="table fw-bold" border="collapse">
         <thead>
           <tr>
             <th className="ch">MON</th>
@@ -11,14 +13,15 @@ const ShreeDay = ({ chartData }) => {
             <th className="ch">WED</th>
             <th className="ch">THU</th>
             <th className="ch">FRI</th>
- 
+            <th className="ch">SAT</th>
+
           </tr>
         </thead>
         <tbody>
-          {MainBazar.map((group, groupIndex) => (
+          {MadhurNight.map((group, groupIndex) => (
             <tr key={groupIndex}>
               {group.map((item) => (
-                <td>
+                <td className="cc">
                   <div className="kalyan-chart-number-black">
                     <span
                       className={`cp ${
@@ -37,7 +40,6 @@ const ShreeDay = ({ chartData }) => {
             </tr>
           ))}
 
-         
 {chartData &&
   chartData.map((item1) => {
     return (

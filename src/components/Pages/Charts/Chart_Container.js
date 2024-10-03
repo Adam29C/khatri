@@ -19,9 +19,7 @@ const Charts_Container = ({ title, data, link, responsive_Class }) => {
       <div className={responsive_Class}>
       
         <h3 
-        // className="charts-main-title text-decoration-underline"
         className={`charts-main-title text-decoration-underline  ${title === "Jodi Chart" ? "color-white" : ""}`}
-        
         >
           {" "}
           {title}

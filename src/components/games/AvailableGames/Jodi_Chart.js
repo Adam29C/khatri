@@ -3,6 +3,7 @@ import Navbar from "../../Pages/Navbar/Navbar";
 import Footer from "../../Pages/Footer/Footer";
 import { nameRejext } from "../../Helpers/StringRejex";
 import MadhurDay from "../../Charts/JodiCharts/MadhurDay";
+import MadhurNight from "../../Charts/JodiCharts/MadhurNight";
 import MilanDay from "../../Charts/JodiCharts/MilanDay";
 import MilanNight from "../../Charts/JodiCharts/MilanNight";
 import RajdhaniDay from "../../Charts/JodiCharts/RajdhaniDay";
@@ -13,6 +14,10 @@ import MainBazar from "../../Charts/JodiCharts/MainBazar";
 import ShreeDevi from "../../Charts/JodiCharts/ShreeDevi";
 import ShreeDeviNight from "../../Charts/JodiCharts/ShreeDeviNight";
 import MayaMorning from "../../Charts/JodiCharts/MayaMorning";
+
+import QueenDay from "../../Charts/JodiCharts/QueenDay";
+import QueenMorning from "../../Charts/JodiCharts/QueenMorning";
+import QueenNight from "../../Charts/JodiCharts/QueenNight";
 
 import { GetAllCharts } from "../../Helpers/GetCharts";
 import { PagesIndex } from "../../Pages/PagesIndex";
@@ -48,12 +53,9 @@ const Pana_Chart = () => {
 
   return (
     <>
-      {" "}
       <div className="chart-home-page">
         <div id="scroll-up"></div>
-
         <Navbar />
-
         <div className="container-fluid ">
           <div className="row">
             <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header-table ">
@@ -63,7 +65,6 @@ const Pana_Chart = () => {
                     {location.state.title}
                   </strong>
                 </h1>
-
                 <p className="color-white">
                   {location.state.title} Pana Chart Satta Matka Record Old
                   History Historical Data Bracket Results Chart Online Live Book
@@ -71,7 +72,6 @@ const Pana_Chart = () => {
                 </p>
               </div>
               <div className="d-flex alighn-item-center justify-content-center">
-                {" "}
                 <button
                   className="scroll-btn my-3"
                   onClick={handleClick}
@@ -83,7 +83,6 @@ const Pana_Chart = () => {
             </div>
           </div>
         </div>
-
         <div className="container ">
           <div className="row justify-content-center ">
             <div className=" p-0 text-center d-flex justify-content-center   col-xl-12 col-q-12 col-md-12 col-sm-12 ">
@@ -121,11 +120,22 @@ const Pana_Chart = () => {
                 ) : nameRejext(location.state.title) ===
                   nameRejext("sridevinight") ? (
                   <ShreeDeviNight chartData={getData.data} />
-                ) : (
+                ) : nameRejext(location.state.title) ===
+                  nameRejext("QueenDay") ? (
+                  <QueenDay chartData={getData.data} />
+                ) : nameRejext(location.state.title) ===
+                  nameRejext("QueenMorning") ? (
+                  <QueenMorning chartData={getData.data} />
+                ) : nameRejext(location.state.title) ===
+                  nameRejext("QueenNight") ? (
+                  <QueenNight chartData={getData.data} />
+                ): nameRejext(location.state.title) ===
+                nameRejext("MadhurNight") ? (
+                <MadhurNight chartData={getData.data} />
+              ) : (
                   ""
                 )}
 
-                {/* <div className="row justify-content-center mt-2 gap-4"> */}
                 <button
                   className=" btn  rounded-pill back-btn "
                   onClick={() => navigate(-1)}

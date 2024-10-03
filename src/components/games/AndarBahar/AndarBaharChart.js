@@ -113,7 +113,7 @@ const Andar_Bahar_Chart = (props) => {
             <div className="pt-110 text-alignment">
               <h2 className="chart-header-font">
                 <strong className="color-white">
-                Shree Jackpot &nbsp;
+                Queen Jackpot &nbsp;
                   {location.state.title}&nbsp; Chart
                 </strong>
               </h2>
